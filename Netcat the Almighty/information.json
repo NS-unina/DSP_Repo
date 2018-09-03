@@ -1,0 +1,1 @@
+{"description":"Learn the basics of the \"hackers' Swiss army knife\"","goal":"<p>Study how to connect to TCP/UDP ports, forge HTTP requests, transfer files and setup a simple Remote Administration scenario with Netcat.</p>","solution":"<p>First off, take some time to inspect Netcat's command line options:</p>\n<p>&nbsp;</p>","author":"efrcatu"}
