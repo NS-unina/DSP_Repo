@@ -14,6 +14,22 @@ services:
     networks:
       mySubnet:
         ipv4_address: 193.20.1.2
+  ftp_server:
+    image: 'dockersecplayground/alpine_ftp:v1.0'
+    stdin_open: true
+    tty: true
+    networks:
+      mySubnet:
+        ipv4_address: 193.20.1.4
+    cap_add:
+      - ALL
+  http_server:
+    image: 'dockersecplayground/linode_lamp:v2.0'
+    stdin_open: true
+    tty: true
+    networks:
+      mySubnet:
+        ipv4_address: 193.20.1.5
 networks:
   mySubnet:
     ipam:
