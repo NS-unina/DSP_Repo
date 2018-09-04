@@ -1,19 +1,5 @@
 version: '2'
 services:
-  Bob:
-    image: 'alpine-ncat:latest'
-    stdin_open: true
-    tty: true
-    networks:
-      mySubnet:
-        ipv4_address: 193.20.1.3
-  Alice:
-    image: 'alpine-ncat:latest'
-    stdin_open: true
-    tty: true
-    networks:
-      mySubnet:
-        ipv4_address: 193.20.1.2
   ftp_server:
     image: 'dockersecplayground/alpine_ftp:v1.0'
     stdin_open: true
@@ -30,6 +16,20 @@ services:
     networks:
       mySubnet:
         ipv4_address: 193.20.1.5
+  Alice:
+    image: 'nsunina/alpine_netcat:v1.0'
+    stdin_open: true
+    tty: true
+    networks:
+      mySubnet:
+        ipv4_address: 193.20.1.2
+  Bob:
+    image: 'nsunina/alpine_netcat:v1.0'
+    stdin_open: true
+    tty: true
+    networks:
+      mySubnet:
+        ipv4_address: 193.20.1.3
 networks:
   mySubnet:
     ipam:
