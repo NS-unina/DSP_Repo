@@ -17,14 +17,14 @@ services:
       mySubnet:
         ipv4_address: 193.20.1.5
   Alice:
-    image: 'nsunina/alpine_netcat:v1.0'
+    image: 'nsunina/alpine_netcat:v1.1'
     stdin_open: true
     tty: true
     networks:
       mySubnet:
         ipv4_address: 193.20.1.2
   Bob:
-    image: 'nsunina/alpine_netcat:v1.0'
+    image: 'nsunina/alpine_netcat:v1.1'
     stdin_open: true
     tty: true
     networks:
