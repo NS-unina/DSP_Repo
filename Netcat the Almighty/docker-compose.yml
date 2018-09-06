@@ -9,13 +9,6 @@ services:
         ipv4_address: 193.20.1.4
     cap_add:
       - ALL
-  http_server:
-    image: 'dockersecplayground/linode_lamp:v2.0'
-    stdin_open: true
-    tty: true
-    networks:
-      mySubnet:
-        ipv4_address: 193.20.1.5
   Alice:
     image: 'nsunina/alpine_netcat:v1.1'
     stdin_open: true
@@ -30,6 +23,15 @@ services:
     networks:
       mySubnet:
         ipv4_address: 193.20.1.3
+  http_server:
+    image: 'dockersecplayground/linode_lamp:v2.0'
+    stdin_open: true
+    tty: true
+    networks:
+      mySubnet:
+        ipv4_address: 193.20.1.5
+    volumes:
+      - './website:/var/www/'
 networks:
   mySubnet:
     ipam:
