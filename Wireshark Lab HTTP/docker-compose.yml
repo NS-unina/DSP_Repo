@@ -1,0 +1,27 @@
+version: '2'
+services:
+  wireshark:
+    image: 'ffeldhaus/wireshark:latest'
+    stdin_open: true
+    tty: true
+    ports:
+      - '14501:14500'
+    networks:
+      wireshark_subnet:
+        ipv4_address: 193.21.2.2
+    environment:
+      - XPRA_PW=wireshark
+  website:
+    image: 'dockersecplayground/linode_lamp:v2.0'
+    stdin_open: true
+    tty: true
+    networks:
+      wireshark_subnet:
+        ipv4_address: 193.21.2.3
+    volumes:
+      - './website:/var/www/'
+networks:
+  wireshark_subnet:
+    ipam:
+      config:
+        - subnet: 193.21.2.1/24
