@@ -15,11 +15,9 @@ services:
       - NET_ADMIN
     privileged: true
   wireshark:
-    image: 'nsunina/wireshark:v1.0'
+    image: 'nsunina/wireshark:v1.1'
     stdin_open: true
     tty: true
-    ports:
-      - '14500:14500'
     networks:
       wireshark_subnet:
         ipv4_address: 193.21.1.5
