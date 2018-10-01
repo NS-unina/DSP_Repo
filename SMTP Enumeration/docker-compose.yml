@@ -1,7 +1,7 @@
 version: '2'
 services:
   SMPT_server:
-    image: 'nsunina/postfix:v1.0'
+    image: 'nsunina/postfix:v1.1'
     stdin_open: true
     tty: true
     networks:
