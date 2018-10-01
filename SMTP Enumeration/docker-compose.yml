@@ -1,0 +1,7 @@
+version: '2'
+services: {}
+networks:
+  public_network:
+    ipam:
+      config:
+        - subnet: 193.21.1.1/24
