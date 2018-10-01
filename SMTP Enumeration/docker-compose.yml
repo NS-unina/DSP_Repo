@@ -1,5 +1,12 @@
 version: '2'
-services: {}
+services:
+  SMPT_server:
+    image: 'nsunina/postfix:v1.0'
+    stdin_open: true
+    tty: true
+    networks:
+      public_network:
+        ipv4_address: 193.21.1.3
 networks:
   public_network:
     ipam:
