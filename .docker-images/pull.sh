@@ -6,4 +6,6 @@ pull_image() {
   fi
 }
 # Built images
-# pull_image dockersecplayground/alpine:v1.0
+pull_image nsunina/alpine_netcat:v1.1
+pull_image nsunina/smtp-user-enum:v1.0
+pull_image nsunina/alpine_vrfy:v1.0
