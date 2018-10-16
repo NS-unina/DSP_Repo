@@ -1,0 +1,6 @@
+daemon_file=/etc/default/frox
+apply_cmd=/etc/init.d/frox reload
+start_cmd=/etc/init.d/frox start
+frox=/usr/sbin/frox
+frox_conf=/etc/frox.conf
+stop_cmd=/etc/init.d/frox stop

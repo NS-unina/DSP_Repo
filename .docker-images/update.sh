@@ -15,3 +15,5 @@ pull_image nsunina/alpine_netcat:v1.1
 pull_image nsunina/smtp-user-enum:v1.0
 pull_image nsunina/alpine_vrfy:v1.0
 pull_image nsunina/postfix:v1.1
+pull_image nsunina/alpine-dnsutils:v1.0
+pull_image cosmicq/docker-bind:latest

@@ -1,0 +1,28 @@
+$ttl 38400
+dspdnsenum.lab.	IN	SOA	ns1.dspdnsenum.lab. admin.dspdnsenum.lab. (
+			1539615099
+			10800
+			3600
+			604800
+			38400 )
+dspdnsenum.lab.	IN	NS	ns1.dspdnsenum.lab.
+dspdnsenum.lab.	IN	NS	ns2.dspdnsenum.lab.
+dspdnsenum.lab.	IN	NS	ns3.dspdnsenum.lab.
+dspdnsenum.lab.	IN	MX	10 mail.dspdnsenum.lab.
+dspdnsenum.lab.	IN	MX	20 mail2.dspdnsenum.lab.
+dspdnsenum.lab.	IN	A	193.21.1.2
+admin.dspdnsenum.lab.	IN	A	192.168.1.6
+beta.dspdnsenum.lab.	IN	A	192.168.1.14
+intranet.dspdnsenum.lab.	IN	A	192.168.1.13
+mail.dspdnsenum.lab.	IN	A	192.168.1.2
+mail2.dspdnsenum.lab.	IN	A	192.168.1.3
+ns1.dspdnsenum.lab.	IN	A	193.21.1.3
+ns2.dspdnsenum.lab.	IN	A	192.168.1.4
+ns3.dspdnsenum.lab.	IN	A	192.168.1.5
+router.dspdnsenum.lab.	IN	A	192.168.1.9
+snmp.dspdnsenum.lab.	IN	A	192.168.1.11
+syslog.dspdnsenum.lab.	IN	A	192.168.1.12
+test.dspdnsenum.lab.	IN	A	192.168.1.15
+vpn.dspdnsenum.lab.	IN	A	192.168.1.10
+www.dspdnsenum.lab.	IN	A	192.168.1.7
+www2.dspdnsenum.lab.	IN	A	192.168.1.8

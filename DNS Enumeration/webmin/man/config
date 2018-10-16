@@ -1,0 +1,9 @@
+kernel_dir=/usr/src/linux/Documentation
+man_cmd=man PAGE
+search_cmd=man -k PAGE
+man_cmd_sect=man SECTION PAGE
+list_cmd=man -w PAGE
+doc_dir=/usr/share/doc
+list_cmd_sect=man -w SECTION PAGE
+man2html_path=man2html
+man_dir=/usr/man:/usr/share/man:/usr/local/man:/usr/local/share/man

@@ -1,0 +1,6 @@
+program_dir=/usr/lib/majordomo
+dynamic=0
+sort_mode=0
+perms=0
+aliases_file=
+majordomo_cf=/etc/majordomo.cf
