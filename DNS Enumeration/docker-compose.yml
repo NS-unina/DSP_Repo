@@ -13,7 +13,7 @@ services:
       - './var-lib-bind:/var/lib/bind'
       - './bind:/etc/bind'
       - './webmin:/etc/webmin'
-  ns1.dspdnsenum.lab:
+  server:
     image: 'cosmicq/docker-bind:latest'
     stdin_open: true
     tty: true
