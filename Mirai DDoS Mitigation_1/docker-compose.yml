@@ -1,0 +1,93 @@
+version: '2'
+services:
+  cnc:
+    image: 'nsunina/mirai_cnc:v1.0'
+    stdin_open: true
+    tty: true
+    networks:
+      mirai_net:
+        ipv4_address: 172.22.0.3
+  quagga:
+    image: 'nsunina/quagga:v1.0'
+    privileged: true
+    stdin_open: true
+    tty: true
+    networks:
+      quagga_net:
+        ipv4_address: 172.21.0.2
+      mirai_net:
+        ipv4_address: 172.22.0.2
+    volumes:
+      - './quagga:/etc/quagga/'
+  exabgp:
+    image: 'nsunina/exabgp:3.4.20'
+    privileged: true
+    stdin_open: true
+    tty: true
+    networks:
+      target_net:
+        ipv4_address: 172.20.0.2
+      quagga_net:
+        ipv4_address: 172.21.0.3
+    volumes:
+      - './exabgp:/etc/exabgp/'
+  mongodb:
+    image: 'fnmdockerized_mongodb:latest'
+    stdin_open: true
+    tty: true
+    networks:
+      fastnetmon_net:
+        ipv4_address: 172.18.0.3
+  bot:
+    image: 'nsunina/mirai_bot:v1.1'
+    privileged: true
+    stdin_open: true
+    tty: true
+    networks:
+      mirai_net: {}
+    depends_on:
+      - cnc
+    cap_add:
+      - ALL
+  fastnetmon:
+    image: 'fnmdockerized_fastnetmon:latest'
+    privileged: true
+    stdin_open: true
+    tty: true
+    expose:
+      - "80"
+    ports:
+      - "10100:80"
+      - "10101:80/udp"
+    networks:
+      fastnetmon_net:
+        ipv4_address: 172.18.0.2
+      target_net:
+        ipv4_address: 172.20.0.3
+    depends_on:
+      - mongodb
+networks:
+  fastnetmon_net:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.18.0.0/24
+  target_net:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.20.0.0/24
+  quagga_net:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.21.0.0/24
+  mirai_net:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.22.0.0/24
