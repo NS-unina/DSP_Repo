@@ -7,18 +7,6 @@ services:
     networks:
       mirai_net:
         ipv4_address: 172.22.0.3
-  quagga:
-    image: 'nsunina/quagga:v1.0'
-    privileged: true
-    stdin_open: true
-    tty: true
-    networks:
-      quagga_net:
-        ipv4_address: 172.21.0.2
-      mirai_net:
-        ipv4_address: 172.22.0.2
-    volumes:
-      - './quagga:/etc/quagga/'
   exabgp:
     image: 'nsunina/exabgp:3.4.20'
     privileged: true
@@ -49,8 +37,20 @@ services:
     networks:
       fastnetmon_net:
         ipv4_address: 172.18.0.3
+  quagga:
+    image: 'nsunina/quagga:v1.1'
+    privileged: true
+    stdin_open: true
+    tty: true
+    networks:
+      quagga_net:
+        ipv4_address: 172.21.0.2
+      mirai_net:
+        ipv4_address: 172.22.0.2
+    volumes:
+      - './quagga:/etc/quagga/'
   fastnetmon:
-    image: 'nsunina/fastnetmon:v1.3'
+    image: 'nsunina/fastnetmon:v1.4'
     privileged: true
     stdin_open: true
     tty: true
