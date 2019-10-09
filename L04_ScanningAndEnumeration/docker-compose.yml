@@ -1,0 +1,26 @@
+version: '2'
+services:
+  telnet:
+    image: 'dockersecplayground/alpine_telnet:v1.0'
+    stdin_open: true
+    tty: true
+    cap_add:
+      - ALL
+  ftp:
+    image: 'dockersecplayground/alpine_ftp:v1.0'
+    stdin_open: true
+    tty: true
+    cap_add:
+      - ALL
+  eye_container:
+    image: 'dockersecplayground/iplog:v1.1'
+    stdin_open: true
+    tty: true
+    cap_add:
+      - NET_ADMIN
+    privileged: true
+  samba:
+    image: 'vulhub/samba:4.6.3'
+    stdin_open: true
+    tty: true
+networks: {}
