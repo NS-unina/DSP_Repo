@@ -1,0 +1,66 @@
+version: "3.1"
+services:
+    www:
+        image: 'xssattack_www:latest'
+        ports: 
+            - "8001:80"
+        volumes:
+            - ./www:/var/www/html/
+        links:
+            - db
+        networks:
+          static-network:
+            ipv4_address: 193.20.1.2
+    wwws:
+         image: 'striker_wwws:latest'
+         ports: 
+             - "8005:80"
+         volumes:
+             - ./wwws:/var/www/html/
+         networks:
+           static-network1:
+            
+    db:
+        image: mysql:8.0
+        ports: 
+            - "3306:3306"
+        command: --default-authentication-plugin=mysql_native_password
+        environment:
+            MYSQL_DATABASE: myDb
+            MYSQL_USER: user
+            MYSQL_PASSWORD: test
+            MYSQL_ROOT_PASSWORD: test 
+        volumes:
+            - ./dump:/docker-entrypoint-initdb.d
+            - ./conf:/etc/mysql/conf.d
+            - persistent:/var/lib/mysql
+        networks:
+          static-network:
+            ipv4_address: 193.20.1.3
+    phpmyadmin:
+        image: phpmyadmin/phpmyadmin
+        links: 
+            - db:db
+        ports:
+            - 8000:80
+        environment:
+            MYSQL_USER: user
+            MYSQL_PASSWORD: test
+            MYSQL_ROOT_PASSWORD: test 
+        networks:
+          static-network:
+            ipv4_address: 193.20.1.4
+      
+networks:
+  static-network:
+    ipam:
+      config:
+        - subnet: 193.20.1.1/24
+  static-network1:
+    ipam:
+      config:
+        - subnet: 193.30.1.1/24
+          
+volumes:
+    persistent:
+
