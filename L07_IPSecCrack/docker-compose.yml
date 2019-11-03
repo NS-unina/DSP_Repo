@@ -1,64 +1,46 @@
 version: '2'
-
 services:
   kali:
-    image:
-      savmil/kali
-    networks:
-      mia:
-        ipv4_address: 172.18.0.5
-    privileged: true
-
-  server:
-    image:
-      savmil/ipsec
-    networks:
-      mia:
-        ipv4_address: 172.18.0.2
-    expose:
-      - "500/udp"
-      - "4500/udp"
-    volumes:
-      - /lib/modules:/lib/modules
-    cap_add:
-      - NET_ADMIN
-    privileged: true
-
-  client:
-    image:
-      savmil/ipsecclient
-    networks:
-      mia:
-        ipv4_address: 172.18.0.3
-    volumes:
-      - /lib/modules:/lib/modules
+    image: 'savmil/kali:latest'
     stdin_open: true
     tty: true
-    cap_add:
-      - NET_ADMIN
-    privileged: true
-
-  wireshark:
-    image:
-      #stealthandsecure-master-688752154bfe46775c9d1ea5cb0ef3edca323d72_wireshark_1
-      #nsunina/wireshark
-      savmil/wireshark
+    ports:
+      - '5000:4200'
     networks:
-      mia:
-        ipv4_address: 172.18.0.4
+      sub:
+        ipv4_address: 172.18.0.5
+    cap_add:
+      - ALL
+  wireshark:
+    image: 'savmil/wireshark:latest'
     stdin_open: true
     tty: true
     ports:
       - '14500:14500'
+    networks:
+      sub:
+        ipv4_address: 172.18.0.4
     environment:
       - XPRA_PW=wireshark
     cap_add:
       - NET_ADMIN
     privileged: true
-    #command: bash -c "sudo iptables-restore < /etc/iptables/rules.v4 && ping 172.18.0.4 >>/dev/null"
-
+  client:
+    image: 'savmil/ipsecclient:latest'
+    stdin_open: true
+    tty: true
+    networks:
+      sub:
+        ipv4_address: 172.18.0.3
+  server:
+    image: 'savmil/ipsec:latest'
+    stdin_open: true
+    tty: true
+    networks:
+      sub:
+        ipv4_address: 172.18.0.2
 networks:
-  mia:
+  sub:
     ipam:
       config:
-        - subnet: 172.18.0.0/24
+        - subnet: 172.18.0.1/24
