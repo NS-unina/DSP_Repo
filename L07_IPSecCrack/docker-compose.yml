@@ -1,9 +1,9 @@
 version: '2'
 
 services:
-  kali:
+  attacker:
     image:
-      savmil/kali
+      dockersecplayground/ike-scan 
     networks:
       mia:
         ipv4_address: 172.18.0.5
