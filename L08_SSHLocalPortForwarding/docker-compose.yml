@@ -12,7 +12,7 @@ services:
     cap_add:
       - NET_ADMIN
   ssh_server:
-    image: 'dockersecplayground/alpine_ssh_password:v1.0'
+    image: 'dockersecplayground/alpine_ssh_password:v1.1'
     stdin_open: true
     tty: true
     ports:
