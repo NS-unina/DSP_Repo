@@ -12,7 +12,7 @@ services:
     cap_add:
       - NET_ADMIN
   ssh_server:
-    image: 'dockersecplayground/alpine_ssh_password:v1.1'
+    image: 'dockersecplayground/alpine_ssh_password:v1.2'
     stdin_open: true
     tty: true
     ports:
@@ -22,8 +22,6 @@ services:
         ipv4_address: 193.20.2.2
       public_client_network:
         ipv4_address: 193.20.4.2
-    volumes:
-      - './sshconfiguration:/etc/ssh'
     cap_add:
       - NET_ADMIN
   music_server:
