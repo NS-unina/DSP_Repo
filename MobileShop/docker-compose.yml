@@ -1,9 +1,0 @@
-version: '2'
-services:
-  element_0:
-    image: 'traianus/mobileshoptest:latest'
-    stdin_open: true
-    tty: true
-    ports:
-      - '8081:8080'
-networks: {}
