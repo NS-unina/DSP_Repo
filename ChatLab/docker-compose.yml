@@ -1,0 +1,17 @@
+version: '2'
+services:
+  ChatServer:
+    image: 'emalderson/my-first-repo:server_0.1'
+    stdin_open: true
+    tty: true
+  ChatClient:
+    image: 'emalderson/my-first-repo:client_0.1'
+    stdin_open: true
+    tty: true
+    depends_on:
+      - ChatServer
+networks:
+  ChatNetwork:
+    ipam:
+      config:
+        - subnet: 193.20.1.1/24
