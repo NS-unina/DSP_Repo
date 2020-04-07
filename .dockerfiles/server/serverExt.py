@@ -21,8 +21,11 @@ class receiving (Thread):
 
         while True:
             fromClient = csock.recv(1024).decode()
+            if (len(fromClient) < 1):
+                break
             print(self.addr_info[0] +' dice: ' + fromClient)
             if (fromClient == "Cia"):
+                print('Il client ha terminato la connessione, se non hai altro da dire scrivi "Cia" per terminare anche tu.')
                 break
 
 class sending (Thread):
@@ -47,7 +50,7 @@ lsock.bind((HOST, PORT))
 lsock.listen(1)
 
 while True:
-    print('In attesa di connessioni...')
+    print('In attesa di connessioni sulla porta 9999...')
     csock, addr_info = lsock.accept()
 
     #creo i thread e li starto, dopo aver fatto la accept e quindi aver creato la socket connessa

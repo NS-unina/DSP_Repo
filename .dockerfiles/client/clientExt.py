@@ -14,8 +14,11 @@ class receiving (Thread):
     def run(self):
         while True:
             fromServer = self.sock.recv(1024).decode()
-            print("Hai ricevuto: " + fromServer)
+            if (len(fromServer) < 1):
+                break
+            print(HOST + " ha scritto: " + fromServer)
             if (fromServer == "Cia"):
+                print('Il server ha terminato la connessione, se non hai altro da dire scrivi "Cia" per terminare anche tu.')
                 break
 
 class sending (Thread):
@@ -37,7 +40,6 @@ print("Client per chat uno a uno.")
 print('Inserisci l\'IP del destinatario: ')
 host = input()
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-#sock.bind(('', 51396))
 sock.connect((host, PORTto))
 print('Scrivi "Cia" per smettere di inviare dati ed attendere la chiusura dall\'altro lato.')
 
