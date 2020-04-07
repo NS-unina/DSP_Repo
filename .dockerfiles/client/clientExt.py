@@ -16,7 +16,7 @@ class receiving (Thread):
             fromServer = self.sock.recv(1024).decode()
             if (len(fromServer) < 1):
                 break
-            print(HOST + " ha scritto: " + fromServer)
+            print("Il server ha scritto: " + fromServer)
             if (fromServer == "Cia"):
                 print('Il server ha terminato la connessione, se non hai altro da dire scrivi "Cia" per terminare anche tu.')
                 break
