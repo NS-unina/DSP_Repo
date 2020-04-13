@@ -1,0 +1,48 @@
+version: '2'
+services:
+  ssh_client:
+    image: 'nsunina/alpine-ssh-client:latest'
+    stdin_open: true
+    tty: true
+    networks:
+      public_client_network:
+        ipv4_address: 193.20.4.2
+      not_visible_network:
+        ipv4_address: 193.20.2.2
+    cap_add:
+      - NET_ADMIN
+  music_server:
+    image: 'nsunina/linode_lamp:v1.0'
+    stdin_open: true
+    tty: true
+    networks:
+      not_visible_network:
+        ipv4_address: 193.20.2.3
+    volumes:
+      - './website:/var/www'
+    cap_add:
+      - NET_ADMIN
+    privileged: true
+  client_firefox:
+    image: 'nsunina/firefox-ssh-server:latest'
+    stdin_open: true
+    tty: true
+    ports:
+      - '5800:5800'
+    networks:
+      public_client_network:
+        ipv4_address: 193.20.4.3
+    volumes:
+      - './sshconfiguration:/etc/ssh'
+    cap_add:
+      - NET_ADMIN
+    privileged: true
+networks:
+  not_visible_network:
+    ipam:
+      config:
+        - subnet: 193.20.2.1/24
+  public_client_network:
+    ipam:
+      config:
+        - subnet: 193.20.4.1/24

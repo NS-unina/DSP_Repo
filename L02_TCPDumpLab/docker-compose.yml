@@ -1,0 +1,57 @@
+version: '2'
+services:
+  Kali:
+    image: 'dockersecplayground/kali:v1.0'
+    stdin_open: true
+    tty: true
+    networks:
+      internal_network:
+        ipv4_address: 192.168.2.3
+    cap_add:
+      - ALL
+    privileged: true
+  router:
+    image: 'dockersecplayground/alpine_router:v1.0'
+    stdin_open: true
+    tty: true
+    networks:
+      internal_network:
+        ipv4_address: 192.168.2.2
+      telnet_network:
+        ipv4_address: 192.168.1.2
+    cap_add:
+      - ALL
+  TelnetServer:
+    image: 'dockersecplayground/alpine_telnet:v1.0'
+    stdin_open: true
+    tty: true
+    networks:
+      telnet_network:
+        ipv4_address: 192.168.1.3
+    cap_add:
+      - ALL
+  telnet_client:
+    image: 'nsunina/bot_telnet_client:v1.0'
+    stdin_open: true
+    tty: true
+    networks:
+      internal_network:
+        ipv4_address: 192.168.2.4
+    cap_add:
+      - NET_ADMIN
+  scapy:
+    image: 'nsunina/alpine_scapy:v1.0'
+    stdin_open: true
+    tty: true
+    networks:
+      internal_network:
+        ipv4_address: 192.168.2.5
+networks:
+  telnet_network:
+    ipam:
+      config:
+        - subnet: 192.168.1.1/24
+  internal_network:
+    ipam:
+      config:
+        - subnet: 192.168.2.1/24

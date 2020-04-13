@@ -1,0 +1,11 @@
+warn_days=7
+cron_mode=0
+upmissing=0
+updays=1
+upshow=1
+update=0
+osdn=1
+upmins=48
+uphour=7
+last_version_check=1539615885
+last_version_number=1.890

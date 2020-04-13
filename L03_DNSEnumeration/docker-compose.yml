@@ -1,0 +1,33 @@
+version: '2'
+services:
+  dspdnsenum.lab:
+    image: 'cosmicq/docker-bind:latest'
+    stdin_open: true
+    tty: true
+    networks:
+      public_dnsenum:
+        ipv4_address: 193.21.1.2
+    environment:
+      - PASS=newpass
+    volumes:
+      - './var-lib-bind:/var/lib/bind'
+      - './bind:/etc/bind'
+      - './webmin:/etc/webmin'
+  server:
+    image: 'cosmicq/docker-bind:latest'
+    stdin_open: true
+    tty: true
+    networks:
+      public_dnsenum:
+        ipv4_address: 193.21.1.3
+    environment:
+      - PASS=newpass
+    volumes:
+      - './webmin-slave:/etc/webmin'
+      - './bind-slave:/etc/bind'
+      - './var-lib-bind-slave:/var/lib/bind'
+networks:
+  public_dnsenum:
+    ipam:
+      config:
+        - subnet: 193.21.1.1/24

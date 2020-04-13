@@ -1,0 +1,13 @@
+portsentry_umode=udp
+portsentry_ignore=/etc/portsentry/portsentry.ignore.static
+portsentry=/usr/sbin/portsentry
+hostsentry_start=
+portsentry_pid=
+hostsentry_config=/usr/local/abacus/hostsentry/hostsentry.conf
+portsentry_stop=/etc/init.d/portsentry stop
+portsentry_config=/etc/portsentry/portsentry.conf
+logcheck=/usr/sbin/logcheck
+portsentry_start=/etc/init.d/portsentry start
+hostsentry=/usr/local/abacus/hostsentry/hostsentry.py
+portsentry_tmode=tcp
+hostsentry_stop=

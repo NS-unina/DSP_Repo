@@ -1,0 +1,64 @@
+version: '2'
+
+services:
+  attacker:
+    image:
+      dockersecplayground/ike-scan 
+    networks:
+      mia:
+        ipv4_address: 172.18.0.5
+    privileged: true
+
+  server:
+    image:
+      savmil/ipsec
+    networks:
+      mia:
+        ipv4_address: 172.18.0.2
+    expose:
+      - "500/udp"
+      - "4500/udp"
+    volumes:
+      - /lib/modules:/lib/modules
+    cap_add:
+      - NET_ADMIN
+    privileged: true
+
+  client:
+    image:
+      savmil/ipsecclient
+    networks:
+      mia:
+        ipv4_address: 172.18.0.3
+    volumes:
+      - /lib/modules:/lib/modules
+    stdin_open: true
+    tty: true
+    cap_add:
+      - NET_ADMIN
+    privileged: true
+
+  wireshark:
+    image:
+      #stealthandsecure-master-688752154bfe46775c9d1ea5cb0ef3edca323d72_wireshark_1
+      #nsunina/wireshark
+      savmil/wireshark
+    networks:
+      mia:
+        ipv4_address: 172.18.0.4
+    stdin_open: true
+    tty: true
+    ports:
+      - '14500:14500'
+    environment:
+      - XPRA_PW=wireshark
+    cap_add:
+      - NET_ADMIN
+    privileged: true
+    #command: bash -c "sudo iptables-restore < /etc/iptables/rules.v4 && ping 172.18.0.4 >>/dev/null"
+
+networks:
+  mia:
+    ipam:
+      config:
+        - subnet: 172.18.0.0/24

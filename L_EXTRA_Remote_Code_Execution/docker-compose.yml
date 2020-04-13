@@ -1,0 +1,9 @@
+version: '2'
+services:
+  Mobile_Shop:
+    image: 'traianus/mobile_shop_ns:latest'
+    stdin_open: true
+    tty: true
+    ports:
+      - '8081:8080'
+networks: {}

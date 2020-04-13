@@ -1,0 +1,35 @@
+version: '2'
+services:
+  website:
+    image: 'nsunina/linode_lamp:v1.0'
+    stdin_open: true
+    tty: true
+    ports:
+      - '8090:80'
+    networks:
+      wireshark_subnet:
+        ipv4_address: 193.21.1.4
+    volumes:
+      - './website:/var/www/'
+    cap_add:
+      - NET_ADMIN
+    privileged: true
+  wireshark:
+    image: 'nsunina/wireshark:v1.1'
+    stdin_open: true
+    tty: true
+    ports:
+      - '14500:14500'
+    networks:
+      wireshark_subnet:
+        ipv4_address: 193.21.1.5
+    environment:
+      - XPRA_PW=wireshark
+    cap_add:
+      - NET_ADMIN
+    privileged: true
+networks:
+  wireshark_subnet:
+    ipam:
+      config:
+        - subnet: 193.21.1.1/24

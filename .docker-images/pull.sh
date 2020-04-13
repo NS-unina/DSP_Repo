@@ -6,4 +6,4 @@ pull_image() {
   fi
 }
 # Built images
-# pull_image dockersecplayground/alpine:v1.0
+
