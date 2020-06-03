@@ -71,4 +71,6 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+#Linux .cache files
+*.cache
 # End of https://www.gitignore.io/api/macos,windows,linux
