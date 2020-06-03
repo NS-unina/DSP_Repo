@@ -72,5 +72,5 @@ $RECYCLE.BIN/
 *.lnk
 
 #Linux .cache files
-*.cache
+**.cache
 # End of https://www.gitignore.io/api/macos,windows,linux
