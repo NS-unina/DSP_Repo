@@ -6,13 +6,6 @@ services:
     tty: true
     networks:
       vulnerable_network:
-        ipv4_address: 193.20.1.3
-  ssh_client:
-    image: 'nsunina/alpine_ssh:latest'
-    stdin_open: true
-    tty: true
-    networks:
-      vulnerable_network:
         ipv4_address: 193.20.1.2
 networks:
   vulnerable_network:
