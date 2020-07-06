@@ -1,0 +1,25 @@
+version: '2'
+services:
+  wordpress:
+    image: 'wordpress:latest'
+    stdin_open: true
+    tty: true
+    ports:
+      - '11080:80'
+    depends_on:
+      - db
+    environment:
+      - WORDPRESS_DB_HOST=db
+      - WORDPRESS_DB_USER=dsp
+      - WORDPRESS_DB_PASSWORD=dsp
+      - WORDPRESS_DB_NAME=wordpress
+  db:
+    image: 'dockersecplayground/mysql_dsp:latest'
+    stdin_open: true
+    tty: true
+    environment:
+      - MYSQL_DATABASE=wordpress
+      - MYSQL_USER=dsp
+      - MYSQL_PASSWORD=dsp
+      - MYSQL_RANDOM_ROOT_PASSWORD=1
+networks: {}
