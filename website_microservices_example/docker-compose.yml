@@ -1,0 +1,18 @@
+version: '2'
+services:
+  web:
+    image: 'php:5.6-apache'
+    stdin_open: true
+    tty: true
+    ports:
+      - '18080:80'
+    depends_on:
+      - db
+  db:
+    image: 'mysql:5.7'
+    stdin_open: true
+    tty: true
+    environment:
+      - MYSQL_DATABASE=test_db
+      - MYSQL_ALLOW_EMPTY_PASSWORD=true
+networks: {}
