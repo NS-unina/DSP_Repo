@@ -1,0 +1,55 @@
+version: '2'
+services:
+  ComputerAFL:
+    image: 'alessandro123456/afl:latest'
+    stdin_open: true
+    tty: true
+  ServerHttps:
+    image: 'alessandro123456/heartbleed:latest'
+    stdin_open: true
+    tty: true
+    networks:
+      network_2:
+        ipv4_address: 193.20.3.3
+  Metasploit:
+    image: 'dockersecplayground/kali:v1.0'
+    stdin_open: true
+    tty: true
+    networks:
+      network_2: {}
+    cap_add:
+      - ALL
+    privileged: true
+  ClientWfuzzBoofuzz:
+    image: 'alessandro123456/wfuzz:latest'
+    stdin_open: true
+    tty: true
+    ports:
+      - '26000:26000'
+    networks:
+      network_1: {}
+    volumes:
+      - '././:/home/boofuzz-results'
+  SERVERFTP1:
+    image: 'jbenninghoff/vsftpd:latest'
+    stdin_open: true
+    tty: true
+    networks:
+      network_1:
+        ipv4_address: 193.20.1.20
+  SERVERFTP2:
+    image: 'metabrainz/docker-anon-ftp:latest'
+    stdin_open: true
+    tty: true
+    networks:
+      network_1:
+        ipv4_address: 193.20.1.19
+networks:
+  network_2:
+    ipam:
+      config:
+        - subnet: 193.20.3.1/24
+  network_1:
+    ipam:
+      config:
+        - subnet: 193.20.1.1/24
