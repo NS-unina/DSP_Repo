@@ -4,6 +4,8 @@ services:
     image: 'alessandro123456/afl:latest'
     stdin_open: true
     tty: true
+    networks:
+      network_2: {}
   ServerHttps:
     image: 'alessandro123456/heartbleed:latest'
     stdin_open: true
@@ -11,23 +13,6 @@ services:
     networks:
       network_2:
         ipv4_address: 193.20.3.3
-  Metasploit:
-    image: 'dockersecplayground/kali:v1.0'
-    stdin_open: true
-    tty: true
-    networks:
-      network_2: {}
-    cap_add:
-      - ALL
-    privileged: true
-  ClientWfuzzBoofuzz:
-    image: 'alessandro123456/wfuzz:latest'
-    stdin_open: true
-    tty: true
-    networks:
-      network_1: {}
-    volumes:
-      - '././:/home/boofuzz-results'
   SERVERFTP1:
     image: 'jbenninghoff/vsftpd:latest'
     stdin_open: true
@@ -43,17 +28,18 @@ services:
       network_1:
         ipv4_address: 193.20.1.19
   wfuzz:
-    image: 'dockersecplayground/wfuzz:latest'
+    image: 'alessandro123456/wfuzz:tagname'
     stdin_open: true
     tty: true
     networks:
       network_1: {}
   boofuzz:
-    image: 'aldorperez1/boofuzz_docker:latest'
+    image: 'boofuzz_ultimo_2:latest'
     stdin_open: true
     tty: true
     ports:
       - '26000:26000'
+      - '26002:26002'
     networks:
       network_1: {}
 networks:
