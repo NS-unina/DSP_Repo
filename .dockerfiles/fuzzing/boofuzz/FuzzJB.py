@@ -1,7 +1,8 @@
 
 from boofuzz import *
 
-session = Session(target=Target(connection=SocketConnection("193.20.1.19", 21,proto='tcp')))
+session = Session(target=Target(connection=SocketConnection("193.20.1.20", 21 ,proto='tcp')))
+
 s_initialize("user")
 s_string("USER")
 s_delim(" ")
@@ -26,9 +27,12 @@ s_delim(" ")
 s_string("AAAA")
 s_static("\r\n")
 
+
 session.connect(s_get("user"))
 session.connect(s_get("user"), s_get("pass"))
 session.connect(s_get("pass"), s_get("stor"))
 session.connect(s_get("pass"), s_get("retr"))
 
+
 session.fuzz()
+

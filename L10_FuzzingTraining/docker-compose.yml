@@ -34,14 +34,13 @@ services:
     networks:
       network_1: {}
   boofuzz:
-    image: 'boofuzz_ultimo_2:latest'
+    image: 'alessandro123456/boofuzz:latest'
     stdin_open: true
     tty: true
-    ports:
-      - '26000:26000'
-      - '26002:26002'
     networks:
       network_1: {}
+    volumes:
+      - '././:/home/boofuzz-results'
 networks:
   network_2:
     ipam:
