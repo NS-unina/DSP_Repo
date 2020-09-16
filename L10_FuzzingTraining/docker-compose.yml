@@ -1,0 +1,52 @@
+version: '2'
+services:
+  ComputerAFL:
+    image: 'alessandro123456/afl:latest'
+    stdin_open: true
+    tty: true
+    networks:
+      network_2: {}
+  ServerHttps:
+    image: 'alessandro123456/heartbleed:latest'
+    stdin_open: true
+    tty: true
+    networks:
+      network_2:
+        ipv4_address: 193.20.3.3
+  SERVERFTP1:
+    image: 'jbenninghoff/vsftpd:latest'
+    stdin_open: true
+    tty: true
+    networks:
+      network_1:
+        ipv4_address: 193.20.1.20
+  SERVERFTP2:
+    image: 'metabrainz/docker-anon-ftp:latest'
+    stdin_open: true
+    tty: true
+    networks:
+      network_1:
+        ipv4_address: 193.20.1.19
+  wfuzz:
+    image: 'alessandro123456/wfuzz:tagname'
+    stdin_open: true
+    tty: true
+    networks:
+      network_1: {}
+  boofuzz:
+    image: 'alessandro123456/boofuzz:latest'
+    stdin_open: true
+    tty: true
+    networks:
+      network_1: {}
+    volumes:
+      - '././:/home/boofuzz-results'
+networks:
+  network_2:
+    ipam:
+      config:
+        - subnet: 193.20.3.1/24
+  network_1:
+    ipam:
+      config:
+        - subnet: 193.20.1.1/24
