@@ -1,0 +1,10 @@
+version: '2'
+services:
+  hackMe:
+    image: 'dockersecplayground/bufferoverflow_1:latest'
+    stdin_open: true
+    tty: true
+    cap_add:
+      - ALL
+    privileged: true
+networks: {}
