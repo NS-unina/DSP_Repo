@@ -1,14 +1,14 @@
 version: '2'
 services:
   client:
-    image: 'clientnode:latest'
+    image: 'ciromanfredi/javascriptserializeclient:latest'
     stdin_open: true
     tty: true
     networks:
       LaRete:
         ipv4_address: 191.20.1.2
   server:
-    image: 'servernode:latest'
+    image: 'ciromanfredi/javascriptserializeserver:latest'
     stdin_open: true
     tty: true
     ports:
