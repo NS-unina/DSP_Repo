@@ -11,8 +11,6 @@ services:
     image: 'ciromanfredi/javascriptserializeserver:latest'
     stdin_open: true
     tty: true
-    ports:
-      - '3000:3000'
     networks:
       LaRete:
         ipv4_address: 191.20.1.3
