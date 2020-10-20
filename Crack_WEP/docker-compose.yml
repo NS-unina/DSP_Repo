@@ -1,0 +1,9 @@
+version: '2'
+services:
+  AP_WEP:
+    image: 'ale753/wep_hacking_docker:latest'
+    tty: true
+    stdin_open: true
+    privileged : true
+    network_mode : host
+networks: {}
