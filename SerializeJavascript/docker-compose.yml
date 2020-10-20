@@ -1,0 +1,21 @@
+version: '2'
+services:
+  client:
+    image: 'ciromanfredi/javascriptserializeclient:latest'
+    stdin_open: true
+    tty: true
+    networks:
+      LaRete:
+        ipv4_address: 191.20.1.2
+  server:
+    image: 'ciromanfredi/javascriptserializeserver:latest'
+    stdin_open: true
+    tty: true
+    networks:
+      LaRete:
+        ipv4_address: 191.20.1.3
+networks:
+  LaRete:
+    ipam:
+      config:
+        - subnet: 191.20.1.1/24
