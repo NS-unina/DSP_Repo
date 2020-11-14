@@ -1,0 +1,2 @@
+FROM ubuntu
+RUN apt-get -y update && apt-get install -y g++ && apt-get install -y gdb && apt-get install -y openssl && apt-get install -y libssl-dev && apt-get install -y python3 && apt-get install -y net-tools
