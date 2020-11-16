@@ -21,7 +21,7 @@ services:
     volumes: 
       - "./server:/usr/server"
     ports:
-      - "5555:5555"
+      - "443"
     working_dir: "/usr/server"
     command: /bin/sh start_commands.sh
     networks:
