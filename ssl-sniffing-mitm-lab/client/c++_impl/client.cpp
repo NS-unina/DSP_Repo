@@ -38,14 +38,19 @@ int main(int argc, char **argv){
     char *msg_to_send = "Hello, SSL SERVER.";
 
     char buff[1024];
-    for(int i = 0; i < messages; ++i){
-        SSL_write(ssl, msg_to_send, strlen(msg_to_send));    // cripta e invia il messaggio
-        // se la SSL_read va a buon fine, restituisce il numero di byte del messaggio ricevuto
-        int bytes = SSL_read(ssl, buff, sizeof(buff)); // ottiene la risposta e decripta
-        buff[bytes] = 0;
-        cout<< " - messaggio ricevuto dal server: " << endl << "\n\t" << buff << "\n" << endl;
-        sleep(period);
-    }
+    char input;
+    do {
+        for(int i = 0; i < messages; ++i){
+            SSL_write(ssl, msg_to_send, strlen(msg_to_send));    // cripta e invia il messaggio
+            // se la SSL_read va a buon fine, restituisce il numero di byte del messaggio ricevuto
+            int bytes = SSL_read(ssl, buff, sizeof(buff)); // ottiene la risposta e decripta
+            buff[bytes] = 0;
+            cout<< " - messaggio ricevuto dal server: " << endl << "\n\t" << buff << "\n" << endl;
+            sleep(period);
+        }
+        std::cout << "Vuoi inviare un nuovo set di " << messages << " messaggi ogni " << period <<"s? (y/n)" << endl;
+        std::cin >> input;
+    } while(input != 'n');
 
     msg_to_send = "exit";
     SSL_write(ssl, msg_to_send, strlen(msg_to_send));    // cripta e invia il messaggio 'exit' per terminare
