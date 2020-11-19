@@ -7,6 +7,10 @@ services:
     networks:
       internal_network:
         ipv4_address: 192.168.2.3
+    depends_on:
+      - router
+    cap_add: 
+      - ALL
   client:
     image: 'gppprimo/ssl-sniffing-mitm-lab-client:latest'
     stdin_open: true
@@ -15,7 +19,9 @@ services:
       external_network:
         ipv4_address: 192.168.3.3
     depends_on:
-      - server
+      - router
+    cap_add: 
+      - ALL
   sniffer:
     image: 'gppprimo/ssl-sniffing-mitm-lab-sniffer:latest'
     stdin_open: true
@@ -26,7 +32,7 @@ services:
       external_network:
         ipv4_address: 192.168.3.4
     depends_on:
-      - server
+      - router
     environment:
       - XPRA_PW=wireshark
     cap_add:

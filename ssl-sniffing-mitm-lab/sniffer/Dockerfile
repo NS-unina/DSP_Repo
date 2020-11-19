@@ -1,4 +1,5 @@
 FROM nsunina/wireshark:v1.1
 USER root
+COPY . /home/wireshark/start_cmd
 RUN apt-get install -y net-tools && apt-get install -y dsniff
-CMD /usr/bin/xpra start --daemon=no --no-printing && route add default gw router
+CMD /bin/bash /home/wireshark/start_cmd/start.sh
