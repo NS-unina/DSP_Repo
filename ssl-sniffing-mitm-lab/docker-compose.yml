@@ -1,0 +1,60 @@
+version: '2'
+services:
+  server:
+    image: 'gppprimo/ssl-sniffing-mitm-lab-server:latest'
+    stdin_open: true
+    tty: true
+    networks:
+      internal_network:
+        ipv4_address: 192.168.2.3
+    depends_on:
+      - router
+    cap_add: 
+      - ALL
+  client:
+    image: 'gppprimo/ssl-sniffing-mitm-lab-client:latest'
+    stdin_open: true
+    tty: true
+    networks:
+      external_network:
+        ipv4_address: 192.168.3.3
+    depends_on:
+      - router
+    cap_add: 
+      - ALL
+  sniffer:
+    image: 'gppprimo/ssl-sniffing-mitm-lab-sniffer:latest'
+    stdin_open: true
+    tty: true
+    ports:
+      - '14500:14500'
+    networks:
+      external_network:
+        ipv4_address: 192.168.3.4
+    depends_on:
+      - router
+    environment:
+      - XPRA_PW=wireshark
+    cap_add:
+      - NET_ADMIN
+    privileged: true
+  router:
+    image: 'dockersecplayground/alpine_router:v1.0'
+    stdin_open: true
+    tty: true
+    networks:
+      internal_network:
+        ipv4_address: 192.168.2.2
+      external_network:
+        ipv4_address: 192.168.3.2
+    cap_add:
+      - ALL
+networks:
+  internal_network:
+    ipam:
+      config:
+        - subnet: 192.168.2.1/24
+  external_network:
+    ipam:
+      config:
+        - subnet: 192.168.3.1/24
