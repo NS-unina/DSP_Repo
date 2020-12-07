@@ -1,0 +1,72 @@
+version: '2'
+services:
+  loader:
+    image: 'loader:latest'
+    stdin_open: true
+    tty: true
+    networks:
+      botnet:
+        ipv4_address: 172.20.0.4
+    depends_on:
+      - cnc
+  cnc:
+    image: 'cnc:latest'
+    stdin_open: true
+    tty: true
+    networks:
+      botnet:
+        ipv4_address: 172.20.0.2
+  scanner:
+    image: 'scanner_alpine:latest'
+    stdin_open: true
+    tty: true
+    networks:
+      botnet: {}
+    depends_on:
+      - loader
+      - cnc
+      - bot_vittima
+      - bot_n
+  bot_vittima:
+    image: 'bot_vittima_alpine:latest'
+    stdin_open: true
+    tty: true
+    networks:
+      botnet:
+        ipv4_address: 172.20.0.10
+      servernet:
+        ipv4_address: 172.19.0.5
+    depends_on:
+      - loader
+      - cnc
+      - server_vittima
+  bot_n:
+    image: 'bot_attack_alpine:latest'
+    stdin_open: true
+    tty: true
+    networks:
+      botnet: {}
+      servernet: {}
+    depends_on:
+      - loader
+      - cnc
+      - bot_vittima
+      - server_vittima
+  server_vittima:
+    image: 'httpd:latest'
+    stdin_open: true
+    tty: true
+    ports:
+      - '1111:80'
+    networks:
+      servernet:
+        ipv4_address: 172.19.0.2
+networks:
+  botnet:
+    ipam:
+      config:
+        - subnet: 172.20.0.1/24
+  servernet:
+    ipam:
+      config:
+        - subnet: 172.19.0.1/24
