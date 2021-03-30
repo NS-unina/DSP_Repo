@@ -1,0 +1,16 @@
+version: '2'
+services:
+  vulnerable-server:
+    image: 'effesociety/heartbleed-vulnerable-server:latest'
+    stdin_open: true
+    tty: true
+    ports:
+     - "8443:443"
+    networks:
+      server-network:
+        ipv4_address: 193.20.1.2
+networks:
+  server-network:
+    ipam:
+      config:
+        - subnet: 193.20.1.1/24
