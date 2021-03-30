@@ -1,0 +1,72 @@
+version: '2'
+services:
+  loader:
+    image: 'zummino/loader:latest'
+    stdin_open: true
+    tty: true
+    networks:
+      botnet:
+        ipv4_address: 172.20.0.4
+    depends_on:
+      - cnc
+  cnc:
+    image: 'zummino/cnc:latest'
+    stdin_open: true
+    tty: true
+    networks:
+      botnet:
+        ipv4_address: 172.20.0.2
+  scanner:
+    image: 'zummino/scanner:latest'
+    stdin_open: true
+    tty: true
+    networks:
+      botnet: {}
+    depends_on:
+      - loader
+      - cnc
+      - bot_vittima
+      - bot_n
+  bot_vittima:
+    image: 'zummino/bot_vittima:latest'
+    stdin_open: true
+    tty: true
+    networks:
+      botnet:
+        ipv4_address: 172.20.0.10
+      servernet:
+        ipv4_address: 172.19.0.5
+    depends_on:
+      - loader
+      - cnc
+      - server_vittima
+  bot_n:
+    image: 'zummino/bot_attack:latest'
+    stdin_open: true
+    tty: true
+    networks:
+      botnet: {}
+      servernet: {}
+    depends_on:
+      - loader
+      - cnc
+      - bot_vittima
+      - server_vittima
+  server_vittima:
+    image: 'httpd:latest'
+    stdin_open: true
+    tty: true
+    ports:
+      - '1111:80'
+    networks:
+      servernet:
+        ipv4_address: 172.19.0.2
+networks:
+  botnet:
+    ipam:
+      config:
+        - subnet: 172.20.0.1/24
+  servernet:
+    ipam:
+      config:
+        - subnet: 172.19.0.1/24
