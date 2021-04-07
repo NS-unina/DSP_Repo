@@ -1,0 +1,26 @@
+version: '2'
+services:
+  attacker:
+    image: 'mmunno/alpinehping3:latest'
+    stdin_open: true
+    tty: true
+    networks:
+      network: {}
+  smurf:
+    image: 'alpine:latest'
+    stdin_open: true
+    tty: true
+    networks:
+      network: {}
+  victim:
+    image: 'alpine:latest'
+    stdin_open: true
+    tty: true
+    networks:
+      network:
+        ipv4_address: 193.20.1.250
+networks:
+  network:
+    ipam:
+      config:
+        - subnet: 193.20.1.1/24
