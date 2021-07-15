@@ -1,0 +1,61 @@
+version: '2.4'
+
+# Services
+services:
+
+  # Nginx Service
+  nginx:
+    image: nginx:1.19
+    ports:
+       - 8000:80
+    volumes:
+      - ./src:/var/www/php
+      - ./nginx/conf.d:/etc/nginx/conf.d
+    depends_on:
+      - php
+  # PHP Service
+  php:
+    build: ./php
+    working_dir: /var/www/php
+    volumes:
+      - ./src:/var/www/php
+    depends_on:
+      mysql:
+        condition: service_healthy
+
+  # MySQL Service
+  mysql:
+    image: mysql:8
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: demo
+    volumes:
+      - ./mysql/my.cnf:/etc/mysql/conf.d/my.cnf
+      - mysqldata:/var/lib/mysql
+      - ./mysqldata:/docker-entrypoint-initdb.d
+    healthcheck:
+      test: mysqladmin ping -h 127.0.0.1 -u root --password=$$MYSQL_ROOT_PASSWORD
+      interval: 5s
+      retries: 10
+
+  # PhpMyAdmin Service
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:5
+    ports:
+      - 8080:80
+    environment:
+      PMA_HOST: mysql
+    depends_on:
+      mysql:
+        condition: service_healthy
+
+  # Nginx Service
+  evil_nginx:
+    image: nginx:1.19
+    ports:
+      - 8008:80
+
+# Volumes
+volumes:
+
+  mysqldata:
