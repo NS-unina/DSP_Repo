@@ -1,7 +1,7 @@
 version: '2'
 services:
   Server:
-    image: 'metasploitable2:latest'
+    image: 'piter518/metasploitable2:latest'
     stdin_open: true
     tty: true
     networks:
