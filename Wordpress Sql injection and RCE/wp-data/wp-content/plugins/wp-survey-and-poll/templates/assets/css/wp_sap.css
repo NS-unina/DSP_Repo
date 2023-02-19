@@ -1,0 +1,147 @@
+#survey {
+}
+
+#wpsapcr {
+	text-align: right;
+	margin-right: 20px;	
+}
+
+#wpsapcr a {
+	text-decoration: none;
+	color: #000;
+	font-size: 10px;
+	font-family: Arial, Helvetica, Times New Roman, sans-serif;
+}
+
+.survey_table {
+	display: table;
+	border-collapse:separate;
+	border-spacing:10px 10px;
+	width: 100%;
+}
+
+.survey_element {
+	margin: 10px;
+	text-align: center;
+}
+
+.survey_question {
+	display:table-caption;
+	font-weight: bold;
+}
+
+.survey_answers {
+	text-decoration: none;
+	display:table-cell;
+	cursor: pointer;
+	vertical-align: middle;
+}
+
+.survey_answers:hover {
+	text-decoration: underline;
+	display:table-cell;
+	cursor: pointer;
+	vertical-align: middle;
+}
+
+.survey_row {
+	display: table-row;
+}
+
+#bglock {
+	position: fixed;
+	display:none;
+	top:0px;
+	left:0px;
+	z-index:999998;
+	width:100%;
+	height:100%;
+	background:#000000;
+	filter: alpha(opacity=80);
+	-khtml-opacity: 0.8;
+	-moz-opacity: 0.8;
+	opacity: 0.8;
+}
+
+#survey .cl_survey {
+	position: absolute;
+	right: 20px;
+	top: 0px;
+	cursor: pointer;
+}
+
+#survey .cl_top_survey {
+	position: absolute;
+	right: 20px;
+	bottom: 0px;
+	cursor: pointer;
+}
+
+.progress {
+	filter: none !important;
+	position: relative;
+	overflow: hidden;
+	height: 22px;
+	background: none repeat scroll 0% 0% rgb(239, 239, 239);
+	box-shadow: none;
+	border-radius: 2px 2px 2px 2px;
+	border: 1px solid rgb(213, 213, 213);
+} 
+
+.process {
+	margin-top: 20px;
+}
+
+.process p {
+	margin: 0px 0px 0px 0px !important;
+}
+
+.right {
+	float: right;
+}
+
+.progress .badge {
+	padding-left: 9px;
+	padding-right: 9px;
+	border-radius: 9px 9px 9px 9px;
+	background-color: rgb(58, 135, 173);
+	display: inline-block;
+	padding: 2px 4px;
+	font-size: 11.844px;
+	font-weight: bold;
+	line-height: 14px;
+	color: rgb(255, 255, 255);
+	vertical-align: baseline;
+	white-space: nowrap;
+	text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+}
+
+.progress .bar {
+	background-color: rgb(91, 192, 222);
+	background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+	filter: none !important;
+	position: absolute;
+	overflow: hidden;
+	border-radius: 2px 2px 2px 2px;
+	font-size: 11px;
+	font-weight: bold;
+	line-height: 13px;
+	padding: 5px 0px 4px;
+	width: 0%;
+	height: 100%;
+	color: rgb(255, 255, 255);
+	float: left;
+	text-align: center !important;
+	text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+	box-shadow: 0px -1px 0px rgba(0, 0, 0, 0.15) inset;
+	-moz-box-sizing: border-box;
+	transition: width 1.6s ease 0s;
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 100px) {
+	.survey_element {
+		margin: 3px !important;
+		font-size: 12px !important;
+		padding: 3px !important;
+	}
+}

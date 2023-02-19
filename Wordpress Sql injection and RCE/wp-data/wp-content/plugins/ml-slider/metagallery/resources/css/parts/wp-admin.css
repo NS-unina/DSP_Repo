@@ -1,0 +1,29 @@
+/* Override default wp-admin styles here */
+#wpbody-content,
+#wpcontent,
+#wpfooter {
+    padding: 0 !important;
+}
+ul#adminmenu a.wp-has-current-submenu:after,
+ul#adminmenu > li.current > a.current:after {
+    @apply border-nord6;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+}
+#metagallery-app p {
+    font-size: inherit;
+}
+#metagallery-app strong {
+    @apply font-medium text-nord2;
+}
+#footer-left {
+    @apply px-4;
+}
+[id^='__wp-uploader-id'].supports-drag-drop {
+    @apply z-max;
+}
+#wp-auth-check-wrap #wp-auth-check,
+#wp-auth-check-wrap #wp-auth-check-bg {
+    @apply z-max;
+}

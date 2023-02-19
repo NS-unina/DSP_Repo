@@ -1,0 +1,10 @@
+.arrow-top {
+    @apply relative;
+}
+.arrow-top::after {
+    @apply bottom-full left-1/2 border-8 -ml-2 border-white h-0 w-0 absolute pointer-events-none;
+    content: '';
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+}

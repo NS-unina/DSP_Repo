@@ -1,0 +1,494 @@
+.settings_page_wp_sap .wrap .form-table th {
+	width: 400px;
+}
+
+#wpcontent
+{
+	background: #fff !important;
+}
+
+.shortcode_section .inner-block {
+	margin: 0px 25px;
+	display: inline-block;
+}
+
+.shortcode_section .copytext {
+	width: 300px;
+	font-size: 12px;
+}
+
+.promo-area {
+	width: 20%;
+	text-align: right;
+	margin-left: 20px;
+	background: transparent;
+	display: inline-block;
+	position: fixed;
+	margin: 30px;
+}
+
+.promo-area a {
+	margin-top: 20px;
+	display: block;
+}
+
+.promo-area img {
+	width: 100%;
+	max-width: 300px;
+}
+
+.ui-accordion-content {
+	overflow: hidden !important;
+}
+
+.help_link {
+	position: absolute;
+    right: 20px;
+    top: 35px;
+}
+
+h3 span.question-subheader {
+    text-align: left;
+    width: 500px;
+    position: absolute;
+    display: inline-block;
+    color: #a5a5a5;
+    left: 0px;
+    margin-left: 200px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.help_link a {
+	padding: 5px 10px 5px 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid #42CC6C;
+    color: #080808;
+    margin-right: 10px;
+}
+
+.settings_page_wp_sap .wrap hr { 
+	border: 0; 
+	height: 1px; 
+	background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+	background-image: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+	background-image: -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+	background-image: -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+	background-image: linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+}
+
+.settings_page_wp_sap .wrap h3 {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif !important;
+	text-align: left;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.settings_page_wp_sap .wrap h2 {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif !important;
+	text-align: left;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#survey
+{
+}
+
+.survey_table
+{
+	display: table;
+	border-collapse:separate;
+	border-spacing:10px 10px;
+	width: 100%;
+}
+
+.survey_element
+{
+	margin: 10px;
+	text-align: center;
+}
+
+.survey_question
+{
+	display:table-caption;
+	font-weight: bold;
+}
+
+.survey_answers
+{
+	text-decoration: none;
+	display:table-cell;
+	cursor: pointer;
+	vertical-align: middle;
+}
+
+.survey_answers:hover
+{
+	text-decoration: underline;
+	display:table-cell;
+	cursor: pointer;
+	vertical-align: middle;
+}
+
+.survey_row
+{
+	display: table-row;
+}
+
+#wp_sap_accordion {
+	width: 75%;
+	display: inline-block;
+	margin-top: 50px;
+}
+
+#wp_sap_accordion fieldset
+{
+	border: 1px solid #AAAAAA;
+	padding: 20px 20px;
+	width: 100%;
+}
+ 
+.text input[type=checkbox]
+{
+	width: 15px;
+}
+
+.text input, .text select
+{
+	width: 130px;
+}
+ 
+.thankyou 
+{
+	width: 280px !important;
+}
+
+#add_new_survey {
+	margin: 2px;
+}
+
+.save_survey, .reset_survey
+{
+	margin-left: 10px !important;
+}
+
+#settings img
+{
+	width: 100%;
+}
+
+#survey_name
+{
+	padding: 4px;
+}
+
+.delete_survey.button {
+	background: #ff1f1f;
+	color: #fff;
+}
+
+.save_survey.button {
+	background: #28de2e;
+	color: #000;
+}
+
+.add_question.button  {
+	padding: 10px !important;
+    line-height: 5px !important;
+}
+
+.save_survey.button, .delete_survey.button, .reset_survey.button, .add_question.button, #add_new_survey  {
+    font-size: 12px !important;
+    font-family: sans-serif !important;
+    font-weight: bold !important;
+	font-family: Arial !important;
+}
+
+#wp_sap_accordion h3
+{
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif !important;
+	text-shadow: 0px 0px 0px #aaa;
+	text-align: left;
+	font-size: 12px;
+	font-weight: bold;
+	background: #ccc;
+}
+
+#wp_sap_accordion .left_half {
+	float: left;
+	width: 45%;
+}
+
+#wp_sap_accordion .text {
+	display: block;
+	font-size: 10px;
+	color: #5D5D5D;
+	font-weight: bold;
+	width: 140px;
+	text-align: left;
+	padding-top: 7px;
+	padding-left: 10px;
+	float:left;
+}
+
+#wp_sap_accordion .right_half {
+	float: left;
+	width: 45%;
+	padding-left: 4%;
+}
+
+/* css for timepicker */
+.ui-timepicker-div .ui-widget-header { margin-bottom: 8px; }
+.ui-timepicker-div dl { text-align: left; }
+.ui-timepicker-div dl dt { float: left; clear:left; padding: 0 0 0 5px; }
+.ui-timepicker-div dl dd { margin: 0 10px 10px 45%; }
+.ui-timepicker-div td { font-size: 90%; }
+.ui-tpicker-grid-label { background: none; border: none; margin: 0; padding: 0; }
+
+.ui-timepicker-rtl{ direction: rtl; }
+.ui-timepicker-rtl dl { text-align: right; padding: 0 5px 0 0; }
+.ui-timepicker-rtl dl dt{ float: right; clear: right; }
+.ui-timepicker-rtl dl dd { margin: 0 45% 10px 10px; }
+
+.form-area .add_question {
+	margin: 10px;
+}
+
+.remove_answer, .add_answer, .add_question
+{
+	cursor: pointer;
+	display: block;
+	float: right;
+}
+
+.add_question, #wp_sap_accordion legend
+{
+	font-size: 12px;
+	font-weight: bold;
+	color: #000000;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif !important;
+}
+
+.remove_answer img, .add_answer img, .add_question img
+{
+	padding-top: 5px;
+}
+
+.added_answers input
+{
+	width: 50%;
+}
+
+.canvas_graph {
+	margin-left: 150px;
+}
+
+.questions_block {
+	width: 100%;
+}
+
+.answer_count:before
+{
+	content:url("../img/users.png");
+	position: absolute;
+	margin-top: -5px;
+	margin-left: -30px;
+}
+
+.answer_count
+{
+	margin-left: 15px;
+}
+
+.wp_sap_preview {
+	float: left;
+    background: url("../img/select.png") repeat scroll center center transparent;
+    border-radius: 2px;
+    box-shadow: 1px 1px 1px #444444;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+	margin-top: 19px;
+	margin-left: 5px;
+}
+
+.wp_sap_preview1002
+{
+	background-color: #000000;
+}
+
+.wp_sap_preview1003
+{
+	background-color: #5D5D5D;
+}
+
+.font_family
+{
+	width: 150px;
+}
+
+.play_button
+{
+	float: left;
+	margin-top: 22px;
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+.targets {
+    margin:0 auto;
+    text-align: center;
+    border: 1px solid #ccc;
+    background: #f8f8f8;
+    margin: 0 auto;
+    border-radius: 4px;
+    width:auto;
+    padding:10px;
+}
+
+.target_text {
+    margin: 0px auto;
+    margin-top: 40%;
+    background: #f8f8f8;
+    width: 70px;
+    border: 1px solid #ddd;
+    padding: 2px;
+    border-radius: 2px;
+    color: #111;
+}
+
+.target {
+   border: 1px solid;
+   margin: 0px 10%;
+   width: 150px;
+   height: 150px;
+   display:inline-block;
+}
+
+#target {
+   border-radius: 150px;
+}
+
+.result {
+   text-align: center;
+   text-transform: uppercase;
+   font-weight: bold;
+   padding:12px;
+   padding-left: 15px;
+   margin: 10px 0px;
+   border: 1px solid #ddd;
+   background: #f8f8f8;
+}
+
+#gradX {
+    height: 200px; 
+    margin: 100px 34%;  
+	display:none;
+	position: absolute;
+	z-index: 10;
+	left:0%;
+	top:0%;
+}   
+
+#gradx_show_code {
+	display: none;
+}
+
+.inner
+{
+	margin-left: 3px;
+	width: 24px;
+	height: 19px;
+	margin-top: 3px;
+	background: linear-gradient(top , rgb(255, 255, 255) 35% , rgb(204, 204, 204) 70%);
+	background: -o-linear-gradient(top , rgb(255, 255, 255) 35% , rgb(204, 204, 204) 70%);
+	background: -ms-linear-gradient(top , rgb(255, 255, 255) 35% , rgb(204, 204, 204) 70%);
+	background: -moz-linear-gradient(top , rgb(255, 255, 255) 35% , rgb(204, 204, 204) 70%);
+	background: -webkit-linear-gradient(top , rgb(255, 255, 255) 35% , rgb(204, 204, 204) 70%);
+}
+
+.ui-slider-range
+{ 
+	background: #5D5D5D; 
+}
+ 
+.ui-slider-horizontal
+{ 
+	background: #CCCCCC; 
+	border: 1px solid #5D5D5D;
+}
+ 
+.ui-slider-handle
+{ 
+	border: 1px solid #5D5D5D;
+	cursor: pointer;
+}
+
+.wp_sap_sliders
+{
+	float: left;
+	width: 125px;
+	margin: 20px 0px 20px 23px;
+}
+
+.wp_sap_sliders input
+{
+	height: 14px;
+	font-size: 10px !important;
+	border: 0px;
+	padding:0px;
+	color: #000000;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	box-shadow: 0px 0px 0px 0px !important;
+}
+
+.wp_sap_checkbox
+{
+	float: left;
+	width: 150px;
+	margin-left: 5px;
+	margin-top: 17px;
+}
+
+#bglock
+{
+	position: fixed;
+	display:none;
+	top:0px;
+	left:0px;
+	z-index:999998;
+	width:100%;
+	height:100%;
+	background:#000000;
+	filter: alpha(opacity=80);
+	-khtml-opacity: 0.8;
+	-moz-opacity: 0.8;
+	opacity: 0.8;
+}
+
+#survey .cl_survey
+{
+	position: absolute;
+	right: 20px;
+	top: 0px;
+	cursor: pointer;
+}
+
+#survey .cl_top_survey
+{
+	position: absolute;
+	right: 20px;
+	bottom: 0px;
+	cursor: pointer;
+}
+
+#ui-datepicker-div
+{
+	z-index: 2 !important;
+}

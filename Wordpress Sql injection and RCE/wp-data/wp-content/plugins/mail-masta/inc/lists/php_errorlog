@@ -1,0 +1,140 @@
+[24-Jul-2014 00:08:04 CST6CDT] PHP Parse error:  syntax error, unexpected '[', expecting ',' or ';' in /home/getmailm/public_html/demo/wp-content/plugins/mail-masta/inc/lists/demo_list.php on line 211
+
+[24-Jul-2014 00:08:22 CST6CDT] PHP Parse error:  syntax error, unexpected '[', expecting ',' or ';' in /home/getmailm/public_html/demo/wp-content/plugins/mail-masta/inc/lists/demo_list.php on line 211
+
+[29-Jul-2014 14:15:47 Asia/Kolkata] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1 for query 
+
+
+
+                DELETE FROM wp_masta_support where id in()
+
+
+
+		 made by include('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), call_user_func_array, mmasta_api_call, include('/plugins/mail-masta/inc/autoresponder/campaign/cron_autoresponder.php')
+
+[31-Jul-2014 15:16:27 Asia/Kolkata] WordPress database error Table 'getmailm_demo.wp_mail_campaign' doesn't exist for query SELECT * FROM wp_mail_campaign WHERE campaign_type = 2 AND STATUS = 5 AND shedule_date < '2014-07-31 15:16:27'  made by require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), call_user_func_array, mmasta_api_call
+
+[31-Jul-2014 15:16:27 Asia/Kolkata] WordPress database error Table 'getmailm_demo.wp_mastal_responder' doesn't exist for query SELECT * from  wp_mastal_responder where responder_type=2 and status=5 made by require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), call_user_func_array, mmasta_api_call, include('/plugins/mail-masta/inc/autoresponder/campaign/cron_autoresponder.php')
+
+[31-Jul-2014 15:16:27 Asia/Kolkata] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1 for query 
+
+
+
+                DELETE FROM wp_masta_support where id in()
+
+
+
+		 made by require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), call_user_func_array, mmasta_api_call, include('/plugins/mail-masta/inc/autoresponder/campaign/cron_autoresponder.php')
+
+[01-Aug-2014 16:37:47 Asia/Kolkata] WordPress database error Table 'getmailm_demo.wp_mail_campaign' doesn't exist for query SELECT * FROM wp_mail_campaign WHERE campaign_type = 2 AND STATUS = 5 AND shedule_date < '2014-08-01 16:37:47'  made by include('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), call_user_func_array, mmasta_api_call
+
+[01-Aug-2014 16:37:47 Asia/Kolkata] WordPress database error Table 'getmailm_demo.wp_mastal_responder' doesn't exist for query SELECT * from  wp_mastal_responder where responder_type=2 and status=5 made by include('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), call_user_func_array, mmasta_api_call, include('/plugins/mail-masta/inc/autoresponder/campaign/cron_autoresponder.php')
+
+[01-Aug-2014 16:37:47 Asia/Kolkata] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1 for query 
+
+
+
+                DELETE FROM wp_masta_support where id in()
+
+
+
+		 made by include('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), call_user_func_array, mmasta_api_call, include('/plugins/mail-masta/inc/autoresponder/campaign/cron_autoresponder.php')
+
+[01-Aug-2014 16:37:56 Asia/Kolkata] WordPress database error Table 'getmailm_demo.wp_mail_campaign' doesn't exist for query SELECT * FROM wp_mail_campaign WHERE campaign_type = 2 AND STATUS = 5 AND shedule_date < '2014-08-01 16:37:56'  made by include('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), call_user_func_array, mmasta_api_call
+
+[01-Aug-2014 16:37:56 Asia/Kolkata] WordPress database error Table 'getmailm_demo.wp_mastal_responder' doesn't exist for query SELECT * from  wp_mastal_responder where responder_type=2 and status=5 made by include('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), call_user_func_array, mmasta_api_call, include('/plugins/mail-masta/inc/autoresponder/campaign/cron_autoresponder.php')
+
+[01-Aug-2014 16:37:56 Asia/Kolkata] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1 for query 
+
+
+
+                DELETE FROM wp_masta_support where id in()
+
+
+
+		 made by include('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), call_user_func_array, mmasta_api_call, include('/plugins/mail-masta/inc/autoresponder/campaign/cron_autoresponder.php')
+
+[01-Aug-2014 16:38:12 Asia/Kolkata] WordPress database error Table 'getmailm_demo.wp_mail_campaign' doesn't exist for query SELECT * FROM wp_mail_campaign WHERE campaign_type = 2 AND STATUS = 5 AND shedule_date < '2014-08-01 16:38:12'  made by include('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), call_user_func_array, mmasta_api_call
+
+[01-Aug-2014 16:38:12 Asia/Kolkata] WordPress database error Table 'getmailm_demo.wp_mastal_responder' doesn't exist for query SELECT * from  wp_mastal_responder where responder_type=2 and status=5 made by include('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), call_user_func_array, mmasta_api_call, include('/plugins/mail-masta/inc/autoresponder/campaign/cron_autoresponder.php')
+
+[01-Aug-2014 16:38:12 Asia/Kolkata] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1 for query 
+
+
+
+                DELETE FROM wp_masta_support where id in()
+
+
+
+		 made by include('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), call_user_func_array, mmasta_api_call, include('/plugins/mail-masta/inc/autoresponder/campaign/cron_autoresponder.php')
+
+[01-Aug-2014 16:38:14 Asia/Kolkata] WordPress database error Table 'getmailm_demo.wp_mail_campaign' doesn't exist for query SELECT * FROM wp_mail_campaign WHERE campaign_type = 2 AND STATUS = 5 AND shedule_date < '2014-08-01 16:38:14'  made by include('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), call_user_func_array, mmasta_api_call
+
+[01-Aug-2014 16:38:14 Asia/Kolkata] WordPress database error Table 'getmailm_demo.wp_mastal_responder' doesn't exist for query SELECT * from  wp_mastal_responder where responder_type=2 and status=5 made by include('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), call_user_func_array, mmasta_api_call, include('/plugins/mail-masta/inc/autoresponder/campaign/cron_autoresponder.php')
+
+[01-Aug-2014 16:38:14 Asia/Kolkata] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1 for query 
+
+
+
+                DELETE FROM wp_masta_support where id in()
+
+
+
+		 made by include('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), call_user_func_array, mmasta_api_call, include('/plugins/mail-masta/inc/autoresponder/campaign/cron_autoresponder.php')
+
+[01-Aug-2014 16:38:22 Asia/Kolkata] WordPress database error Table 'getmailm_demo.wp_mail_campaign' doesn't exist for query SELECT * FROM wp_mail_campaign WHERE campaign_type = 2 AND STATUS = 5 AND shedule_date < '2014-08-01 16:38:22'  made by include('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), call_user_func_array, mmasta_api_call
+
+[01-Aug-2014 16:38:22 Asia/Kolkata] WordPress database error Table 'getmailm_demo.wp_mastal_responder' doesn't exist for query SELECT * from  wp_mastal_responder where responder_type=2 and status=5 made by include('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), call_user_func_array, mmasta_api_call, include('/plugins/mail-masta/inc/autoresponder/campaign/cron_autoresponder.php')
+
+[01-Aug-2014 16:38:22 Asia/Kolkata] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1 for query 
+
+
+
+                DELETE FROM wp_masta_support where id in()
+
+
+
+		 made by include('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), call_user_func_array, mmasta_api_call, include('/plugins/mail-masta/inc/autoresponder/campaign/cron_autoresponder.php')
+
+[01-Aug-2014 16:38:30 Asia/Kolkata] WordPress database error Table 'getmailm_demo.wp_mail_campaign' doesn't exist for query SELECT * FROM wp_mail_campaign WHERE campaign_type = 2 AND STATUS = 5 AND shedule_date < '2014-08-01 16:38:30'  made by include('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), call_user_func_array, mmasta_api_call
+
+[01-Aug-2014 16:38:30 Asia/Kolkata] WordPress database error Table 'getmailm_demo.wp_mastal_responder' doesn't exist for query SELECT * from  wp_mastal_responder where responder_type=2 and status=5 made by include('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), call_user_func_array, mmasta_api_call, include('/plugins/mail-masta/inc/autoresponder/campaign/cron_autoresponder.php')
+
+[01-Aug-2014 16:38:30 Asia/Kolkata] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1 for query 
+
+
+
+                DELETE FROM wp_masta_support where id in()
+
+
+
+		 made by include('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), call_user_func_array, mmasta_api_call, include('/plugins/mail-masta/inc/autoresponder/campaign/cron_autoresponder.php')
+
+[01-Aug-2014 16:57:30 Asia/Kolkata] WordPress database error Table 'getmailm_demo.wp_mail_campaign' doesn't exist for query SELECT * FROM wp_mail_campaign WHERE campaign_type = 2 AND STATUS = 5 AND shedule_date < '2014-08-01 16:57:30'  made by include('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), call_user_func_array, mmasta_api_call
+
+[01-Aug-2014 16:57:30 Asia/Kolkata] WordPress database error Table 'getmailm_demo.wp_mastal_responder' doesn't exist for query SELECT * from  wp_mastal_responder where responder_type=2 and status=5 made by include('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), call_user_func_array, mmasta_api_call, include('/plugins/mail-masta/inc/autoresponder/campaign/cron_autoresponder.php')
+
+[01-Aug-2014 16:57:30 Asia/Kolkata] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1 for query 
+
+
+
+                DELETE FROM wp_masta_support where id in()
+
+
+
+		 made by include('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), call_user_func_array, mmasta_api_call, include('/plugins/mail-masta/inc/autoresponder/campaign/cron_autoresponder.php')
+
+[01-Aug-2014 17:09:29 Asia/Kolkata] WordPress database error Table 'getmailm_demo.wp_mail_campaign' doesn't exist for query SELECT * FROM wp_mail_campaign WHERE campaign_type = 2 AND STATUS = 5 AND shedule_date < '2014-08-01 17:09:29'  made by require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), call_user_func_array, mmasta_api_call
+
+[01-Aug-2014 17:09:29 Asia/Kolkata] WordPress database error Table 'getmailm_demo.wp_mastal_responder' doesn't exist for query SELECT * from  wp_mastal_responder where responder_type=2 and status=5 made by require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), call_user_func_array, mmasta_api_call, include('/plugins/mail-masta/inc/autoresponder/campaign/cron_autoresponder.php')
+
+[01-Aug-2014 17:09:29 Asia/Kolkata] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1 for query 
+
+
+
+                DELETE FROM wp_masta_support where id in()
+
+
+
+		 made by require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), call_user_func_array, mmasta_api_call, include('/plugins/mail-masta/inc/autoresponder/campaign/cron_autoresponder.php')
+

@@ -1,0 +1,255 @@
+# Translation of Plugins - Slider, Gallery, and Carousel by MetaSlider &#8211; Responsive WordPress Plugin - Stable (latest release) in Italian
+# This file is distributed under the same license as the Plugins - Slider, Gallery, and Carousel by MetaSlider &#8211; Responsive WordPress Plugin - Stable (latest release) package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Plugins - Slider, Gallery, and Carousel by MetaSlider &#8211; Responsive WordPress Plugin - Stable (latest release)\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2022-07-11 12:13-0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 3.1.1\n"
+
+#: metagallery/public/build/metagallery.js:22
+#: metagallery/resources/js/sources/MediaLibrary.js:7
+msgid "Select Images"
+msgstr "Seleziona le immagini"
+
+#: metagallery/public/build/metagallery.js:22
+#: metagallery/resources/js/models/GalleryImage.js:30
+msgid "edit"
+msgstr "modifica"
+
+#. translators: %s is replaced with post ID.
+#: metagallery/resources/views/pages/archive.php:36
+msgid "Gallery ID #%s"
+msgstr "ID della galleria #%s"
+
+#: metagallery/resources/views/pages/archive.php:16
+msgid "Your Galleries"
+msgstr "Le tue gallerie"
+
+#. translators: %s is an emoji.
+#: metagallery/resources/views/pages/start.php:58
+msgid "%s Easy to use, fun to master. With advanced features for those who need them."
+msgstr "%s Facile da usare, divertente da gestire. Con caratteristiche avanzate per chi ne ha bisogno."
+
+#. translators: %s is an emoji.
+#: metagallery/resources/views/pages/start.php:51
+msgid "%s Fully WCAG accessible - All users will be able to enjoy your galleries."
+msgstr "%s Completamente accessibile WCAG - tutti gli utenti saranno in grado di godere delle tue gallerie."
+
+#. translators: %s is an emoji.
+#: metagallery/resources/views/pages/start.php:44
+msgid "%s SEO-focused - Search engines will love your galleries."
+msgstr "%s incentrato sul SEO - i motori di ricerca ameranno le tue gallerie."
+
+#. translators: %s is an emoji.
+#: metagallery/resources/views/pages/start.php:37
+msgid "%s Fast - Using modern best practices, your galleries will be faster than ever."
+msgstr "%s Rapido - utilizzando le moderne procedure ottimali, le tue gallerie saranno più veloci che mai."
+
+#: metagallery/resources/views/pages/start.php:32
+msgid "We are building the gallery following these principles:"
+msgstr "Costruiamo la galleria seguendo questi principi:"
+
+#. translators: %s are anchor tags i.e. <strong></strong>.
+#: metagallery/resources/views/pages/start.php:16
+msgid "Hi, welcome the gallery project by MetaSlider. %1$sRedefining WordPress galleries%2$s."
+msgstr "Ciao, benvenuto al progetto di galleria di MetaSlider. %1$sRidefinire le gallerie di WordPress%2$s."
+
+#: metagallery/resources/views/settings/gallery-settings.php:116
+msgid "Open Settings"
+msgstr "Apri le impostazioni"
+
+#: metagallery/resources/views/settings/gallery-settings.php:95
+msgid "Spacing (px)"
+msgstr "Spaziatura (px)"
+
+#: metagallery/resources/views/settings/gallery-settings.php:81
+msgid "Image min width (px)"
+msgstr "Larghezza minima dell'immagine (px)"
+
+#: metagallery/resources/views/settings/gallery-settings.php:67
+msgid "Image max width (px)"
+msgstr "Larghezza massima dell'immagine (px)"
+
+#: metagallery/resources/views/settings/gallery-settings.php:53
+msgid "Image width (%)"
+msgstr "Larghezza dell'immagine (%)"
+
+#: metagallery/app/AdminRouter.php:255
+msgid "Gallery"
+msgstr "Galleria"
+
+#: metagallery/resources/views/settings/gallery-settings.php:47
+msgid "Gallery Settings"
+msgstr "Impostazioni galleria"
+
+#: metagallery/resources/views/settings/image-settings.php:102
+msgid "Remove image"
+msgstr "Rimuovi immagine"
+
+#: metagallery/resources/views/settings/image-settings.php:101
+msgid "Remove image from gallery"
+msgstr "Rimuovi l'immagine dalla galleria"
+
+#: metagallery/resources/views/settings/image-settings.php:81
+msgid "Image alt attribute"
+msgstr "Attributo \"alt\" dell'immagine"
+
+#: metagallery/resources/views/settings/image-settings.php:69
+msgid "Image Settings"
+msgstr "Impostazioni immagine"
+
+#: metagallery/resources/views/parts/notice-in-settings.php:20
+msgid "This gallery extention is in active development, so check back soon for more features."
+msgstr "Questa estensione della galleria è in fase di sviluppo attivo, quindi ritorna a controllare presto per ulteriori caratteristiche."
+
+#: metagallery/resources/views/parts/add-images-button.php:49
+msgid "Media Library"
+msgstr "Libreria dei media"
+
+#: metagallery/resources/views/parts/add-images-button.php:40
+msgid "Select image source"
+msgstr "Seleziona la sorgente immagine"
+
+#: metagallery/resources/views/parts/add-images-button.php:24
+msgid "Add images"
+msgstr "Aggiungi immagini"
+
+#: metagallery/resources/views/parts/save-button.php:39
+msgid "Saved"
+msgstr "Salvato"
+
+#: metagallery/resources/views/parts/delete-button.php:42
+msgid "Delete gallery"
+msgstr "Elimina galleria"
+
+#: metagallery/resources/views/parts/delete-button.php:37
+msgid "Are you sure you want to DELETE this gallery? Note that we will not remove images or other external data"
+msgstr "Sei sicuro di voler eliminare questa galleria? Nota che non rimuoveremo le immagini o altri dati esterni"
+
+#: metagallery/resources/views/parts/delete-button.php:36
+msgid "Delete Gallery"
+msgstr "Elimina galleria"
+
+#: metagallery/resources/views/pages/archive.php:31
+#: metagallery/resources/views/parts/breadcrumbs.php:38
+msgid "Title not set"
+msgstr "Titolo non impostato"
+
+#: metagallery/resources/views/parts/breadcrumbs.php:30
+msgid "Press to edit the title"
+msgstr "Premi per modificare il titolo"
+
+#: metagallery/resources/views/parts/breadcrumbs.php:29
+msgid "Focus to edit the title"
+msgstr "Focus per modificare il titolo"
+
+#: metagallery/resources/views/parts/breadcrumbs.php:18
+msgid "Galleries"
+msgstr "Gallerie"
+
+#: metagallery/resources/views/parts/breadcrumbs.php:16
+msgid "View all galleries"
+msgstr "Visualizza tutte le gallerie"
+
+#: metagallery/resources/views/parts/modal.php:23
+msgid "Cancel"
+msgstr "Annulla"
+
+#: metagallery/resources/views/parts/modal.php:21
+msgid "Ok"
+msgstr "Ok"
+
+#: metagallery/resources/views/parts/modal.php:17
+msgid "Action"
+msgstr "Azione"
+
+#: metagallery/resources/views/parts/right-dropdown.php:100
+msgid "Background color"
+msgstr "Colore di sfondo"
+
+#: metagallery/resources/views/parts/right-dropdown.php:85
+msgid "Dark mode"
+msgstr "Modalità scura"
+
+#: metagallery/resources/views/parts/right-dropdown.php:69
+msgid "Work without distraction"
+msgstr "Lavora senza distrazioni"
+
+#: metagallery/resources/views/parts/right-dropdown.php:66
+msgid "Fullscreen mode"
+msgstr "Modalità a schermo intero"
+
+#: metagallery/resources/views/parts/right-dropdown.php:26
+msgid "Open options"
+msgstr "Apri le opzioni"
+
+#: metagallery/resources/views/parts/create-gallery-simple.php:30
+msgid "Add gallery"
+msgstr "Aggiungi galleria"
+
+#: metagallery/resources/views/parts/create-gallery-simple.php:30
+msgid "Create gallery"
+msgstr "Crea galleria"
+
+#: metagallery/resources/views/parts/create-gallery-simple.php:24
+msgid "Give your gallery a name."
+msgstr "Dai un nome alla tua galleria."
+
+#: metagallery/resources/views/parts/share-button.php:32
+msgid "Add to page"
+msgstr "Aggiungi alla pagina"
+
+#: metagallery/resources/views/parts/share-button.php:29
+msgid "Copy"
+msgstr "Copia"
+
+#: metagallery/resources/views/parts/share-button.php:27
+msgid "Copied!"
+msgstr "Copiato!"
+
+#: metagallery/resources/views/parts/share-button.php:22
+msgid "Copy the shortcode and insert it on your page using a shortcode block or otherwise an html block."
+msgstr "Copia lo shortcode e inseriscilo nella tua pagina usando un blocco shortcode o altrimenti un blocco html."
+
+#: metagallery/resources/views/parts/share-button.php:20
+msgid "Add to page/post"
+msgstr "Aggiung alla pagina/articolo"
+
+#: metagallery/app/Controllers/GalleryController.php:168
+msgid "You are not authorized to update this Gallery"
+msgstr "Non sei autorizzato ad aggiornare questa galleria"
+
+#: metagallery/app/AdminRouter.php:137 metagallery/app/AdminRouter.php:142
+msgid "You do not have permission to do that."
+msgstr "Non hai i permessiper fare ciò."
+
+#: metagallery/resources/views/parts/save-button.php:36
+msgid "Saving..."
+msgstr "Salvataggio in corso..."
+
+#: metagallery/resources/views/settings/gallery-settings.php:41
+#: metagallery/resources/views/settings/image-settings.php:61
+msgid "Close"
+msgstr "Chiudi"
+
+#: metagallery/resources/views/parts/right-dropdown.php:88
+#: metagallery/resources/views/parts/right-dropdown.php:103
+msgid "Coming soon"
+msgstr "Prossimamente"
+
+#: metagallery/resources/views/parts/create-gallery-simple.php:19
+msgid "Title"
+msgstr "Titolo"
+
+#: admin/views/pages/parts/toolbar.php:116
+#: metagallery/resources/views/parts/save-button.php:33
+msgid "Save"
+msgstr "Salva"

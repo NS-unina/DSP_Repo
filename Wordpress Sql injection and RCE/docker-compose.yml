@@ -1,0 +1,47 @@
+version: '2'
+services:
+  DB:
+    image: 'mysql:5.7.41'
+    stdin_open: true
+    tty: true
+    ports:
+      - '3306:3307'
+    networks:
+      network_0:
+        ipv4_address: 193.20.1.2
+    volumes:
+      - './sql:/var/lib/mysql'
+  Wordpress:
+    image: 'wordpress:5.5.3-php7.3'
+    stdin_open: true
+    tty: true
+    ports:
+      - '80:80'
+    networks:
+      network_0:
+        ipv4_address: 193.20.1.4
+    depends_on:
+      - DB
+    volumes:
+      - './wp-data:/var/www/html'
+  Accesso_DB:
+    image: 'phpmyadmin:latest'
+    stdin_open: true
+    tty: true
+    networks:
+      network_0:
+        ipv4_address: 193.20.1.3
+  Kali:
+    image: 'gferrara8596/ns-kali:latest'
+    stdin_open: true
+    tty: true
+    ports:
+      - '5901:5901'
+    networks:
+      network_0:
+        ipv4_address: 193.20.1.5
+networks:
+  network_0:
+    ipam:
+      config:
+        - subnet: 193.20.1.1/24

@@ -1,0 +1,9 @@
+.muuri-item-dragging {
+    @apply z-40;
+}
+.muuri-item-releasing {
+    @apply z-50;
+}
+.muuri-item-hidden {
+    @apply z-0;
+}
