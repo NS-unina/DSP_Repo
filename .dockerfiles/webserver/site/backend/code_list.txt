@@ -1,0 +1,8 @@
+200 - Request OK
+201 - Request Created
+
+400 - Bad Request
+401 - Unauthorized
+409 - Request conflict
+
+500 - Internal database error
