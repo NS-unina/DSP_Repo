@@ -1,0 +1,52 @@
+version: '2'
+services:
+  TomPC:
+    image: 'tony177/tompc:latest'
+    stdin_open: true
+    tty: true
+    ports:
+      - '22:22'
+    networks:
+      EmployeeNetwork: {}
+  WebServer:
+    image: 'tony177/webserver:latest'
+    stdin_open: true
+    tty: true
+    ports:
+      - '8080:8080'
+    networks:
+      WebNetwork: {}
+    depends_on:
+      - MySQLServer
+    environment:
+      - NODE_ENV=production
+  MySQLServer:
+    image: 'tony177/mysqlserver:latest'
+    stdin_open: true
+    tty: true
+    ports:
+      - '3306:3306'
+    networks:
+      WebNetwork: {}
+  BobPC:
+    image: 'tony177/bobpc:latest'
+    stdin_open: true
+    tty: true
+    ports:
+      - '2222:22'
+    networks:
+      EmployeeNetwork: {}
+      CompanyNetwork: {}
+networks:
+  EmployeeNetwork:
+    ipam:
+      config:
+        - subnet: 193.20.1.1/24
+  WebNetwork:
+    ipam:
+      config:
+        - subnet: 193.20.2.1/24
+  CompanyNetwork:
+    ipam:
+      config:
+        - subnet: 193.20.3.1/24

@@ -1,0 +1,37 @@
+{
+  "name": "ns_vulnerable_host",
+  "version": "1.1.0",
+  "description": "Example vulnerable host",
+  "main": "backend/app/index.js",
+  "scripts": {
+    "start": "node backend/app/index.js"
+  },
+  "keywords": [
+    "Network",
+    "Security",
+    "Docker",
+    "Pentesting",
+    "MySQL",
+    "Node",
+    "Nodejs",
+    "npm",
+    "js",
+    "html"
+  ],
+  "author": "Tony177",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "express-rate-limit": "^6.3.0",
+    "express-session": "^1.17.2",
+    "mysql2": "^2.3.3",
+    "ol": "^7.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.19.1",
+    "nodemon": "^2.0.15"
+  }
+}
