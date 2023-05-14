@@ -1,0 +1,14 @@
+version: '2'
+services:
+  VulnBox:
+    image: 'shotokhan/heap_overflow_nx:latest'
+    stdin_open: true
+    tty: true
+    networks:
+      network_0:
+        ipv4_address: 193.20.1.11
+networks:
+  network_0:
+    ipam:
+      config:
+        - subnet: 193.20.1.1/24
