@@ -15,7 +15,7 @@ services:
       - NET_ADMIN
     privileged: true
   wireshark:
-    image: 'nsunina/wireshark:v1.1'
+    image: 'nsunina/wireshark:v1.2'
     stdin_open: true
     tty: true
     ports:
@@ -27,7 +27,6 @@ services:
       - XPRA_PW=wireshark
     cap_add:
       - NET_ADMIN
-    privileged: true
 networks:
   wireshark_subnet:
     ipam:
