@@ -1,0 +1,41 @@
+version: '2'
+services:
+  webserver:
+    image: 'marcotammaro/flask_webserver:latest'
+    stdin_open: true
+    tty: true
+    networks:
+      internal_network:
+        ipv4_address: 192.168.1.11
+    environment:
+      - FLASK_DEBUG=1
+      - FLASK_APP=app
+      - APP_SETTINGS=config.ProductionConfig
+  victim_mail:
+    image: 'marcotammaro/mailcatcher:latest'
+    stdin_open: true
+    tty: true
+    networks:
+      internal_network:
+        ipv4_address: 192.168.1.12
+    environment:
+      - TIMEZONE=Europe/Rome
+  attacker:
+    image: 'marcotammaro/firefox:latest'
+    stdin_open: true
+    tty: true
+    ports:
+      - '3000:3000'
+      - '3001:3001'
+    networks:
+      internal_network:
+        ipv4_address: 192.168.1.13
+    environment:
+      - TZ=Europe/Rome
+      - PUID=1000
+      - PGID=1000
+networks:
+  internal_network:
+    ipam:
+      config:
+        - subnet: 192.168.1.1/24
