@@ -1,0 +1,4 @@
+#!/bin/bash
+
+postfix start
+
