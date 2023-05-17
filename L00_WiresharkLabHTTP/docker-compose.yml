@@ -1,7 +1,7 @@
 version: '2'
 services:
   website:
-    image: 'nsunina/linode_lamp:v1.0'
+    image: 'nsunina/l00-wiresharklab-website:1.0'
     stdin_open: true
     tty: true
     ports:
@@ -9,13 +9,8 @@ services:
     networks:
       wireshark_subnet:
         ipv4_address: 193.21.1.4
-    volumes:
-      - './website:/var/www/'
-    cap_add:
-      - NET_ADMIN
-    privileged: true
   wireshark:
-    image: 'nsunina/wireshark:v1.2'
+    image: 'nsunina/l00-wiresharklab-wireshark:1.0'
     stdin_open: true
     tty: true
     ports:

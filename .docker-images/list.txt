@@ -2,3 +2,8 @@ nsunina/alpine,base/alpine/base
 nsunina/mysql,base/mysql
 nsunina/apache,base/apache/5.6
 nsunina/apache,base/apache/8
+nsunina/ubuntu-xpra,base/ubuntu/20.04/xpra
+nsunina/ubuntu-xpra-html5,base/ubuntu/20.04/xpra-html5
+nsunina/wireshark,base/wireshark
+nsunina/l00-wiresharklab-wireshark,L00_WiresharkLabHTTP/wireshark
+nsunina/l00-wiresharklab-website,L00_WiresharkLabHTTP/website
