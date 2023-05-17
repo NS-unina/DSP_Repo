@@ -1,2 +1,4 @@
 nsunina/alpine,base/alpine/base
-nsunina/lamp,ubuntu/20.04/lamp
+nsunina/mysql,base/mysql
+nsunina/apache,base/apache/5.6
+nsunina/apache,base/apache/8

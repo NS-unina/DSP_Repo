@@ -75,3 +75,5 @@ $RECYCLE.BIN/
 **.cache
 # End of https://www.gitignore.io/api/macos,windows,linux
 L03_DNSEnumeration/var-lib-bind-slave/dspdnsenum.lab.hosts
+
+.vscode

@@ -12,8 +12,7 @@ build() {
     path=$2
     cd $path
     VERSION=`cat VERSION`
-    # docker buildx build --platform linux/amd64,linux/arm64 -t $image:$VERSION $NOCACHE .
-    docker build --platform linux/amd64 -t $image:$VERSION $NOCACHE .
+    docker buildx build --platform linux/amd64,linux/arm64 -t $image:$VERSION $NOCACHE --push .
     cd -
 }
 

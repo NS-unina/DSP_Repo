@@ -1,0 +1,12 @@
+version: '3'
+services:
+  web:
+    image: nsunina/apache:5.6
+    ports:
+      - 80:80
+    depends_on:
+      - db
+  db:
+    image: nsunina/mysql:8.0.33
+    # environment:
+    #   MYSQL_ROOT_PASSWORD: example
