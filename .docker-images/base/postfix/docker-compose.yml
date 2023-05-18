@@ -1,0 +1,7 @@
+version: '2'
+services:
+  postfix:
+    build: .
+    ports:
+      - 25
+    tty: true

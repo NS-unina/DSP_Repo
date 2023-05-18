@@ -7,6 +7,14 @@ services:
     networks:
       public_network:
         ipv4_address: 193.21.1.3
+  hacking:
+    image: 'nsunina/hacking:1.0'
+    stdin_open: true
+    tty: true
+    ports:
+      - '13389:3389'
+    networks:
+      public_network: {}
 networks:
   public_network:
     ipam:

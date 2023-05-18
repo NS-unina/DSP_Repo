@@ -7,6 +7,7 @@ nsunina/router-2-ports,base/router/2-ports
 nsunina/telnet-server,base/telnet-server
 nsunina/ftp-server,base/ftp-server
 nsunina/networking,base/networking
+nsunina/postfix,base/postfix
 nsunina/netcat,base/netcat
 nsunina/hacking,base/hacking
 nsunina/scapy,base/scapy
