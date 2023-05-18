@@ -1,4 +1,4 @@
-FROM ubuntu:20.04
+FROM nsunina/ubuntu:20.04
 
 LABEL version="0.3"
 LABEL maintainer="florian.feldhaus@gmail.com"

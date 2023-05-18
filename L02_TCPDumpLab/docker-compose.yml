@@ -1,15 +1,16 @@
 version: '2'
 services:
   Kali:
-    image: 'dockersecplayground/kali:v1.0'
+    image: 'nsunina/hacking:1.0'
     stdin_open: true
     tty: true
+    ports:
+      - '13389:3389'
     networks:
       internal_network:
         ipv4_address: 192.168.2.3
-    cap_add:
-      - ALL
-    privileged: true
+    environment:
+      - GATEWAY=192.168.2.2
   router:
     image: 'dockersecplayground/alpine_router:v1.0'
     stdin_open: true
@@ -31,21 +32,27 @@ services:
     cap_add:
       - ALL
   telnet_client:
-    image: 'nsunina/bot_telnet_client:v1.0'
+    image: 'nsunina/networking:1.0'
     stdin_open: true
     tty: true
     networks:
       internal_network:
         ipv4_address: 192.168.2.4
+    environment:
+      - GATEWAY=192.168.2.2
     cap_add:
-      - NET_ADMIN
+      - ALL
   scapy:
-    image: 'nsunina/alpine_scapy:v1.0'
+    image: 'nsunina/networking:1.0'
     stdin_open: true
     tty: true
     networks:
       internal_network:
         ipv4_address: 192.168.2.5
+    environment:
+      - GATEWAY=192.168.2.2
+    cap_add:
+      - ALL
 networks:
   telnet_network:
     ipam:

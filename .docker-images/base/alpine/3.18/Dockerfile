@@ -8,6 +8,7 @@ COPY setgw.sh /setgw.sh
 COPY addctf.sh /addctf.sh
 COPY exec.sh /exec.sh
 COPY disable_shell.sh /disable_shell.sh
+COPY init.sh /init.sh
 
 LABEL \
       type="host" \
@@ -37,4 +38,6 @@ LABEL \
       actions.setgw.args.gateway.type="text" \
       actions.setgw.args.gateway.rule.pattern="^[a-zA-Z0-9_-]+$" \
       actions.disableshell.command="/disable_shell.sh" \ 
-      actions.disableshell.description="Disable shell access" \ 
+      actions.disableshell.description="Disable shell access" 
+
+ENTRYPOINT ["/init.sh"]

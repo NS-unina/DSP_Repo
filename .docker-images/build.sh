@@ -1,5 +1,13 @@
 #!/bin/bash
 
+BIBlue='\033[1;94m'       # Blue
+NC='\033[0m' # No Color
+set -e
+
+log_colored() {
+    echo -e "${BIBlue}$1${NC}"
+}
+
 # If you run with --no-cache the command is executed without caching
 if echo "$*" | grep -q -- "--no-cache" ; then
     NOCACHE=--no-cache
@@ -22,7 +30,7 @@ while read -r line; do
 
     image=$(echo $line | cut -d',' -f1)
     path=$(echo $line | cut -d',' -f2)
-    echo "Build $image"
+    log_colored "Build $image located in $path"
     build $image $path
 
 done < list.txt
