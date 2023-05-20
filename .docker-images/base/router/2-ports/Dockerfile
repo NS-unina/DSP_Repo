@@ -1,11 +1,10 @@
-FROM dockersecplayground/alpine:latest
-RUN apk add --update iptables python
+FROM nsunina/alpine:3.18
+RUN apk add --update iptables python3
 COPY getif /getif
 COPY firewall.py /firewall.py
 COPY firewall.sh /firewall.sh
 LABEL \
 	type="router" \
-      ports="2" \
       actions.firewall.command="/firewall.sh" \ 
       actions.firewall.description="Exec an iptable rule (-i arg filled with IP of interface, \
       it will be replaced with proper interface " \ 

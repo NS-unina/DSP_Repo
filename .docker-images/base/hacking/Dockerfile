@@ -9,5 +9,6 @@ RUN apt-get update && apt-get install -y python3-scapy dsniff tcpdump fping nmap
 RUN useradd -m -s /bin/bash -p $(openssl passwd -1 dsp) dsp && usermod -aG sudo dsp
 
 LABEL \
-      type="host" 
+      type="host"  \ 
+      caps_add="ALL"
       

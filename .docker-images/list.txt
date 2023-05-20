@@ -3,7 +3,7 @@ nsunina/ubuntu,base/ubuntu/20.04/base
 nsunina/mysql-server,base/mysql
 nsunina/apache,base/apache/5.6
 nsunina/apache,base/apache/8
-nsunina/router-2-ports,base/router/2-ports
+nsunina/router,base/router/2-ports
 nsunina/telnet-server,base/telnet-server
 nsunina/ftp-server,base/ftp-server
 nsunina/networking,base/networking
@@ -14,6 +14,5 @@ nsunina/scapy,base/scapy
 nsunina/ssh-client,base/ssh-client
 nsunina/ubuntu-xpra,base/ubuntu/20.04/xpra
 nsunina/ubuntu-xpra-html5,base/ubuntu/20.04/xpra-html5
-nsunina/wireshark,base/wireshark
 nsunina/l00-wiresharklab-wireshark,L00_WiresharkLabHTTP/wireshark
 nsunina/l00-wiresharklab-website,L00_WiresharkLabHTTP/website
