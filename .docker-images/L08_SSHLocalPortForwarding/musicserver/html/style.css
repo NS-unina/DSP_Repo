@@ -1,0 +1,293 @@
+/* the way html tag and classes are used same css order I have done */
+
+
+/* I have follow sequence wise class and their property */
+
+
+/* all the class name are related to project  */
+
+
+/* all the body is samecolor */
+
+body {
+    scrollbar-width: 0px;
+}
+
+
+/* this our top element  */
+
+.top {
+    background-color: midnightblue;
+    display: flex;
+    align-items: center;
+}
+
+i {
+    height: 100%;
+    width: 200px;
+}
+
+
+/* image tag in top class */
+
+img {
+    max-width: 100%;
+    margin-left: 10px;
+}
+
+
+/* style the favourite word in top */
+
+.favourites {
+    margin-left: 70px;
+    color: white;
+    font-size: 1.25em;
+    font-style: normal;
+}
+
+
+/* adding search feature in top  */
+
+.search {
+    position: absolute;
+    margin-left: 700px;
+    padding: 10px 12px;
+    pointer-events: none;
+}
+
+
+/* giving input style  */
+
+.search input {
+    border: 3px;
+    height: 20px;
+    width: 250px;
+    border-radius: 50px;
+}
+
+
+/* Notification icon in left side  */
+
+.bell {
+    font-size: 30px;
+    text-align: right;
+    padding-right: 50px;
+    color: white;
+}
+
+
+/* profile picture will show when you open the music */
+
+.profile img {
+    margin-left: 650px;
+    border-radius: 50%;
+    height: 90px;
+}
+
+
+/* dividing two parts main and aside using container */
+
+.container {
+    display: flex;
+    background-color: midnightblue;
+}
+
+
+/* main part started  */
+
+
+/* consist all part without aside */
+
+.main {
+    width: 70%;
+}
+
+
+/* .main .section1 {
+  background-color: royalblue;
+  position: relative;
+  width: 10px;
+  height: 50px;
+  margin: 11px auto 0;
+} */
+
+
+/* carousel home screen started */
+
+.section1 {
+    width: 500px;
+    margin: 0 auto;
+    background-color: midnightblue;
+    /* padding: 10px 10px 0 10px; */
+}
+
+
+/* adding slideshow in section 1 main */
+
+.slideshow_wrapper {
+    width: 580px;
+    height: 280px;
+    overflow: hidden;
+}
+
+
+/* the image will automatically slideshow by infinite time */
+
+.slideshow {
+    width: 1500px;
+    height: 300px;
+    margin: 0 0 0 -1000px;
+    position: relative;
+    -webkit-animation-name: slide_animation;
+    -webkit-animation-duration: 10s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
+}
+
+
+/* property for all the images into slide */
+
+.slide {
+    width: 500px;
+    height: 270px;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin-right: 40px;
+}
+
+.slideshow img {
+    width: 500px;
+    height: 270px;
+}
+
+
+/* keyframe started for animation  */
+
+@-webkit-keyframes slide_animation {
+    0% {
+        left: 0px;
+    }
+    10% {
+        left: 500px;
+    }
+    20% {
+        left: 500px;
+    }
+    30% {
+        left: 500px;
+    }
+    40% {
+        left: 500px;
+    }
+    50% {
+        left: 500px;
+    }
+    60% {
+        left: 500px;
+    }
+    70% {
+        left: 1000px;
+    }
+    80% {
+        left: 1000px;
+    }
+    90% {
+        left: 1000px;
+    }
+    100% {
+        left: 1000px;
+    }
+}
+
+
+/* end of caurosel effect */
+
+
+/* all the latest song will now display in home screen */
+
+.main .section2 {
+    background-color: midnightblue;
+    color: white;
+    font-style: normal;
+    padding: 0 0 0 30px;
+}
+
+
+/* latest release song will appear */
+
+.section2 .Latest-Release {
+    margin-left: 10px;
+}
+
+
+/* popular artist will display after latest release */
+
+.popular-Artist {
+    display: block;
+    justify-content: space-around;
+    margin-bottom: ;
+}
+
+.popular-Artist img {
+    border-radius: 50%;
+}
+
+.Playlist {
+    display: block;
+    justify-content: space-around;
+}
+
+.Playlist img {
+    margin-right: 10px;
+}
+
+.Playlist1 img {
+    margin-right: 30px;
+}
+
+.Latest-English img {
+    margin-right: 20px;
+}
+
+.Latest-Hindi img {
+    margin-right: 20px;
+}
+
+
+/* main body part end */
+
+
+/* aside will work now and right side we have to generate queue song */
+
+.side {
+    width: 30%;
+    color: white;
+    font-style: normal;
+}
+
+
+/* all the playlist song will add in queue in left side  */
+
+.Queue-Song {
+    display: block;
+    flex-direction: column;
+}
+
+.Queue-Song img {
+    margin-bottom: 20px;
+    max-width: 90%;
+}
+
+
+/* it will show current song playlist button in the bottom  */
+
+
+/* using sticky it will fixed even we scrolling */
+
+.latest-playlist {
+    position: sticky;
+    width: 100%;
+    margin-left: -10px;
+}

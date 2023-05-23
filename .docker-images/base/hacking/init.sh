@@ -39,6 +39,11 @@ if [ -n "$GATEWAY" ]; then
     /setgw.sh --gateway $GATEWAY
 fi
 
+mkdir -p /run/sshd
+ssh-keygen -A
+/usr/sbin/sshd -D -e &
+
+
 # Now we're good: s6-overlay-suexec is accessible via PATH, as are
 # all our binaries.
 # Run preinit as root, then run stage0 as the container's user (can be
