@@ -9,4 +9,8 @@ if [ -n "$GATEWAY" ]; then
     /setgw.sh --gateway $GATEWAY
 fi
 
+# If a custom_init.sh command exists, the execute it before blocking. In this way it is possible to override the init command
+if test -e /custom_init.sh; then
+ 	bash /custom_init.sh
+fi
 tail -f /dev/null

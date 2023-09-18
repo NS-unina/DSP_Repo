@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import Roboto Slab Font-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="style.css"/>
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+
+<body>
+  <div class="container">
+	<div class="row">
+	  <div class="col s12 center-align info">
+	    <p>This is a vulnerable web server for showcasing CVE 2014-0160, a.k.a. Heartbleed.</p>
+		<p>In order to provide some <b>juicy</b> data when exploiting the vulnerability we added a simple form that creates a <b>cookie</b> where are stored user credentials<br/>
+		(We know that this is not a real case scenario but it is useful tu understand how informations are stored in the webserver)
+		</p>
+	  </div>
+	</div>
+  
+    <div class="card">
+	  <div class="card-content">
+		  <div class="row">
+			<form class="col s12" action="GET">
+			  <div class="row">
+				<div class="input-field col s12">
+				  <input id="username" type="text" class="validate">
+				  <label for="username">Username</label>
+				</div>
+			  </div>
+			  <div class="row">
+				<div class="input-field col s12">
+				  <input id="password" type="password" class="validate">
+				  <label for="password">Password</label>
+				</div>
+			  </div>
+			  <a id="create-cookie-btn" class="waves-effect waves-light btn-large">Submit</a>
+			</form>
+		  </div>
+	  </div>
+	</div>
+  </div>
+
+  <!--JavaScript at end of body for optimized loading-->
+  <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+  
+  <!--Cookie setup-->
+  <script>
+  function setCookie(name, value) {
+	    document.cookie = name + "=" + value + ";path=/";
+	}
+	
+  document.getElementById("create-cookie-btn").addEventListener('click', () => {
+    const username = document.getElementById('username').value;
+	const password = document.getElementById('password').value;
+	setCookie("username", username);
+	setCookie("password", password);
+	window.location.reload();
+  })
+  </script>
+</body>
+</html>

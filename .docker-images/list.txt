@@ -9,7 +9,10 @@ nsunina/ftp-server,base/ftp-server
 nsunina/networking,base/networking
 nsunina/postfix,base/postfix
 nsunina/netcat,base/netcat
+nsunina/openssl,base/openssl
+nsunina/nginx-heartbleed,base/openssl/with-nginx
 nsunina/hacking,base/hacking
+nsunina/effesociety-hearthbleed,effesociety/heartbleed-vulnerable-server
 nsunina/scapy,base/scapy
 nsunina/ssh-client,base/ssh-client
 nsunina/ssh-server,base/ssh-server

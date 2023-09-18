@@ -24,6 +24,5 @@ while read -r line; do
     echo "Build $image"
     build $image $path
 
-done < list.txt
-
-
+LIST="${1:-list.txt}";
+done < $LIST
