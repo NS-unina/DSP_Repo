@@ -4,11 +4,19 @@ services:
     image: 'effesociety/heartbleed-vulnerable-server:latest'
     stdin_open: true
     tty: true
-    ports:
-     - "8443:443"
     networks:
       server-network:
         ipv4_address: 193.20.1.2
+  hacking:
+    image: 'nsunina/hacking:1.0'
+    stdin_open: true
+    tty: true
+    ports:
+      - '13389:3389'
+    networks:
+      server-network: {}
+    cap_add:
+      - ALL
 networks:
   server-network:
     ipam:
