@@ -19,5 +19,6 @@ LABEL \
       caps_add="ALL"
       
 
+RUN DEBIAN_FRONTEND=noninterractive apt-get update && apt-get install -y vim ftp
 EXPOSE 22
 EXPOSE 3389

@@ -6,13 +6,13 @@ else
   PLATFORM="linux/amd64"
 fi
 
-
 # If you run with --no-cache the command is executed without caching
 if echo "$*" | grep -q -- "--no-cache" ; then
     NOCACHE=--no-cache
 else
     NOCACHE=''
 fi
+
 file="${1:-list.txt}"
 echo "[+] Build from $file"
 
@@ -21,7 +21,7 @@ build() {
     path=$2
     cd $path
     VERSION=`cat VERSION`
-    docker buildx build $NOCACHE --load --platform=$PLATFORM -t $image:$VERSION  .
+    docker buildx build --platform linux/amd64,linux/arm64 -t $image:$VERSION $NOCACHE --push .
     cd -
 }
 
@@ -33,6 +33,6 @@ while read -r line; do
     echo "Build $image"
     build $image $path
 
-done < $file
+done < list.txt
 
 
