@@ -1,14 +1,14 @@
 FROM nsunina/alpine:3.18
 
 
-ADD telnetd /bin/telnetd
+# ADD telnetd /bin/telnetd
 LABEL type="server" 
 
 RUN echo "http://dl-cdn.alpinelinux.org/alpine/v3.18/community" | tee /etc/apk/repositories && \
   echo "http://dl-cdn.alpinelinux.org/alpine/v3.18/main" | tee -a /etc/apk/repositories && \
-  apk update && \
+  apk update && apk add busybox-extras \
   rm -f /etc/motd /etc/issue && \
-  chmod +x /bin/telnetd && \
+  # chmod +x /bin/telnetd && \
   rm -f /etc/securetty
 
 ADD custom_init.sh /custom_init.sh
