@@ -1,0 +1,7 @@
+FROM kylemanna/openvpn:latest
+
+COPY ./script/setgw.sh /app/setgw.sh 
+
+RUN chmod +x /app/* 
+
+CMD ["/app/setgw.sh", "add", "192.168.1.0/24", "192.168.2.2"]

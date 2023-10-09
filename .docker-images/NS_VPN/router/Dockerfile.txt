@@ -1,0 +1,5 @@
+FROM dockersecplayground/alpine_router
+
+RUN apk update -y && apk  add tcpdump
+
+CMD ["/bin/sh"]
