@@ -21,6 +21,7 @@ build() {
     path=$2
     cd $path
     VERSION=`cat VERSION`
+    echo "[+] docker buildx build $NOCACHE --load --platform=$PLATFORM -t $image:$VERSION  ."
     docker buildx build $NOCACHE --load --platform=$PLATFORM -t $image:$VERSION  .
     cd -
 }

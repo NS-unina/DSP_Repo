@@ -29,7 +29,7 @@ rewrite   unix  -       -       n       -       -       trivial-rewrite
 bounce    unix  -       -       n       -       0       bounce
 defer     unix  -       -       n       -       0       bounce
 trace     unix  -       -       n       -       0       bounce
-verify    unix  -       -       n       -       1       verify
+verify    unix  n       -       n       -       1       verify
 flush     unix  n       -       n       1000?   0       flush
 proxymap  unix  -       -       n       -       -       proxymap
 smtp      unix  -       -       n       -       -       smtp

@@ -18,6 +18,10 @@ services:
     networks:
       network_0:
         ipv4_address: 193.20.1.3
+  element_0:
+    image: 'sharelatex/sharelatex-full:latest'
+    stdin_open: true
+    tty: true
 networks:
   network_0:
     ipam:
