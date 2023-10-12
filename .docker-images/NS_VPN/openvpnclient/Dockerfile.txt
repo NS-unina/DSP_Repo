@@ -1,0 +1,10 @@
+FROM frauhottelmann/openvpn-client:latest
+
+COPY ./script/setgw.sh /app/setgw.sh
+
+RUN chmod +x /app/*
+
+CMD ["/app/setgw.sh", "replace", "default", "192.168.1.2"]
+
+ENTRYPOINT []
+

@@ -1,0 +1,48 @@
+version: '2'
+services:
+  router:
+    image: 'ndambra99/alpine_router:latest'
+    stdin_open: true
+    tty: true
+    networks:
+      server_network:
+        ipv4_address: 192.168.2.2
+      client_network:
+        ipv4_address: 192.168.1.2
+    volumes:
+      - './router_captures:/captures/'
+    cap_add:
+      - NET_ADMIN
+  openVpn-Server:
+    image: 'ndambra99/myopenvpnserver:latest'
+    stdin_open: true
+    tty: true
+    networks:
+      server_network:
+        ipv4_address: 192.168.2.3
+    volumes:
+      - './server/ovpn-data:/etc/openvpn'
+    cap_add:
+     - NET_ADMIN
+  openVpn-Client:
+    image: 'ndambra99/myopenvpnclient:latest'
+    stdin_open: true
+    tty: true
+    devices:
+     - '/dev/net/tun:/dev/net/tun'
+    networks:
+      client_network:
+        ipv4_address: 192.168.1.3
+    volumes:
+      - './client/vpn_config:/vpn'
+    cap_add:
+     - NET_ADMIN
+networks:
+  server_network:
+    ipam:
+      config:
+        - subnet: 192.168.2.1/24
+  client_network:
+    ipam:
+      config:
+        - subnet: 192.168.1.1/24
