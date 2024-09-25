@@ -18,4 +18,4 @@ networks:
   LaRete:
     ipam:
       config:
-        - subnet: 191.20.1.1/24
+        - subnet: 191.20.1.0/24

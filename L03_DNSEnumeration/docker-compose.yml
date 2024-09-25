@@ -30,4 +30,4 @@ networks:
   public_dnsenum:
     ipam:
       config:
-        - subnet: 193.21.1.1/24
+        - subnet: 193.21.1.0/24

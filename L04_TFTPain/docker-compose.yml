@@ -22,4 +22,4 @@ networks:
   network_0:
     ipam:
       config:
-        - subnet: 193.20.1.1/24
+        - subnet: 193.20.1.0/24
