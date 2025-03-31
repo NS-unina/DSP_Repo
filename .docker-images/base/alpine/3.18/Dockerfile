@@ -1,7 +1,7 @@
 FROM alpine:3.18
 ENV ENV="/root/.ashrc"
-RUN apk --update add bash && \
- echo "alias sh=bash" > "$ENV"
+RUN apk --update add bash  
+ # echo "alias sh=bash" > "$ENV"
 
 COPY adduser.sh /adduser.sh
 COPY setgw.sh /setgw.sh

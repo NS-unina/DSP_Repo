@@ -29,5 +29,6 @@ LABEL type="server" \
       actions.set_banner.args.banner.type="text" \
       actions.start_ftpd.command="/start_ftpd.sh " \
       actions.start_ftpd.description="Start the ftp server" \
-      actions.start_ftpd.backgroundMode="true" \ 
+      actions.start_ftpd.backgroundMode="true" 
 
+ENTRYPOINT ["/start_ftpd.sh"]

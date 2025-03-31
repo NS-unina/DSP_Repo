@@ -26,6 +26,17 @@ services:
       - './webmin-slave:/etc/webmin'
       - './bind-slave:/etc/bind'
       - './var-lib-bind-slave:/var/lib/bind'
+  hacking:
+    image: 'nsunina/hacking:1.0'
+    stdin_open: true
+    tty: true
+    ports:
+      - '13389:3389'
+    networks:
+      public_dnsenum:
+        ipv4_address: 193.21.1.4
+    cap_add:
+      - ALL
 networks:
   public_dnsenum:
     ipam:

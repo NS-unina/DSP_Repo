@@ -1,0 +1,12 @@
+# docker-compose up -d
+version: '3.5'
+
+services:
+  bind9:
+    restart: always
+    image: labbsr0x/dns-bind9
+    ports:
+    - "53:53/udp"
+    - "53:53/tcp"
+    volumes:
+    - ./bind9:/data # Change volume path

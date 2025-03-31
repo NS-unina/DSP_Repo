@@ -1,12 +1,14 @@
 version: '2'
 services:
   SMPT_server:
-    image: 'nsunina/postfix:v1.1'
+    image: 'nsunina/postfix:1.0'
     stdin_open: true
     tty: true
     networks:
       public_network:
         ipv4_address: 193.21.1.3
+    cap_add:
+      - ALL
   hacking:
     image: 'nsunina/hacking:1.0'
     stdin_open: true
@@ -15,6 +17,8 @@ services:
       - '13389:3389'
     networks:
       public_network: {}
+    cap_add:
+      - ALL
 networks:
   public_network:
     ipam:

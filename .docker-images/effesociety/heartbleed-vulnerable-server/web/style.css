@@ -1,0 +1,9 @@
+body {
+	background-color: #f50057;
+}
+
+.info p{
+	font-family: 'Roboto Slab', serif;
+	font-size:28px;
+	text-transform: uppercase;
+}
