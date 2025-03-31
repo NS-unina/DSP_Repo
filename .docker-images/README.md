@@ -1,5 +1,7 @@
 # Docker images used by the DSP repository  
 Use the following repo to build the images. 
+See the images:
+
 
 ## Structure images and deps   
 There is a base folder that contains the base images used by the several labs.
