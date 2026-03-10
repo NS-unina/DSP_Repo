@@ -14,19 +14,22 @@ services:
       - NET_ADMIN
     privileged: true
   wireshark:
-    image: nsunina/wireshark:v1.1
-    stdin_open: true
-    tty: true
+    image: lscr.io/linuxserver/wireshark:latest
+    container_name: wireshark
+    cap_add:
+      - NET_ADMIN
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Etc/UTC
     ports:
-      - '14500:14500'
+      - 3000:3000
+      - 14500:3001
+    shm_size: "1gb"
+    restart: unless-stopped
     networks:
       wireshark_subnet:
         ipv4_address: 193.21.1.5
-    environment:
-      - XPRA_PW=wireshark
-    cap_add:
-      - NET_ADMIN
-    privileged: true
 networks:
   wireshark_subnet:
     ipam:
