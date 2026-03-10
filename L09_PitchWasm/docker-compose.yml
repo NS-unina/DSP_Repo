@@ -1,0 +1,8 @@
+services:
+  pitch-vulnerable:
+    image: nsunina/pitch-vulnerable:v1.0
+    stdin_open: true
+    tty: true
+    ports:
+      - '9999:9999'
+networks: {}
