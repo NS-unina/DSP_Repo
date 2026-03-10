@@ -1,28 +1,24 @@
-version: '2'
 services:
   attacker:
-    image: 'chrisexpo/slowdos-attacker:latest'
+    image: chrisexpo/slowdos-attacker:latest
     stdin_open: true
     tty: true
-    cap_add: 
-        - NET_ADMIN
     networks:
       network:
         ipv4_address: 193.20.1.15
   firefox_user:
-    image: 'jlesage/firefox:latest'
+    image: jlesage/firefox:latest
     stdin_open: true
     tty: true
-    shm_size: 256000000
+    ports:
+      - '5800:5800'
     networks:
       network:
         ipv4_address: 193.20.1.21
   apache_193.20.1.20:
-    image: 'chrisexpo/apache-hackme:latest'
+    image: chrisexpo/apache-hackme:latest
     stdin_open: true
     tty: true
-    cap_add: 
-        - NET_ADMIN
     networks:
       network:
         ipv4_address: 193.20.1.20

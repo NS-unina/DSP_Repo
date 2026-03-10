@@ -1,4 +1,3 @@
-version: '2'
 services:
   website:
     image: nsunina/wireshark_website:v1.1
