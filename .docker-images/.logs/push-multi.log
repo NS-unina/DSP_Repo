@@ -1,0 +1,381 @@
+==> ./L00_WiresharkLabHTTP/website: push-multi
+docker buildx create --name multi --use --bootstrap 2>/dev/null || docker buildx use multi
+docker buildx build --platform linux/amd64,linux/arm64 -f Dockerfile -t nsunina/l00-wiresharklabhttp-website:1.0 \
+	  --push .
+OK   ./L00_WiresharkLabHTTP/website
+==> ./L00_WiresharkLabHTTP/wireshark: push-multi
+docker buildx create --name multi --use --bootstrap 2>/dev/null || docker buildx use multi
+docker buildx build --platform linux/amd64,linux/arm64 -f Dockerfile -t nsunina/l00-wiresharklabhttp-wireshark:1.0 \
+	  --push .
+OK   ./L00_WiresharkLabHTTP/wireshark
+==> ./L08_SSHLocalPortForwarding/musicserver: push-multi
+docker buildx create --name multi --use --bootstrap 2>/dev/null || docker buildx use multi
+docker buildx build --platform linux/amd64,linux/arm64 -f Dockerfile -t nsunina/l08-sshlocalportforwarding-musicserver:1.0 \
+	  --push .
+OK   ./L08_SSHLocalPortForwarding/musicserver
+==> ./L08_SSHLocalPortForwarding/ssh-server: push-multi
+docker buildx create --name multi --use --bootstrap 2>/dev/null || docker buildx use multi
+docker buildx build --platform linux/amd64,linux/arm64 -f Dockerfile -t nsunina/l08-sshlocalportforwarding-ssh-server:1.0 \
+	  --push .
+OK   ./L08_SSHLocalPortForwarding/ssh-server
+==> ./_TO_CHECK/Loader_scanListen: push-multi
+docker buildx create --name multi --use --bootstrap 2>/dev/null || docker buildx use multi
+docker buildx build --platform linux/amd64,linux/arm64 -f Dockerfile -t nsunina/to-check-loader-scanlisten:v1.0 \
+	  --push .
+OK   ./_TO_CHECK/Loader_scanListen
+==> ./_TO_CHECK/attacker: push-multi
+docker buildx create --name multi --use --bootstrap 2>/dev/null || docker buildx use multi
+docker buildx build --platform linux/amd64,linux/arm64 -f Dockerfile -t nsunina/to-check-attacker:v1.0 \
+	  --push .
+OK   ./_TO_CHECK/attacker
+==> ./_TO_CHECK/bot: push-multi
+docker buildx create --name multi --use --bootstrap 2>/dev/null || docker buildx use multi
+docker buildx build --platform linux/amd64,linux/arm64 -f Dockerfile -t nsunina/to-check-bot:v1.0 \
+	  --push .
+OK   ./_TO_CHECK/bot
+==> ./_TO_CHECK/bot_vittima: push-multi
+docker buildx create --name multi --use --bootstrap 2>/dev/null || docker buildx use multi
+docker buildx build --platform linux/amd64,linux/arm64 -f Dockerfile -t nsunina/to-check-bot-vittima:v1.0 \
+	  --push .
+OK   ./_TO_CHECK/bot_vittima
+==> ./_TO_CHECK/client: push-multi
+docker buildx create --name multi --use --bootstrap 2>/dev/null || docker buildx use multi
+docker buildx build --platform linux/amd64,linux/arm64 -f Dockerfile -t nsunina/to-check-client:v1.0 \
+	  --push .
+OK   ./_TO_CHECK/client
+==> ./_TO_CHECK/cnc: push-multi
+docker buildx create --name multi --use --bootstrap 2>/dev/null || docker buildx use multi
+docker buildx build --platform linux/amd64,linux/arm64 -f Dockerfile -t nsunina/to-check-cnc:v1.0 \
+	  --push .
+OK   ./_TO_CHECK/cnc
+==> ./_TO_CHECK/docker-cnc: push-multi
+docker buildx create --name multi --use --bootstrap 2>/dev/null || docker buildx use multi
+docker buildx build --platform linux/amd64,linux/arm64 -f Dockerfile -t nsunina/to-check-docker-cnc:v1.0 \
+	  --push .
+OK   ./_TO_CHECK/docker-cnc
+==> ./_TO_CHECK/firefox_ssh: push-multi
+docker buildx create --name multi --use --bootstrap 2>/dev/null || docker buildx use multi
+docker buildx build --platform linux/amd64,linux/arm64 -f Dockerfile -t nsunina/to-check-firefox-ssh:v1.0 \
+	  --push .
+OK   ./_TO_CHECK/firefox_ssh
+==> ./_TO_CHECK/firefox_ssh_server: push-multi
+docker buildx create --name multi --use --bootstrap 2>/dev/null || docker buildx use multi
+docker buildx build --platform linux/amd64,linux/arm64 -f Dockerfile -t nsunina/to-check-firefox-ssh-server:v1.0 \
+	  --push .
+OK   ./_TO_CHECK/firefox_ssh_server
+==> ./_TO_CHECK/ftpserver: push-multi
+docker buildx create --name multi --use --bootstrap 2>/dev/null || docker buildx use multi
+docker buildx build --platform linux/amd64,linux/arm64 -f Dockerfile -t nsunina/to-check-ftpserver:v1.0 \
+	  --push .
+OK   ./_TO_CHECK/ftpserver
+==> ./_TO_CHECK/fuzzing/afl: push-multi
+docker buildx create --name multi --use --bootstrap 2>/dev/null || docker buildx use multi
+docker buildx build --platform linux/amd64,linux/arm64 -f Dockerfile -t nsunina/to-check-fuzzing-afl:v1.0 \
+	  --push .
+OK   ./_TO_CHECK/fuzzing/afl
+==> ./_TO_CHECK/fuzzing/boofuzz: push-multi
+docker buildx create --name multi --use --bootstrap 2>/dev/null || docker buildx use multi
+docker buildx build --platform linux/amd64,linux/arm64 -f Dockerfile -t nsunina/to-check-fuzzing-boofuzz:v1.0 \
+	  --push .
+OK   ./_TO_CHECK/fuzzing/boofuzz
+==> ./_TO_CHECK/fuzzing/https_heartbleed: push-multi
+docker buildx create --name multi --use --bootstrap 2>/dev/null || docker buildx use multi
+docker buildx build --platform linux/amd64,linux/arm64 -f Dockerfile -t nsunina/to-check-fuzzing-https-heartbleed:v1.0 \
+	  --push .
+OK   ./_TO_CHECK/fuzzing/https_heartbleed
+==> ./_TO_CHECK/fuzzing/wfuzz: push-multi
+docker buildx create --name multi --use --bootstrap 2>/dev/null || docker buildx use multi
+docker buildx build --platform linux/amd64,linux/arm64 -f Dockerfile -t nsunina/to-check-fuzzing-wfuzz:v1.0 \
+	  --push .
+OK   ./_TO_CHECK/fuzzing/wfuzz
+==> ./_TO_CHECK/iplog: push-multi
+docker buildx create --name multi --use --bootstrap 2>/dev/null || docker buildx use multi
+docker buildx build --platform linux/amd64,linux/arm64 -f Dockerfile -t nsunina/to-check-iplog:v1.0 \
+	  --push .
+OK   ./_TO_CHECK/iplog
+==> ./_TO_CHECK/kali: push-multi
+docker buildx create --name multi --use --bootstrap 2>/dev/null || docker buildx use multi
+docker buildx build --platform linux/amd64,linux/arm64 -f Dockerfile -t nsunina/to-check-kali:v1.0 \
+	  --push .
+OK   ./_TO_CHECK/kali
+==> ./_TO_CHECK/postfix: push-multi
+docker buildx create --name multi --use --bootstrap 2>/dev/null || docker buildx use multi
+docker buildx build --platform linux/amd64,linux/arm64 -f Dockerfile -t nsunina/to-check-postfix:v1.0 \
+	  --push .
+OK   ./_TO_CHECK/postfix
+==> ./_TO_CHECK/scanner: push-multi
+docker buildx create --name multi --use --bootstrap 2>/dev/null || docker buildx use multi
+docker buildx build --platform linux/amd64,linux/arm64 -f Dockerfile -t nsunina/to-check-scanner:v1.0 \
+	  --push .
+OK   ./_TO_CHECK/scanner
+==> ./_TO_CHECK/server: push-multi
+docker buildx create --name multi --use --bootstrap 2>/dev/null || docker buildx use multi
+docker buildx build --platform linux/amd64,linux/arm64 -f Dockerfile -t nsunina/to-check-server:v1.0 \
+	  --push .
+OK   ./_TO_CHECK/server
+==> ./_TO_CHECK/slow_dos_attack/apachehackme: push-multi
+docker buildx create --name multi --use --bootstrap 2>/dev/null || docker buildx use multi
+docker buildx build --platform linux/amd64,linux/arm64 -f Dockerfile -t nsunina/to-check-slow-dos-attack-apachehackme:v1.0 \
+	  --push .
+OK   ./_TO_CHECK/slow_dos_attack/apachehackme
+==> ./_TO_CHECK/slow_dos_attack/slowdosattacker: push-multi
+docker buildx create --name multi --use --bootstrap 2>/dev/null || docker buildx use multi
+docker buildx build --platform linux/amd64,linux/arm64 -f Dockerfile -t nsunina/to-check-slow-dos-attack-slowdosattacker:v1.0 \
+	  --push .
+OK   ./_TO_CHECK/slow_dos_attack/slowdosattacker
+==> ./_TO_CHECK/ssh_client: push-multi
+docker buildx create --name multi --use --bootstrap 2>/dev/null || docker buildx use multi
+docker buildx build --platform linux/amd64,linux/arm64 -f Dockerfile -t nsunina/to-check-ssh-client:v1.0 \
+	  --push .
+OK   ./_TO_CHECK/ssh_client
+==> ./_TO_CHECK/tftpserver: push-multi
+docker buildx create --name multi --use --bootstrap 2>/dev/null || docker buildx use multi
+docker buildx build --platform linux/amd64,linux/arm64 -f Dockerfile -t nsunina/to-check-tftpserver:v1.0 \
+	  --push .
+OK   ./_TO_CHECK/tftpserver
+==> ./base/alpine/3.18: push-multi
+docker buildx create --name multi --use --bootstrap 2>/dev/null || docker buildx use multi
+docker buildx build --platform linux/amd64,linux/arm64 -f Dockerfile -t nsunina/alpine:3.18 \
+	  --push .
+OK   ./base/alpine/3.18
+==> ./base/apache/5.6: push-multi
+docker buildx create --name multi --use --bootstrap 2>/dev/null || docker buildx use multi
+docker buildx build --platform linux/amd64,linux/arm64 -f Dockerfile -t nsunina/apache:5.6 \
+	  --push .
+OK   ./base/apache/5.6
+==> ./base/apache/8: push-multi
+docker buildx create --name multi --use --bootstrap 2>/dev/null || docker buildx use multi
+docker buildx build --platform linux/amd64,linux/arm64 -f Dockerfile -t nsunina/apache:8.1.19 \
+	  --push .
+OK   ./base/apache/8
+==> ./base/dns: push-multi
+docker buildx create --name multi --use --bootstrap 2>/dev/null || docker buildx use multi
+docker buildx build --platform linux/amd64,linux/arm64 --tag=labbsr0x/dns-bind9:9.11.3 --push .
+OK   ./base/dns
+==> ./base/ftp-server: push-multi
+docker buildx create --name multi --use --bootstrap 2>/dev/null || docker buildx use multi
+docker buildx build --platform linux/amd64,linux/arm64 -f Dockerfile -t nsunina/ftp-server:1.0 \
+	  --push .
+OK   ./base/ftp-server
+==> ./base/hacking: push-multi
+docker buildx create --name multi --use --bootstrap 2>/dev/null || docker buildx use multi
+docker buildx build --platform linux/amd64,linux/arm64 -f Dockerfile -t nsunina/hacking:1.0 \
+	  --push .
+OK   ./base/hacking
+==> ./base/hacking-common: push-multi
+docker buildx create --name multi --use --bootstrap 2>/dev/null || docker buildx use multi
+docker buildx build --platform linux/amd64,linux/arm64 -f Dockerfile -t nsunina/hacking-common:1.0 \
+	  --push .
+OK   ./base/hacking-common
+==> ./base/hacking-dns: push-multi
+docker buildx create --name multi --use --bootstrap 2>/dev/null || docker buildx use multi
+docker buildx build --platform linux/amd64,linux/arm64 -f Dockerfile -t nsunina/hacking-dns:1.0 \
+	  --push .
+OK   ./base/hacking-dns
+==> ./base/hacking-heartbleed: push-multi
+docker buildx create --name multi --use --bootstrap 2>/dev/null || docker buildx use multi
+docker buildx build --platform linux/amd64,linux/arm64 -f Dockerfile -t nsunina/hacking-heartbleed:1.0 \
+	  --push .
+OK   ./base/hacking-heartbleed
+==> ./base/hacking-mitm: push-multi
+docker buildx create --name multi --use --bootstrap 2>/dev/null || docker buildx use multi
+docker buildx build --platform linux/amd64,linux/arm64 -f Dockerfile -t nsunina/hacking-mitm:1.0 \
+	  --push .
+OK   ./base/hacking-mitm
+==> ./base/hacking-router: push-multi
+docker buildx create --name multi --use --bootstrap 2>/dev/null || docker buildx use multi
+docker buildx build --platform linux/amd64,linux/arm64 -f Dockerfile -t nsunina/hacking-router:1.0 \
+	  --push .
+OK   ./base/hacking-router
+==> ./base/hacking-scanning: push-multi
+docker buildx create --name multi --use --bootstrap 2>/dev/null || docker buildx use multi
+docker buildx build --platform linux/amd64,linux/arm64 -f Dockerfile -t nsunina/hacking-scanning:1.0 \
+	  --push .
+OK   ./base/hacking-scanning
+==> ./base/hacking-scapy: push-multi
+docker buildx create --name multi --use --bootstrap 2>/dev/null || docker buildx use multi
+docker buildx build --platform linux/amd64,linux/arm64 -f Dockerfile -t nsunina/hacking-scapy:1.0 \
+	  --push .
+OK   ./base/hacking-scapy
+==> ./base/hacking-smtp: push-multi
+docker buildx create --name multi --use --bootstrap 2>/dev/null || docker buildx use multi
+docker buildx build --platform linux/amd64,linux/arm64 -f Dockerfile -t nsunina/hacking-smtp:1.0 \
+	  --push .
+OK   ./base/hacking-smtp
+==> ./base/hacking-ssh-client: push-multi
+docker buildx create --name multi --use --bootstrap 2>/dev/null || docker buildx use multi
+docker buildx build --platform linux/amd64,linux/arm64 -f Dockerfile -t nsunina/hacking-ssh-client:1.0 \
+	  --push .
+OK   ./base/hacking-ssh-client
+==> ./base/hacking-ssh-server: push-multi
+docker buildx create --name multi --use --bootstrap 2>/dev/null || docker buildx use multi
+docker buildx build --platform linux/amd64,linux/arm64 -f Dockerfile -t nsunina/hacking-ssh-server:1.0 \
+	  --push .
+OK   ./base/hacking-ssh-server
+==> ./base/hacking-telnet: push-multi
+docker buildx create --name multi --use --bootstrap 2>/dev/null || docker buildx use multi
+docker buildx build --platform linux/amd64,linux/arm64 -f Dockerfile -t nsunina/hacking-telnet:1.0 \
+	  --push .
+OK   ./base/hacking-telnet
+==> ./base/iplog: push-multi
+docker buildx create --name multi --use --bootstrap 2>/dev/null || docker buildx use multi
+docker buildx build --platform linux/amd64,linux/arm64 -f Dockerfile -t nsunina/iplog:1.0 \
+	  --push .
+OK   ./base/iplog
+==> ./base/kali/sqlmap: push-multi
+docker buildx create --name multi --use --bootstrap 2>/dev/null || docker buildx use multi
+docker buildx build --platform linux/amd64,linux/arm64 -f Dockerfile -t nsunina/sqlmap:1.0 \
+	  --push .
+OK   ./base/kali/sqlmap
+==> ./base/mysql: push-multi
+docker buildx create --name multi --use --bootstrap 2>/dev/null || docker buildx use multi
+docker buildx build --platform linux/amd64,linux/arm64 -f Dockerfile -t nsunina/mysql:8.0.33 \
+	  --push .
+OK   ./base/mysql
+==> ./base/netcat: push-multi
+docker buildx create --name multi --use --bootstrap 2>/dev/null || docker buildx use multi
+docker buildx build --platform linux/amd64,linux/arm64 -f Dockerfile -t nsunina/netcat:1.0 \
+	  --push .
+OK   ./base/netcat
+==> ./base/networking: push-multi
+docker buildx create --name multi --use --bootstrap 2>/dev/null || docker buildx use multi
+docker buildx build --platform linux/amd64,linux/arm64 -f Dockerfile -t nsunina/networking:1.0 \
+	  --push .
+OK   ./base/networking
+==> ./base/openssl: push-multi
+docker buildx create --name multi --use --bootstrap 2>/dev/null || docker buildx use multi
+docker buildx build --platform linux/amd64,linux/arm64 -f Dockerfile -t nsunina/openssl:1.0.1c \
+	  --push .
+OK   ./base/openssl
+==> ./base/openssl/with-nginx: push-multi
+docker buildx create --name multi --use --bootstrap 2>/dev/null || docker buildx use multi
+docker buildx build --platform linux/amd64,linux/arm64 -f Dockerfile -t nsunina/openssl-with-nginx:1.0.1c \
+	  --push .
+OK   ./base/openssl/with-nginx
+==> ./base/postfix: push-multi
+docker buildx create --name multi --use --bootstrap 2>/dev/null || docker buildx use multi
+docker buildx build --platform linux/amd64,linux/arm64 -f Dockerfile -t nsunina/postfix:1.0 \
+	  --push .
+OK   ./base/postfix
+==> ./base/postfix.old: push-multi
+docker buildx create --name multi --use --bootstrap 2>/dev/null || docker buildx use multi
+docker buildx build --platform linux/amd64,linux/arm64 -f Dockerfile -t nsunina/postfix.old:1.0 \
+	  --push .
+OK   ./base/postfix.old
+==> ./base/router: push-multi
+docker buildx create --name multi --use --bootstrap 2>/dev/null || docker buildx use multi
+docker buildx build --platform linux/amd64,linux/arm64 -f Dockerfile -t nsunina/router:1.0 \
+	  --push .
+OK   ./base/router
+==> ./base/scapy: push-multi
+docker buildx create --name multi --use --bootstrap 2>/dev/null || docker buildx use multi
+docker buildx build --platform linux/amd64,linux/arm64 -f Dockerfile -t nsunina/scapy:1.0 \
+	  --push .
+OK   ./base/scapy
+==> ./base/ssh-client: push-multi
+docker buildx create --name multi --use --bootstrap 2>/dev/null || docker buildx use multi
+docker buildx build --platform linux/amd64,linux/arm64 -f Dockerfile -t nsunina/ssh-client:1.0 \
+	  --push .
+OK   ./base/ssh-client
+==> ./base/ssh-server: push-multi
+docker buildx create --name multi --use --bootstrap 2>/dev/null || docker buildx use multi
+docker buildx build --platform linux/amd64,linux/arm64 -f Dockerfile -t nsunina/ssh-server:1.0 \
+	  --push .
+OK   ./base/ssh-server
+==> ./base/telnet-server: push-multi
+docker buildx create --name multi --use --bootstrap 2>/dev/null || docker buildx use multi
+docker buildx build --platform linux/amd64,linux/arm64 -f Dockerfile -t nsunina/telnet-server:1.0 \
+	  --push .
+OK   ./base/telnet-server
+==> ./base/ubuntu/14.04/base: push-multi
+docker buildx create --name multi --use --bootstrap 2>/dev/null || docker buildx use multi
+docker buildx build --platform linux/amd64,linux/arm64 -f Dockerfile -t nsunina/ubuntu:14.04 \
+	  --push .
+OK   ./base/ubuntu/14.04/base
+==> ./base/ubuntu/18.04/cron_privesc: push-multi
+docker buildx create --name multi --use --bootstrap 2>/dev/null || docker buildx use multi
+docker buildx build --platform linux/amd64,linux/arm64 -f Dockerfile -t nsunina/ubuntu-18.04-cron-privesc:v1.0 \
+	  --push .
+OK   ./base/ubuntu/18.04/cron_privesc
+==> ./base/ubuntu/18.04/cve-2019-14287: push-multi
+docker buildx create --name multi --use --bootstrap 2>/dev/null || docker buildx use multi
+docker buildx build --platform linux/amd64,linux/arm64 -f Dockerfile -t nsunina/ubuntu-18.04-cve-2019-14287:v1.0 \
+	  --push .
+OK   ./base/ubuntu/18.04/cve-2019-14287
+==> ./base/ubuntu/18.04/etc_passwd_privesc: push-multi
+docker buildx create --name multi --use --bootstrap 2>/dev/null || docker buildx use multi
+docker buildx build --platform linux/amd64,linux/arm64 -f Dockerfile -t nsunina/ubuntu-18.04-etc-passwd-privesc:v1.0 \
+	  --push .
+OK   ./base/ubuntu/18.04/etc_passwd_privesc
+==> ./base/ubuntu/18.04/ld_preload_privesc: push-multi
+docker buildx create --name multi --use --bootstrap 2>/dev/null || docker buildx use multi
+docker buildx build --platform linux/amd64,linux/arm64 -f Dockerfile -t nsunina/ubuntu-18.04-ld-preload-privesc:v1.0 \
+	  --push .
+OK   ./base/ubuntu/18.04/ld_preload_privesc
+==> ./base/ubuntu/18.04/path_privesc: push-multi
+docker buildx create --name multi --use --bootstrap 2>/dev/null || docker buildx use multi
+docker buildx build --platform linux/amd64,linux/arm64 -f Dockerfile -t nsunina/ubuntu-18.04-path-privesc:v1.0 \
+	  --push .
+OK   ./base/ubuntu/18.04/path_privesc
+==> ./base/ubuntu/18.04/sudo_privesc: push-multi
+docker buildx create --name multi --use --bootstrap 2>/dev/null || docker buildx use multi
+docker buildx build --platform linux/amd64,linux/arm64 -f Dockerfile -t nsunina/ubuntu-18.04-sudo-privesc:v1.0 \
+	  --push .
+OK   ./base/ubuntu/18.04/sudo_privesc
+==> ./base/ubuntu/18.04/suid_privesc: push-multi
+docker buildx create --name multi --use --bootstrap 2>/dev/null || docker buildx use multi
+docker buildx build --platform linux/amd64,linux/arm64 -f Dockerfile -t nsunina/ubuntu-18.04-suid-privesc:v1.0 \
+	  --push .
+OK   ./base/ubuntu/18.04/suid_privesc
+==> ./base/ubuntu/20.04/base: push-multi
+docker buildx create --name multi --use --bootstrap 2>/dev/null || docker buildx use multi
+docker buildx build --platform linux/amd64,linux/arm64 -f Dockerfile -t nsunina/ubuntu:20.04 \
+	  --push .
+OK   ./base/ubuntu/20.04/base
+==> ./base/ubuntu/20.04/xpra: push-multi
+docker buildx create --name multi --use --bootstrap 2>/dev/null || docker buildx use multi
+docker buildx build --platform linux/amd64,linux/arm64 -f Dockerfile -t nsunina/ubuntu-xpra:20.04 \
+	  --push .
+OK   ./base/ubuntu/20.04/xpra
+==> ./base/ubuntu/20.04/xpra-html5: push-multi
+docker buildx create --name multi --use --bootstrap 2>/dev/null || docker buildx use multi
+docker buildx build --platform linux/amd64,linux/arm64 -f Dockerfile -t nsunina/ubuntu-xpra-html5:20.04 \
+	  --push .
+OK   ./base/ubuntu/20.04/xpra-html5
+==> ./effesociety/heartbleed-vulnerable-server: push-multi
+docker buildx create --name multi --use --bootstrap 2>/dev/null || docker buildx use multi
+docker buildx build --platform linux/amd64,linux/arm64 -f Dockerfile -t nsunina/effesociety-heartbleed-vulnerable-server:1.0 \
+	  --push .
+OK   ./effesociety/heartbleed-vulnerable-server
+==> ./hacking-cli: push-multi
+docker buildx create --name multi --use --bootstrap 2>/dev/null || docker buildx use multi
+docker buildx build --platform linux/amd64,linux/arm64 -f Dockerfile -t nsunina/hacking-cli:v1.0 \
+	  --push .
+OK   ./hacking-cli
+==> ./pitch_vulnerable: push-multi
+docker buildx create --name multi --use --bootstrap 2>/dev/null || docker buildx use multi
+docker buildx build --platform linux/amd64,linux/arm64 -f Dockerfile -t nsunina/pitch-vulnerable:v1.0 \
+	  --push .
+OK   ./pitch_vulnerable
+==> ./topolinux: push-multi
+docker buildx create --name multi --use --bootstrap 2>/dev/null || docker buildx use multi
+docker buildx build --platform linux/amd64,linux/arm64 -f Dockerfile -t nsunina/topolinux:v1.0 --push .
+OK   ./topolinux
+==> ./vulnhub/samba/4.6.3: push-multi
+docker buildx create --name multi --use --bootstrap 2>/dev/null || docker buildx use multi
+docker buildx build --platform linux/amd64,linux/arm64 -f Dockerfile -t nsunina/samba:v1.0 \
+	  --push .
+OK   ./vulnhub/samba/4.6.3
+==> ./wireshark: push-multi
+docker buildx create --name multi --use --bootstrap 2>/dev/null || docker buildx use multi
+docker buildx build --platform linux/amd64,linux/arm64 -f Dockerfile -t nsunina/wireshark_website:v1.1 --push .
+OK   ./wireshark
+==> ./wireshark_website: push-multi
+docker buildx create --name multi --use --bootstrap 2>/dev/null || docker buildx use multi
+docker buildx build --platform linux/amd64,linux/arm64 -f Dockerfile -t nsunina/wireshark_website:v1.1 --push .
+OK   ./wireshark_website
+==> ./zummino_cnc: push-multi
+docker buildx create --name multi --use --bootstrap 2>/dev/null || docker buildx use multi
+docker buildx build --platform linux/amd64,linux/arm64 -f Dockerfile -t nsunina/zummino-cnc:v1.0 \
+	  --push .
+OK   ./zummino_cnc

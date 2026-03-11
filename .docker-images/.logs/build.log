@@ -1,0 +1,232 @@
+==> ./L00_WiresharkLabHTTP/website: build
+docker build -t nsunina/l00-wiresharklabhttp-website:1.0 -f Dockerfile .
+OK   ./L00_WiresharkLabHTTP/website
+==> ./L00_WiresharkLabHTTP/wireshark: build
+docker build -t nsunina/l00-wiresharklabhttp-wireshark:1.0 -f Dockerfile .
+OK   ./L00_WiresharkLabHTTP/wireshark
+==> ./L08_SSHLocalPortForwarding/musicserver: build
+docker build -t nsunina/l08-sshlocalportforwarding-musicserver:1.0 -f Dockerfile .
+OK   ./L08_SSHLocalPortForwarding/musicserver
+==> ./L08_SSHLocalPortForwarding/ssh-server: build
+docker build -t nsunina/l08-sshlocalportforwarding-ssh-server:1.0 -f Dockerfile .
+OK   ./L08_SSHLocalPortForwarding/ssh-server
+==> ./_TO_CHECK/Loader_scanListen: build
+docker build -t nsunina/to-check-loader-scanlisten:v1.0 -f Dockerfile .
+OK   ./_TO_CHECK/Loader_scanListen
+==> ./_TO_CHECK/attacker: build
+docker build -t nsunina/to-check-attacker:v1.0 -f Dockerfile .
+OK   ./_TO_CHECK/attacker
+==> ./_TO_CHECK/bot: build
+docker build -t nsunina/to-check-bot:v1.0 -f Dockerfile .
+OK   ./_TO_CHECK/bot
+==> ./_TO_CHECK/bot_vittima: build
+docker build -t nsunina/to-check-bot-vittima:v1.0 -f Dockerfile .
+OK   ./_TO_CHECK/bot_vittima
+==> ./_TO_CHECK/client: build
+docker build -t nsunina/to-check-client:v1.0 -f Dockerfile .
+OK   ./_TO_CHECK/client
+==> ./_TO_CHECK/cnc: build
+docker build -t nsunina/to-check-cnc:v1.0 -f Dockerfile .
+OK   ./_TO_CHECK/cnc
+==> ./_TO_CHECK/docker-cnc: build
+docker build -t nsunina/to-check-docker-cnc:v1.0 -f Dockerfile .
+OK   ./_TO_CHECK/docker-cnc
+==> ./_TO_CHECK/firefox_ssh: build
+docker build -t nsunina/to-check-firefox-ssh:v1.0 -f Dockerfile .
+OK   ./_TO_CHECK/firefox_ssh
+==> ./_TO_CHECK/firefox_ssh_server: build
+docker build -t nsunina/to-check-firefox-ssh-server:v1.0 -f Dockerfile .
+OK   ./_TO_CHECK/firefox_ssh_server
+==> ./_TO_CHECK/ftpserver: build
+docker build -t nsunina/to-check-ftpserver:v1.0 -f Dockerfile .
+OK   ./_TO_CHECK/ftpserver
+==> ./_TO_CHECK/fuzzing/afl: build
+docker build -t nsunina/to-check-fuzzing-afl:v1.0 -f Dockerfile .
+OK   ./_TO_CHECK/fuzzing/afl
+==> ./_TO_CHECK/fuzzing/boofuzz: build
+docker build -t nsunina/to-check-fuzzing-boofuzz:v1.0 -f Dockerfile .
+OK   ./_TO_CHECK/fuzzing/boofuzz
+==> ./_TO_CHECK/fuzzing/https_heartbleed: build
+docker build -t nsunina/to-check-fuzzing-https-heartbleed:v1.0 -f Dockerfile .
+OK   ./_TO_CHECK/fuzzing/https_heartbleed
+==> ./_TO_CHECK/fuzzing/wfuzz: build
+docker build -t nsunina/to-check-fuzzing-wfuzz:v1.0 -f Dockerfile .
+OK   ./_TO_CHECK/fuzzing/wfuzz
+==> ./_TO_CHECK/iplog: build
+docker build -t nsunina/to-check-iplog:v1.0 -f Dockerfile .
+OK   ./_TO_CHECK/iplog
+==> ./_TO_CHECK/kali: build
+docker build -t nsunina/to-check-kali:v1.0 -f Dockerfile .
+OK   ./_TO_CHECK/kali
+==> ./_TO_CHECK/postfix: build
+docker build -t nsunina/to-check-postfix:v1.0 -f Dockerfile .
+OK   ./_TO_CHECK/postfix
+==> ./_TO_CHECK/scanner: build
+docker build -t nsunina/to-check-scanner:v1.0 -f Dockerfile .
+OK   ./_TO_CHECK/scanner
+==> ./_TO_CHECK/server: build
+docker build -t nsunina/to-check-server:v1.0 -f Dockerfile .
+OK   ./_TO_CHECK/server
+==> ./_TO_CHECK/slow_dos_attack/apachehackme: build
+docker build -t nsunina/to-check-slow-dos-attack-apachehackme:v1.0 -f Dockerfile .
+OK   ./_TO_CHECK/slow_dos_attack/apachehackme
+==> ./_TO_CHECK/slow_dos_attack/slowdosattacker: build
+docker build -t nsunina/to-check-slow-dos-attack-slowdosattacker:v1.0 -f Dockerfile .
+OK   ./_TO_CHECK/slow_dos_attack/slowdosattacker
+==> ./_TO_CHECK/ssh_client: build
+docker build -t nsunina/to-check-ssh-client:v1.0 -f Dockerfile .
+OK   ./_TO_CHECK/ssh_client
+==> ./_TO_CHECK/tftpserver: build
+docker build -t nsunina/to-check-tftpserver:v1.0 -f Dockerfile .
+OK   ./_TO_CHECK/tftpserver
+==> ./base/alpine/3.18: build
+docker build -t nsunina/alpine:3.18 -f Dockerfile .
+OK   ./base/alpine/3.18
+==> ./base/apache/5.6: build
+docker build -t nsunina/apache:5.6 -f Dockerfile .
+OK   ./base/apache/5.6
+==> ./base/apache/8: build
+docker build -t nsunina/apache:8.1.19 -f Dockerfile .
+OK   ./base/apache/8
+==> ./base/dns: build
+docker build --tag=labbsr0x/dns-bind9:9.11.3 .
+docker build --tag=labbsr0x/dns-bind9:latest .
+OK   ./base/dns
+==> ./base/ftp-server: build
+docker build -t nsunina/ftp-server:1.0 -f Dockerfile .
+OK   ./base/ftp-server
+==> ./base/hacking: build
+docker build -t nsunina/hacking:1.0 -f Dockerfile .
+OK   ./base/hacking
+==> ./base/hacking-common: build
+docker build -t nsunina/hacking-common:1.0 -f Dockerfile .
+OK   ./base/hacking-common
+==> ./base/hacking-dns: build
+docker build -t nsunina/hacking-dns:1.0 -f Dockerfile .
+OK   ./base/hacking-dns
+==> ./base/hacking-heartbleed: build
+docker build -t nsunina/hacking-heartbleed:1.0 -f Dockerfile .
+OK   ./base/hacking-heartbleed
+==> ./base/hacking-mitm: build
+docker build -t nsunina/hacking-mitm:1.0 -f Dockerfile .
+OK   ./base/hacking-mitm
+==> ./base/hacking-router: build
+docker build -t nsunina/hacking-router:1.0 -f Dockerfile .
+OK   ./base/hacking-router
+==> ./base/hacking-scanning: build
+docker build -t nsunina/hacking-scanning:1.0 -f Dockerfile .
+OK   ./base/hacking-scanning
+==> ./base/hacking-scapy: build
+docker build -t nsunina/hacking-scapy:1.0 -f Dockerfile .
+OK   ./base/hacking-scapy
+==> ./base/hacking-smtp: build
+docker build -t nsunina/hacking-smtp:1.0 -f Dockerfile .
+OK   ./base/hacking-smtp
+==> ./base/hacking-ssh-client: build
+docker build -t nsunina/hacking-ssh-client:1.0 -f Dockerfile .
+OK   ./base/hacking-ssh-client
+==> ./base/hacking-ssh-server: build
+docker build -t nsunina/hacking-ssh-server:1.0 -f Dockerfile .
+OK   ./base/hacking-ssh-server
+==> ./base/hacking-telnet: build
+docker build -t nsunina/hacking-telnet:1.0 -f Dockerfile .
+OK   ./base/hacking-telnet
+==> ./base/iplog: build
+docker build -t nsunina/iplog:1.0 -f Dockerfile .
+OK   ./base/iplog
+==> ./base/kali/sqlmap: build
+docker build -t nsunina/sqlmap:1.0 -f Dockerfile .
+OK   ./base/kali/sqlmap
+==> ./base/mysql: build
+docker build -t nsunina/mysql:8.0.33 -f Dockerfile .
+OK   ./base/mysql
+==> ./base/netcat: build
+docker build -t nsunina/netcat:1.0 -f Dockerfile .
+OK   ./base/netcat
+==> ./base/networking: build
+docker build -t nsunina/networking:1.0 -f Dockerfile .
+OK   ./base/networking
+==> ./base/openssl: build
+docker build -t nsunina/openssl:1.0.1c -f Dockerfile .
+OK   ./base/openssl
+==> ./base/openssl/with-nginx: build
+docker build -t nsunina/openssl-with-nginx:1.0.1c -f Dockerfile .
+OK   ./base/openssl/with-nginx
+==> ./base/postfix: build
+docker build -t nsunina/postfix:1.0 -f Dockerfile .
+OK   ./base/postfix
+==> ./base/postfix.old: build
+docker build -t nsunina/postfix.old:1.0 -f Dockerfile .
+OK   ./base/postfix.old
+==> ./base/router: build
+docker build -t nsunina/router:1.0 -f Dockerfile .
+OK   ./base/router
+==> ./base/scapy: build
+docker build -t nsunina/scapy:1.0 -f Dockerfile .
+OK   ./base/scapy
+==> ./base/ssh-client: build
+docker build -t nsunina/ssh-client:1.0 -f Dockerfile .
+OK   ./base/ssh-client
+==> ./base/ssh-server: build
+docker build -t nsunina/ssh-server:1.0 -f Dockerfile .
+OK   ./base/ssh-server
+==> ./base/telnet-server: build
+docker build -t nsunina/telnet-server:1.0 -f Dockerfile .
+OK   ./base/telnet-server
+==> ./base/ubuntu/14.04/base: build
+docker build -t nsunina/ubuntu:14.04 -f Dockerfile .
+OK   ./base/ubuntu/14.04/base
+==> ./base/ubuntu/18.04/cron_privesc: build
+docker build -t nsunina/ubuntu-18.04-cron-privesc:v1.0 -f Dockerfile .
+OK   ./base/ubuntu/18.04/cron_privesc
+==> ./base/ubuntu/18.04/cve-2019-14287: build
+docker build -t nsunina/ubuntu-18.04-cve-2019-14287:v1.0 -f Dockerfile .
+OK   ./base/ubuntu/18.04/cve-2019-14287
+==> ./base/ubuntu/18.04/etc_passwd_privesc: build
+docker build -t nsunina/ubuntu-18.04-etc-passwd-privesc:v1.0 -f Dockerfile .
+OK   ./base/ubuntu/18.04/etc_passwd_privesc
+==> ./base/ubuntu/18.04/ld_preload_privesc: build
+docker build -t nsunina/ubuntu-18.04-ld-preload-privesc:v1.0 -f Dockerfile .
+OK   ./base/ubuntu/18.04/ld_preload_privesc
+==> ./base/ubuntu/18.04/path_privesc: build
+docker build -t nsunina/ubuntu-18.04-path-privesc:v1.0 -f Dockerfile .
+OK   ./base/ubuntu/18.04/path_privesc
+==> ./base/ubuntu/18.04/sudo_privesc: build
+docker build -t nsunina/ubuntu-18.04-sudo-privesc:v1.0 -f Dockerfile .
+OK   ./base/ubuntu/18.04/sudo_privesc
+==> ./base/ubuntu/18.04/suid_privesc: build
+docker build -t nsunina/ubuntu-18.04-suid-privesc:v1.0 -f Dockerfile .
+OK   ./base/ubuntu/18.04/suid_privesc
+==> ./base/ubuntu/20.04/base: build
+docker build -t nsunina/ubuntu:20.04 -f Dockerfile .
+OK   ./base/ubuntu/20.04/base
+==> ./base/ubuntu/20.04/xpra: build
+docker build -t nsunina/ubuntu-xpra:20.04 -f Dockerfile .
+OK   ./base/ubuntu/20.04/xpra
+==> ./base/ubuntu/20.04/xpra-html5: build
+docker build -t nsunina/ubuntu-xpra-html5:20.04 -f Dockerfile .
+OK   ./base/ubuntu/20.04/xpra-html5
+==> ./effesociety/heartbleed-vulnerable-server: build
+docker build -t nsunina/effesociety-heartbleed-vulnerable-server:1.0 -f Dockerfile .
+OK   ./effesociety/heartbleed-vulnerable-server
+==> ./hacking-cli: build
+docker build -t nsunina/hacking-cli:v1.0 -f Dockerfile .
+OK   ./hacking-cli
+==> ./pitch_vulnerable: build
+docker build -t nsunina/pitch-vulnerable:v1.0 -f Dockerfile .
+OK   ./pitch_vulnerable
+==> ./topolinux: build
+docker build -t nsunina/topolinux:v1.0 -f Dockerfile .
+OK   ./topolinux
+==> ./vulnhub/samba/4.6.3: build
+docker build -t nsunina/samba:v1.0 -f Dockerfile .
+OK   ./vulnhub/samba/4.6.3
+==> ./wireshark: build
+docker build -t nsunina/wireshark_website:v1.1 -f Dockerfile .
+OK   ./wireshark
+==> ./wireshark_website: build
+docker build -t nsunina/wireshark_website:v1.1 -f Dockerfile .
+OK   ./wireshark_website
+==> ./zummino_cnc: build
+docker build -t nsunina/zummino-cnc:v1.0 -f Dockerfile .
+OK   ./zummino_cnc
