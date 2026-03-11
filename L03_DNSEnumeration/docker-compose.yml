@@ -1,7 +1,7 @@
 version: '2'
 services:
   dspdnsenum.lab:
-    image: 'cosmicq/docker-bind:latest'
+    image: cosmicq/docker-bind:latest
     stdin_open: true
     tty: true
     networks:
@@ -10,11 +10,11 @@ services:
     environment:
       - PASS=newpass
     volumes:
-      - './var-lib-bind:/var/lib/bind'
-      - './bind:/etc/bind'
-      - './webmin:/etc/webmin'
+      - ./var-lib-bind:/var/lib/bind
+      - ./bind:/etc/bind
+      - ./webmin:/etc/webmin
   server:
-    image: 'cosmicq/docker-bind:latest'
+    image: cosmicq/docker-bind:latest
     stdin_open: true
     tty: true
     networks:
@@ -23,22 +23,20 @@ services:
     environment:
       - PASS=newpass
     volumes:
-      - './webmin-slave:/etc/webmin'
-      - './bind-slave:/etc/bind'
-      - './var-lib-bind-slave:/var/lib/bind'
-  hacking:
-    image: 'nsunina/hacking:1.0'
+      - ./webmin-slave:/etc/webmin
+      - ./bind-slave:/etc/bind
+      - ./var-lib-bind-slave:/var/lib/bind
+  hacking-dns:
+    image: nsunina/hacking-dns:1.0
     stdin_open: true
     tty: true
     ports:
       - '13389:3389'
     networks:
       public_dnsenum:
-        ipv4_address: 193.21.1.4
-    cap_add:
-      - ALL
+        ipv4_address: 193.21.1.5
 networks:
   public_dnsenum:
     ipam:
       config:
-        - subnet: 193.21.1.1/24
+        - subnet: 193.21.1.0/24

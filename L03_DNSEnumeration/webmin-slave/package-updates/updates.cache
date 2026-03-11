@@ -1,1093 +1,1133 @@
 $VAR1 = [
           {
-            'update' => 'apt',
             'name' => 'apt',
+            'source' => 'xenial-updates',
             'system' => 'apt',
-            'arch' => 'amd64',
-            'version' => '1.2.32',
-            'source' => 'xenial-updates'
+            'version' => '1.2.35',
+            'update' => 'apt',
+            'arch' => 'amd64'
           },
           {
-            'version' => '1.2.32',
-            'source' => 'xenial-updates',
+            'version' => '1.2.35',
+            'update' => 'apt-transport-https',
             'arch' => 'amd64',
-            'system' => 'apt',
+            'source' => 'xenial-updates',
             'name' => 'apt-transport-https',
-            'update' => 'apt-transport-https'
+            'system' => 'apt'
           },
           {
-            'system' => 'apt',
-            'arch' => 'amd64',
-            'name' => 'apt-utils',
-            'update' => 'apt-utils',
-            'version' => '1.2.32',
-            'source' => 'xenial-updates'
-          },
-          {
-            'version' => '9.4ubuntu4.11',
             'source' => 'xenial-updates',
+            'name' => 'apt-utils',
             'system' => 'apt',
             'arch' => 'amd64',
-            'name' => 'base-files',
-            'update' => 'base-files'
+            'version' => '1.2.35',
+            'update' => 'apt-utils'
           },
           {
-            'update' => 'bash',
+            'source' => 'xenial-updates',
+            'name' => 'base-files',
             'system' => 'apt',
-            'arch' => 'amd64',
+            'version' => '9.4ubuntu4.14',
+            'update' => 'base-files',
+            'arch' => 'amd64'
+          },
+          {
+            'system' => 'apt',
             'name' => 'bash',
+            'source' => 'xenial-security',
+            'update' => 'bash',
             'version' => '4.3-14ubuntu1.4',
+            'arch' => 'amd64'
+          },
+          {
+            'system' => 'apt',
+            'epoch' => '1',
+            'name' => 'bind9',
+            'source' => 'xenial-security',
+            'update' => 'bind9',
+            'version' => '9.10.3.dfsg.P4-8ubuntu1.19',
+            'arch' => 'amd64'
+          },
+          {
+            'arch' => 'amd64',
+            'update' => 'bind9utils',
+            'version' => '9.10.3.dfsg.P4-8ubuntu1.19',
+            'system' => 'apt',
+            'epoch' => '1',
+            'name' => 'bind9utils',
             'source' => 'xenial-security'
           },
           {
-            'epoch' => '1',
-            'source' => 'xenial-updates',
-            'version' => '9.10.3.dfsg.P4-8ubuntu1.15',
-            'arch' => 'amd64',
-            'system' => 'apt',
-            'name' => 'bind9',
-            'update' => 'bind9'
-          },
-          {
-            'epoch' => '1',
-            'source' => 'xenial-updates',
-            'version' => '9.10.3.dfsg.P4-8ubuntu1.15',
-            'update' => 'bind9utils',
-            'system' => 'apt',
-            'arch' => 'amd64',
-            'name' => 'bind9utils'
-          },
-          {
-            'name' => 'bsdutils',
-            'system' => 'apt',
-            'arch' => 'amd64',
-            'update' => 'bsdutils',
-            'source' => 'xenial-updates',
             'version' => '2.27.1-6ubuntu3.10',
-            'epoch' => '1'
+            'update' => 'bsdutils',
+            'arch' => 'amd64',
+            'name' => 'bsdutils',
+            'source' => 'xenial-updates',
+            'epoch' => '1',
+            'system' => 'apt'
           },
           {
-            'system' => 'apt',
-            'name' => 'ca-certificates',
             'arch' => 'all',
+            'version' => '20210119~16.04.1',
             'update' => 'ca-certificates',
-            'source' => 'xenial-updates',
-            'version' => '20170717~16.04.2'
+            'name' => 'ca-certificates',
+            'source' => 'xenial-security',
+            'system' => 'apt'
           },
           {
-            'system' => 'apt',
             'name' => 'coreutils',
-            'arch' => 'amd64',
-            'update' => 'coreutils',
-            'version' => '8.25-2ubuntu3~16.04',
-            'source' => 'xenial-updates'
-          },
-          {
-            'update' => 'curl',
-            'system' => 'apt',
-            'name' => 'curl',
-            'arch' => 'amd64',
-            'source' => 'xenial-security',
-            'version' => '7.47.0-1ubuntu2.14'
-          },
-          {
-            'update' => 'debconf',
-            'system' => 'apt',
-            'arch' => 'all',
-            'name' => 'debconf',
-            'version' => '1.5.58ubuntu2',
-            'source' => 'xenial-updates'
-          },
-          {
-            'version' => '2.20151103ubuntu1.2',
-            'source' => 'xenial-security',
-            'update' => 'dh-python',
-            'system' => 'apt',
-            'name' => 'dh-python',
-            'arch' => 'all'
-          },
-          {
-            'source' => 'xenial-security',
-            'version' => '0.28ubuntu0.13',
-            'update' => 'distro-info-data',
-            'name' => 'distro-info-data',
-            'system' => 'apt',
-            'arch' => 'all'
-          },
-          {
-            'version' => '1.18.4ubuntu1.6',
             'source' => 'xenial-updates',
             'system' => 'apt',
             'arch' => 'amd64',
-            'name' => 'dpkg',
-            'update' => 'dpkg'
+            'version' => '8.25-2ubuntu3~16.04',
+            'update' => 'coreutils'
           },
           {
-            'update' => 'e2fslibs',
+            'name' => 'curl',
+            'source' => 'xenial-security',
             'system' => 'apt',
-            'arch' => 'amd64',
+            'version' => '7.47.0-1ubuntu2.19',
+            'update' => 'curl',
+            'arch' => 'amd64'
+          },
+          {
+            'system' => 'apt',
+            'source' => 'xenial-updates',
+            'name' => 'debconf',
+            'arch' => 'all',
+            'update' => 'debconf',
+            'version' => '1.5.58ubuntu2'
+          },
+          {
+            'update' => 'dh-python',
+            'version' => '2.20151103ubuntu1.2',
+            'arch' => 'all',
+            'system' => 'apt',
+            'source' => 'xenial-security',
+            'name' => 'dh-python'
+          },
+          {
+            'update' => 'distro-info-data',
+            'version' => '0.28ubuntu0.21',
+            'arch' => 'all',
+            'system' => 'apt',
+            'name' => 'distro-info-data',
+            'source' => 'xenial-security'
+          },
+          {
+            'source' => 'xenial-updates',
+            'name' => 'dpkg',
+            'system' => 'apt',
+            'version' => '1.18.4ubuntu1.7',
+            'update' => 'dpkg',
+            'arch' => 'amd64'
+          },
+          {
+            'system' => 'apt',
             'name' => 'e2fslibs',
             'source' => 'xenial-security',
+            'arch' => 'amd64',
+            'update' => 'e2fslibs',
             'version' => '1.42.13-1ubuntu1.2'
           },
           {
+            'name' => 'e2fsprogs',
             'source' => 'xenial-security',
-            'version' => '1.42.13-1ubuntu1.2',
-            'update' => 'e2fsprogs',
             'system' => 'apt',
             'arch' => 'amd64',
-            'name' => 'e2fsprogs'
+            'version' => '1.42.13-1ubuntu1.2',
+            'update' => 'e2fsprogs'
           },
           {
-            'arch' => 'amd64',
+            'epoch' => '1',
             'system' => 'apt',
+            'source' => 'xenial-security',
             'name' => 'file',
             'update' => 'file',
-            'version' => '5.25-2ubuntu1.3',
-            'source' => 'xenial-security',
-            'epoch' => '1'
+            'version' => '5.25-2ubuntu1.4',
+            'arch' => 'amd64'
           },
           {
-            'system' => 'apt',
             'arch' => 'amd64',
-            'name' => 'gcc-5-base',
             'update' => 'gcc-5-base',
             'version' => '5.4.0-6ubuntu1~16.04.12',
+            'system' => 'apt',
+            'name' => 'gcc-5-base',
             'source' => 'xenial-security'
           },
           {
-            'version' => '1.4.20-1ubuntu3.3',
+            'name' => 'gnupg',
             'source' => 'xenial-security',
-            'update' => 'gnupg',
-            'arch' => 'amd64',
             'system' => 'apt',
-            'name' => 'gnupg'
+            'version' => '1.4.20-1ubuntu3.3',
+            'update' => 'gnupg',
+            'arch' => 'amd64'
           },
           {
             'update' => 'gpgv',
-            'system' => 'apt',
-            'name' => 'gpgv',
+            'version' => '1.4.20-1ubuntu3.3',
             'arch' => 'amd64',
+            'system' => 'apt',
             'source' => 'xenial-security',
-            'version' => '1.4.20-1ubuntu3.3'
+            'name' => 'gpgv'
           },
           {
+            'version' => '0.8.10ubuntu1.4',
             'update' => 'ifupdown',
+            'arch' => 'amd64',
+            'source' => 'xenial-updates',
             'name' => 'ifupdown',
-            'system' => 'apt',
-            'arch' => 'amd64',
-            'source' => 'xenial-updates',
-            'version' => '0.8.10ubuntu1.4'
+            'system' => 'apt'
           },
           {
+            'system' => 'apt',
             'source' => 'xenial-updates',
-            'version' => '4.3.0-1ubuntu3.16.04.5',
+            'name' => 'iproute2',
+            'arch' => 'amd64',
             'update' => 'iproute2',
-            'system' => 'apt',
-            'arch' => 'amd64',
-            'name' => 'iproute2'
+            'version' => '4.3.0-1ubuntu3.16.04.5'
           },
           {
-            'name' => 'isc-dhcp-client',
-            'system' => 'apt',
             'arch' => 'amd64',
+            'version' => '4.3.3-5ubuntu12.10',
             'update' => 'isc-dhcp-client',
             'source' => 'xenial-updates',
-            'version' => '4.3.3-5ubuntu12.10'
+            'name' => 'isc-dhcp-client',
+            'system' => 'apt'
           },
           {
+            'version' => '4.3.3-5ubuntu12.10',
             'update' => 'isc-dhcp-common',
             'arch' => 'amd64',
-            'system' => 'apt',
             'name' => 'isc-dhcp-common',
             'source' => 'xenial-updates',
-            'version' => '4.3.3-5ubuntu12.10'
+            'system' => 'apt'
           },
           {
-            'update' => 'less',
-            'system' => 'apt',
-            'arch' => 'amd64',
+            'source' => 'xenial-updates',
             'name' => 'less',
-            'source' => 'xenial-updates',
-            'version' => '481-2.1ubuntu0.2'
+            'system' => 'apt',
+            'arch' => 'amd64',
+            'version' => '481-2.1ubuntu0.2',
+            'update' => 'less'
           },
           {
-            'source' => 'xenial-security',
-            'version' => '2.10.95-0ubuntu2.11',
+            'system' => 'apt',
             'name' => 'libapparmor1',
-            'system' => 'apt',
+            'source' => 'xenial-security',
             'arch' => 'amd64',
-            'update' => 'libapparmor1'
+            'update' => 'libapparmor1',
+            'version' => '2.10.95-0ubuntu2.12'
           },
           {
+            'system' => 'apt',
+            'name' => 'libapt-inst2.0',
             'source' => 'xenial-updates',
-            'version' => '1.2.32',
             'update' => 'libapt-inst2.0',
-            'system' => 'apt',
-            'arch' => 'amd64',
-            'name' => 'libapt-inst2.0'
+            'version' => '1.2.35',
+            'arch' => 'amd64'
           },
           {
-            'source' => 'xenial-updates',
-            'version' => '1.2.32',
-            'arch' => 'amd64',
             'system' => 'apt',
             'name' => 'libapt-pkg5.0',
-            'update' => 'libapt-pkg5.0'
+            'source' => 'xenial-updates',
+            'update' => 'libapt-pkg5.0',
+            'version' => '1.2.35',
+            'arch' => 'amd64'
           },
           {
             'arch' => 'amd64',
-            'system' => 'apt',
-            'name' => 'libasn1-8-heimdal',
+            'version' => '1.7~git20150920+dfsg-4ubuntu1.16.04.1',
             'update' => 'libasn1-8-heimdal',
+            'name' => 'libasn1-8-heimdal',
             'source' => 'xenial-security',
-            'version' => '1.7~git20150920+dfsg-4ubuntu1.16.04.1'
+            'system' => 'apt'
           },
           {
+            'update' => 'libaudit-common',
+            'version' => '2.4.5-1ubuntu2.1',
+            'arch' => 'all',
+            'epoch' => '1',
             'system' => 'apt',
             'name' => 'libaudit-common',
-            'arch' => 'all',
-            'update' => 'libaudit-common',
-            'epoch' => '1',
-            'version' => '2.4.5-1ubuntu2.1',
             'source' => 'xenial-updates'
           },
           {
             'update' => 'libaudit1',
-            'system' => 'apt',
-            'arch' => 'amd64',
-            'name' => 'libaudit1',
             'version' => '2.4.5-1ubuntu2.1',
-            'source' => 'xenial-updates',
+            'arch' => 'amd64',
+            'system' => 'apt',
+            'epoch' => '1',
+            'name' => 'libaudit1',
+            'source' => 'xenial-updates'
+          },
+          {
+            'arch' => 'amd64',
+            'version' => '9.10.3.dfsg.P4-8ubuntu1.19',
+            'update' => 'libbind9-140',
+            'source' => 'xenial-security',
+            'name' => 'libbind9-140',
+            'system' => 'apt',
             'epoch' => '1'
           },
           {
-            'epoch' => '1',
-            'version' => '9.10.3.dfsg.P4-8ubuntu1.15',
-            'source' => 'xenial-updates',
-            'update' => 'libbind9-140',
-            'name' => 'libbind9-140',
             'system' => 'apt',
+            'source' => 'xenial-updates',
+            'name' => 'libblkid1',
+            'update' => 'libblkid1',
+            'version' => '2.27.1-6ubuntu3.10',
             'arch' => 'amd64'
           },
           {
-            'version' => '2.27.1-6ubuntu3.10',
-            'source' => 'xenial-updates',
-            'update' => 'libblkid1',
-            'system' => 'apt',
-            'arch' => 'amd64',
-            'name' => 'libblkid1'
-          },
-          {
-            'system' => 'apt',
-            'arch' => 'amd64',
-            'name' => 'libbsd0',
-            'update' => 'libbsd0',
             'version' => '0.8.2-1ubuntu0.1',
-            'source' => 'xenial-security'
+            'update' => 'libbsd0',
+            'arch' => 'amd64',
+            'source' => 'xenial-security',
+            'name' => 'libbsd0',
+            'system' => 'apt'
           },
           {
-            'arch' => 'amd64',
-            'system' => 'apt',
-            'name' => 'libbz2-1.0',
-            'update' => 'libbz2-1.0',
             'version' => '1.0.6-8ubuntu0.2',
+            'update' => 'libbz2-1.0',
+            'arch' => 'amd64',
+            'name' => 'libbz2-1.0',
+            'source' => 'xenial-security',
+            'system' => 'apt'
+          },
+          {
+            'system' => 'apt',
+            'name' => 'libc-bin',
+            'source' => 'xenial-security',
+            'arch' => 'amd64',
+            'update' => 'libc-bin',
+            'version' => '2.23-0ubuntu11.3'
+          },
+          {
+            'update' => 'libc6',
+            'version' => '2.23-0ubuntu11.3',
+            'arch' => 'amd64',
+            'system' => 'apt',
+            'name' => 'libc6',
             'source' => 'xenial-security'
           },
           {
-            'update' => 'libc-bin',
-            'system' => 'apt',
             'arch' => 'amd64',
-            'name' => 'libc-bin',
-            'version' => '2.23-0ubuntu11',
-            'source' => 'xenial-updates'
-          },
-          {
-            'source' => 'xenial-updates',
-            'version' => '2.23-0ubuntu11',
-            'update' => 'libc6',
-            'arch' => 'amd64',
-            'system' => 'apt',
-            'name' => 'libc6'
-          },
-          {
-            'system' => 'apt',
-            'arch' => 'amd64',
-            'name' => 'libcomerr2',
+            'version' => '1.42.13-1ubuntu1.2',
             'update' => 'libcomerr2',
             'source' => 'xenial-security',
-            'version' => '1.42.13-1ubuntu1.2'
+            'name' => 'libcomerr2',
+            'system' => 'apt'
           },
           {
-            'epoch' => '2',
-            'source' => 'xenial-updates',
-            'version' => '1.6.6-5ubuntu2.1',
+            'arch' => 'amd64',
             'update' => 'libcryptsetup4',
+            'version' => '1.6.6-5ubuntu2.1',
+            'epoch' => '2',
             'system' => 'apt',
-            'name' => 'libcryptsetup4',
-            'arch' => 'amd64'
+            'source' => 'xenial-updates',
+            'name' => 'libcryptsetup4'
           },
           {
             'source' => 'xenial-security',
-            'version' => '7.47.0-1ubuntu2.14',
-            'update' => 'libcurl3-gnutls',
-            'system' => 'apt',
             'name' => 'libcurl3-gnutls',
+            'system' => 'apt',
+            'version' => '7.47.0-1ubuntu2.19',
+            'update' => 'libcurl3-gnutls',
             'arch' => 'amd64'
           },
           {
-            'version' => '5.3.28-11ubuntu0.2',
-            'source' => 'xenial-security',
             'system' => 'apt',
             'name' => 'libdb5.3',
-            'arch' => 'amd64',
-            'update' => 'libdb5.3'
+            'source' => 'xenial-security',
+            'update' => 'libdb5.3',
+            'version' => '5.3.28-11ubuntu0.2',
+            'arch' => 'amd64'
           },
           {
-            'source' => 'xenial-updates',
-            'version' => '1.10.6-1ubuntu3.5',
-            'update' => 'libdbus-1-3',
-            'system' => 'apt',
             'name' => 'libdbus-1-3',
+            'source' => 'xenial-security',
+            'system' => 'apt',
+            'version' => '1.10.6-1ubuntu3.6',
+            'update' => 'libdbus-1-3',
             'arch' => 'amd64'
           },
           {
-            'update' => 'libdns-export162',
-            'arch' => 'amd64',
             'system' => 'apt',
+            'epoch' => '1',
             'name' => 'libdns-export162',
-            'epoch' => '1',
-            'version' => '9.10.3.dfsg.P4-8ubuntu1.15',
-            'source' => 'xenial-updates'
-          },
-          {
-            'epoch' => '1',
-            'version' => '9.10.3.dfsg.P4-8ubuntu1.15',
-            'source' => 'xenial-updates',
-            'update' => 'libdns162',
-            'name' => 'libdns162',
-            'system' => 'apt',
+            'source' => 'xenial-security',
+            'update' => 'libdns-export162',
+            'version' => '9.10.3.dfsg.P4-8ubuntu1.19',
             'arch' => 'amd64'
           },
           {
+            'update' => 'libdns162',
+            'version' => '9.10.3.dfsg.P4-8ubuntu1.19',
+            'arch' => 'amd64',
+            'epoch' => '1',
+            'system' => 'apt',
+            'source' => 'xenial-security',
+            'name' => 'libdns162'
+          },
+          {
+            'update' => 'libexpat1',
+            'version' => '2.1.0-7ubuntu0.16.04.5',
+            'arch' => 'amd64',
             'system' => 'apt',
             'name' => 'libexpat1',
-            'arch' => 'amd64',
-            'update' => 'libexpat1',
-            'source' => 'xenial-security',
-            'version' => '2.1.0-7ubuntu0.16.04.5'
+            'source' => 'xenial-security'
           },
           {
-            'arch' => 'amd64',
             'system' => 'apt',
+            'source' => 'xenial-updates',
             'name' => 'libfdisk1',
             'update' => 'libfdisk1',
             'version' => '2.27.1-6ubuntu3.10',
-            'source' => 'xenial-updates'
+            'arch' => 'amd64'
           },
           {
+            'name' => 'libgcrypt20',
             'source' => 'xenial-security',
-            'version' => '1.6.5-2ubuntu0.6',
             'system' => 'apt',
             'arch' => 'amd64',
-            'name' => 'libgcrypt20',
+            'version' => '1.6.5-2ubuntu0.6',
             'update' => 'libgcrypt20'
           },
           {
             'arch' => 'amd64',
-            'system' => 'apt',
-            'name' => 'libglib2.0-0',
             'update' => 'libglib2.0-0',
+            'version' => '2.48.2-0ubuntu4.8',
+            'system' => 'apt',
             'source' => 'xenial-security',
-            'version' => '2.48.2-0ubuntu4.6'
+            'name' => 'libglib2.0-0'
           },
           {
-            'version' => '3.4.10-4ubuntu1.7',
-            'source' => 'xenial-security',
+            'system' => 'apt',
+            'source' => 'xenial-updates',
+            'name' => 'libgnutls30',
             'update' => 'libgnutls30',
-            'system' => 'apt',
-            'arch' => 'amd64',
-            'name' => 'libgnutls30'
-          },
-          {
-            'update' => 'libgssapi-krb5-2',
-            'system' => 'apt',
-            'arch' => 'amd64',
-            'name' => 'libgssapi-krb5-2',
-            'version' => '1.13.2+dfsg-5ubuntu2.1',
-            'source' => 'xenial-security'
-          },
-          {
-            'system' => 'apt',
-            'arch' => 'amd64',
-            'name' => 'libgssapi3-heimdal',
-            'update' => 'libgssapi3-heimdal',
-            'version' => '1.7~git20150920+dfsg-4ubuntu1.16.04.1',
-            'source' => 'xenial-security'
-          },
-          {
-            'update' => 'libhcrypto4-heimdal',
-            'name' => 'libhcrypto4-heimdal',
-            'system' => 'apt',
-            'arch' => 'amd64',
-            'source' => 'xenial-security',
-            'version' => '1.7~git20150920+dfsg-4ubuntu1.16.04.1'
-          },
-          {
-            'source' => 'xenial-security',
-            'version' => '1.7~git20150920+dfsg-4ubuntu1.16.04.1',
-            'system' => 'apt',
-            'name' => 'libheimbase1-heimdal',
-            'arch' => 'amd64',
-            'update' => 'libheimbase1-heimdal'
-          },
-          {
-            'source' => 'xenial-security',
-            'version' => '1.7~git20150920+dfsg-4ubuntu1.16.04.1',
-            'update' => 'libheimntlm0-heimdal',
-            'arch' => 'amd64',
-            'system' => 'apt',
-            'name' => 'libheimntlm0-heimdal'
-          },
-          {
-            'update' => 'libhx509-5-heimdal',
-            'name' => 'libhx509-5-heimdal',
-            'system' => 'apt',
-            'arch' => 'amd64',
-            'source' => 'xenial-security',
-            'version' => '1.7~git20150920+dfsg-4ubuntu1.16.04.1'
-          },
-          {
-            'source' => 'xenial-security',
-            'version' => '55.1-7ubuntu0.5',
-            'update' => 'libicu55',
-            'arch' => 'amd64',
-            'system' => 'apt',
-            'name' => 'libicu55'
-          },
-          {
-            'source' => 'xenial-security',
-            'version' => '1.32-3ubuntu1.2',
-            'system' => 'apt',
-            'arch' => 'amd64',
-            'name' => 'libidn11',
-            'update' => 'libidn11'
-          },
-          {
-            'name' => 'libirs141',
-            'system' => 'apt',
-            'arch' => 'amd64',
-            'update' => 'libirs141',
-            'source' => 'xenial-updates',
-            'version' => '9.10.3.dfsg.P4-8ubuntu1.15',
-            'epoch' => '1'
-          },
-          {
-            'source' => 'xenial-updates',
-            'version' => '9.10.3.dfsg.P4-8ubuntu1.15',
-            'epoch' => '1',
-            'update' => 'libisc-export160',
-            'system' => 'apt',
-            'arch' => 'amd64',
-            'name' => 'libisc-export160'
-          },
-          {
-            'source' => 'xenial-updates',
-            'version' => '9.10.3.dfsg.P4-8ubuntu1.15',
-            'epoch' => '1',
-            'system' => 'apt',
-            'arch' => 'amd64',
-            'name' => 'libisc160',
-            'update' => 'libisc160'
-          },
-          {
-            'epoch' => '1',
-            'source' => 'xenial-updates',
-            'version' => '9.10.3.dfsg.P4-8ubuntu1.15',
-            'update' => 'libisccc140',
-            'arch' => 'amd64',
-            'system' => 'apt',
-            'name' => 'libisccc140'
-          },
-          {
-            'update' => 'libisccfg140',
-            'name' => 'libisccfg140',
-            'system' => 'apt',
-            'arch' => 'amd64',
-            'epoch' => '1',
-            'version' => '9.10.3.dfsg.P4-8ubuntu1.15',
-            'source' => 'xenial-updates'
-          },
-          {
-            'version' => '1.13.2+dfsg-5ubuntu2.1',
-            'source' => 'xenial-security',
-            'update' => 'libk5crypto3',
-            'system' => 'apt',
-            'arch' => 'amd64',
-            'name' => 'libk5crypto3'
-          },
-          {
-            'update' => 'libkmod2',
-            'name' => 'libkmod2',
-            'system' => 'apt',
-            'arch' => 'amd64',
-            'version' => '22-1ubuntu5.2',
-            'source' => 'xenial-updates'
-          },
-          {
-            'update' => 'libkrb5-26-heimdal',
-            'arch' => 'amd64',
-            'system' => 'apt',
-            'name' => 'libkrb5-26-heimdal',
-            'version' => '1.7~git20150920+dfsg-4ubuntu1.16.04.1',
-            'source' => 'xenial-security'
-          },
-          {
-            'version' => '1.13.2+dfsg-5ubuntu2.1',
-            'source' => 'xenial-security',
-            'update' => 'libkrb5-3',
-            'system' => 'apt',
-            'arch' => 'amd64',
-            'name' => 'libkrb5-3'
-          },
-          {
-            'update' => 'libkrb5support0',
-            'system' => 'apt',
-            'arch' => 'amd64',
-            'name' => 'libkrb5support0',
-            'version' => '1.13.2+dfsg-5ubuntu2.1',
-            'source' => 'xenial-security'
-          },
-          {
-            'update' => 'libldap-2.4-2',
-            'system' => 'apt',
-            'arch' => 'amd64',
-            'name' => 'libldap-2.4-2',
-            'version' => '2.4.42+dfsg-2ubuntu3.7',
-            'source' => 'xenial-updates'
-          },
-          {
-            'source' => 'xenial-updates',
-            'version' => '9.10.3.dfsg.P4-8ubuntu1.15',
-            'epoch' => '1',
-            'arch' => 'amd64',
-            'system' => 'apt',
-            'name' => 'liblwres141',
-            'update' => 'liblwres141'
-          },
-          {
-            'update' => 'libmagic1',
-            'system' => 'apt',
-            'arch' => 'amd64',
-            'name' => 'libmagic1',
-            'epoch' => '1',
-            'source' => 'xenial-security',
-            'version' => '5.25-2ubuntu1.3'
-          },
-          {
-            'update' => 'libmount1',
-            'name' => 'libmount1',
-            'system' => 'apt',
-            'arch' => 'amd64',
-            'source' => 'xenial-updates',
-            'version' => '2.27.1-6ubuntu3.10'
-          },
-          {
-            'update' => 'libpam-doc',
-            'system' => 'apt',
-            'name' => 'libpam-doc',
-            'arch' => 'all',
-            'source' => 'xenial-updates',
-            'version' => '1.1.8-3.2ubuntu2.1'
-          },
-          {
-            'system' => 'apt',
-            'name' => 'libpam-modules',
-            'arch' => 'amd64',
-            'update' => 'libpam-modules',
-            'version' => '1.1.8-3.2ubuntu2.1',
-            'source' => 'xenial-updates'
-          },
-          {
-            'source' => 'xenial-updates',
-            'version' => '1.1.8-3.2ubuntu2.1',
-            'update' => 'libpam-modules-bin',
-            'system' => 'apt',
-            'name' => 'libpam-modules-bin',
+            'version' => '3.4.10-4ubuntu1.9',
             'arch' => 'amd64'
           },
           {
-            'version' => '1.1.8-3.2ubuntu2.1',
-            'source' => 'xenial-updates',
-            'update' => 'libpam-runtime',
+            'arch' => 'amd64',
+            'version' => '1.13.2+dfsg-5ubuntu2.2',
+            'update' => 'libgssapi-krb5-2',
+            'name' => 'libgssapi-krb5-2',
+            'source' => 'xenial-security',
+            'system' => 'apt'
+          },
+          {
+            'update' => 'libgssapi3-heimdal',
+            'version' => '1.7~git20150920+dfsg-4ubuntu1.16.04.1',
+            'arch' => 'amd64',
             'system' => 'apt',
-            'arch' => 'all',
-            'name' => 'libpam-runtime'
+            'source' => 'xenial-security',
+            'name' => 'libgssapi3-heimdal'
+          },
+          {
+            'arch' => 'amd64',
+            'version' => '1.7~git20150920+dfsg-4ubuntu1.16.04.1',
+            'update' => 'libhcrypto4-heimdal',
+            'name' => 'libhcrypto4-heimdal',
+            'source' => 'xenial-security',
+            'system' => 'apt'
+          },
+          {
+            'name' => 'libheimbase1-heimdal',
+            'source' => 'xenial-security',
+            'system' => 'apt',
+            'arch' => 'amd64',
+            'version' => '1.7~git20150920+dfsg-4ubuntu1.16.04.1',
+            'update' => 'libheimbase1-heimdal'
           },
           {
             'system' => 'apt',
-            'name' => 'libpam0g',
-            'arch' => 'amd64',
-            'update' => 'libpam0g',
-            'version' => '1.1.8-3.2ubuntu2.1',
-            'source' => 'xenial-updates'
+            'source' => 'xenial-security',
+            'name' => 'libheimntlm0-heimdal',
+            'update' => 'libheimntlm0-heimdal',
+            'version' => '1.7~git20150920+dfsg-4ubuntu1.16.04.1',
+            'arch' => 'amd64'
+          },
+          {
+            'system' => 'apt',
+            'source' => 'xenial-security',
+            'name' => 'libhogweed4',
+            'update' => 'libhogweed4',
+            'version' => '3.2-1ubuntu0.16.04.2',
+            'arch' => 'amd64'
           },
           {
             'source' => 'xenial-security',
-            'version' => '5.22.1-9ubuntu0.6',
-            'name' => 'libperl5.22',
+            'name' => 'libhx509-5-heimdal',
             'system' => 'apt',
             'arch' => 'amd64',
-            'update' => 'libperl5.22'
+            'version' => '1.7~git20150920+dfsg-4ubuntu1.16.04.1',
+            'update' => 'libhx509-5-heimdal'
           },
           {
-            'update' => 'libprocps4',
-            'system' => 'apt',
+            'version' => '55.1-7ubuntu0.5',
+            'update' => 'libicu55',
             'arch' => 'amd64',
-            'name' => 'libprocps4',
-            'epoch' => '2',
-            'version' => '3.3.10-4ubuntu2.5',
-            'source' => 'xenial-updates'
-          },
-          {
-            'source' => 'xenial-updates',
-            'version' => '2.7.12-1~16.04',
-            'system' => 'apt',
-            'arch' => 'amd64',
-            'name' => 'libpython-stdlib',
-            'update' => 'libpython-stdlib'
-          },
-          {
-            'update' => 'libpython2.7-minimal',
-            'system' => 'apt',
-            'arch' => 'amd64',
-            'name' => 'libpython2.7-minimal',
+            'name' => 'libicu55',
             'source' => 'xenial-security',
-            'version' => '2.7.12-1ubuntu0~16.04.9'
+            'system' => 'apt'
           },
           {
-            'arch' => 'amd64',
+            'name' => 'libidn11',
+            'source' => 'xenial-security',
             'system' => 'apt',
-            'name' => 'libpython2.7-stdlib',
-            'update' => 'libpython2.7-stdlib',
-            'version' => '2.7.12-1ubuntu0~16.04.9',
+            'version' => '1.32-3ubuntu1.2',
+            'update' => 'libidn11',
+            'arch' => 'amd64'
+          },
+          {
+            'update' => 'libirs141',
+            'version' => '9.10.3.dfsg.P4-8ubuntu1.19',
+            'arch' => 'amd64',
+            'epoch' => '1',
+            'system' => 'apt',
+            'name' => 'libirs141',
             'source' => 'xenial-security'
           },
           {
-            'version' => '3.5.2-2ubuntu0~16.04.9',
-            'source' => 'xenial-security',
-            'update' => 'libpython3.5-minimal',
             'system' => 'apt',
-            'arch' => 'amd64',
-            'name' => 'libpython3.5-minimal'
+            'epoch' => '1',
+            'source' => 'xenial-security',
+            'name' => 'libisc-export160',
+            'update' => 'libisc-export160',
+            'version' => '9.10.3.dfsg.P4-8ubuntu1.19',
+            'arch' => 'amd64'
           },
           {
-            'version' => '3.5.2-2ubuntu0~16.04.9',
+            'system' => 'apt',
+            'epoch' => '1',
             'source' => 'xenial-security',
-            'update' => 'libpython3.5-stdlib',
+            'name' => 'libisc160',
+            'update' => 'libisc160',
+            'version' => '9.10.3.dfsg.P4-8ubuntu1.19',
+            'arch' => 'amd64'
+          },
+          {
+            'arch' => 'amd64',
+            'update' => 'libisccc140',
+            'version' => '9.10.3.dfsg.P4-8ubuntu1.19',
+            'system' => 'apt',
+            'epoch' => '1',
+            'name' => 'libisccc140',
+            'source' => 'xenial-security'
+          },
+          {
+            'version' => '9.10.3.dfsg.P4-8ubuntu1.19',
+            'update' => 'libisccfg140',
+            'arch' => 'amd64',
+            'name' => 'libisccfg140',
+            'source' => 'xenial-security',
+            'system' => 'apt',
+            'epoch' => '1'
+          },
+          {
+            'update' => 'libk5crypto3',
+            'version' => '1.13.2+dfsg-5ubuntu2.2',
             'arch' => 'amd64',
             'system' => 'apt',
+            'name' => 'libk5crypto3',
+            'source' => 'xenial-security'
+          },
+          {
+            'source' => 'xenial-updates',
+            'name' => 'libkmod2',
+            'system' => 'apt',
+            'version' => '22-1ubuntu5.2',
+            'update' => 'libkmod2',
+            'arch' => 'amd64'
+          },
+          {
+            'arch' => 'amd64',
+            'update' => 'libkrb5-26-heimdal',
+            'version' => '1.7~git20150920+dfsg-4ubuntu1.16.04.1',
+            'system' => 'apt',
+            'source' => 'xenial-security',
+            'name' => 'libkrb5-26-heimdal'
+          },
+          {
+            'system' => 'apt',
+            'source' => 'xenial-security',
+            'name' => 'libkrb5-3',
+            'update' => 'libkrb5-3',
+            'version' => '1.13.2+dfsg-5ubuntu2.2',
+            'arch' => 'amd64'
+          },
+          {
+            'update' => 'libkrb5support0',
+            'version' => '1.13.2+dfsg-5ubuntu2.2',
+            'arch' => 'amd64',
+            'system' => 'apt',
+            'name' => 'libkrb5support0',
+            'source' => 'xenial-security'
+          },
+          {
+            'system' => 'apt',
+            'name' => 'libldap-2.4-2',
+            'source' => 'xenial-security',
+            'update' => 'libldap-2.4-2',
+            'version' => '2.4.42+dfsg-2ubuntu3.13',
+            'arch' => 'amd64'
+          },
+          {
+            'name' => 'liblwres141',
+            'source' => 'xenial-security',
+            'epoch' => '1',
+            'system' => 'apt',
+            'arch' => 'amd64',
+            'version' => '9.10.3.dfsg.P4-8ubuntu1.19',
+            'update' => 'liblwres141'
+          },
+          {
+            'name' => 'libmagic1',
+            'source' => 'xenial-security',
+            'system' => 'apt',
+            'epoch' => '1',
+            'arch' => 'amd64',
+            'version' => '5.25-2ubuntu1.4',
+            'update' => 'libmagic1'
+          },
+          {
+            'system' => 'apt',
+            'name' => 'libmount1',
+            'source' => 'xenial-updates',
+            'update' => 'libmount1',
+            'version' => '2.27.1-6ubuntu3.10',
+            'arch' => 'amd64'
+          },
+          {
+            'name' => 'libnettle6',
+            'source' => 'xenial-security',
+            'system' => 'apt',
+            'arch' => 'amd64',
+            'version' => '3.2-1ubuntu0.16.04.2',
+            'update' => 'libnettle6'
+          },
+          {
+            'update' => 'libp11-kit0',
+            'version' => '0.23.2-5~ubuntu16.04.2',
+            'arch' => 'amd64',
+            'system' => 'apt',
+            'name' => 'libp11-kit0',
+            'source' => 'xenial-security'
+          },
+          {
+            'update' => 'libpam-doc',
+            'version' => '1.1.8-3.2ubuntu2.3',
+            'arch' => 'all',
+            'system' => 'apt',
+            'source' => 'xenial-updates',
+            'name' => 'libpam-doc'
+          },
+          {
+            'version' => '1.1.8-3.2ubuntu2.3',
+            'update' => 'libpam-modules',
+            'arch' => 'amd64',
+            'source' => 'xenial-updates',
+            'name' => 'libpam-modules',
+            'system' => 'apt'
+          },
+          {
+            'name' => 'libpam-modules-bin',
+            'source' => 'xenial-updates',
+            'system' => 'apt',
+            'arch' => 'amd64',
+            'version' => '1.1.8-3.2ubuntu2.3',
+            'update' => 'libpam-modules-bin'
+          },
+          {
+            'arch' => 'all',
+            'update' => 'libpam-runtime',
+            'version' => '1.1.8-3.2ubuntu2.3',
+            'system' => 'apt',
+            'source' => 'xenial-updates',
+            'name' => 'libpam-runtime'
+          },
+          {
+            'arch' => 'amd64',
+            'version' => '1.1.8-3.2ubuntu2.3',
+            'update' => 'libpam0g',
+            'name' => 'libpam0g',
+            'source' => 'xenial-updates',
+            'system' => 'apt'
+          },
+          {
+            'arch' => 'amd64',
+            'version' => '5.22.1-9ubuntu0.9',
+            'update' => 'libperl5.22',
+            'name' => 'libperl5.22',
+            'source' => 'xenial-security',
+            'system' => 'apt'
+          },
+          {
+            'system' => 'apt',
+            'epoch' => '2',
+            'source' => 'xenial-updates',
+            'name' => 'libprocps4',
+            'update' => 'libprocps4',
+            'version' => '3.3.10-4ubuntu2.5',
+            'arch' => 'amd64'
+          },
+          {
+            'version' => '2.7.12-1~16.04',
+            'update' => 'libpython-stdlib',
+            'arch' => 'amd64',
+            'name' => 'libpython-stdlib',
+            'source' => 'xenial-updates',
+            'system' => 'apt'
+          },
+          {
+            'arch' => 'amd64',
+            'update' => 'libpython2.7-minimal',
+            'version' => '2.7.12-1ubuntu0~16.04.18',
+            'system' => 'apt',
+            'name' => 'libpython2.7-minimal',
+            'source' => 'xenial-security'
+          },
+          {
+            'version' => '2.7.12-1ubuntu0~16.04.18',
+            'update' => 'libpython2.7-stdlib',
+            'arch' => 'amd64',
+            'source' => 'xenial-security',
+            'name' => 'libpython2.7-stdlib',
+            'system' => 'apt'
+          },
+          {
+            'system' => 'apt',
+            'source' => 'xenial-security',
+            'name' => 'libpython3.5-minimal',
+            'update' => 'libpython3.5-minimal',
+            'version' => '3.5.2-2ubuntu0~16.04.13',
+            'arch' => 'amd64'
+          },
+          {
+            'arch' => 'amd64',
+            'update' => 'libpython3.5-stdlib',
+            'version' => '3.5.2-2ubuntu0~16.04.13',
+            'system' => 'apt',
+            'source' => 'xenial-security',
             'name' => 'libpython3.5-stdlib'
           },
           {
             'source' => 'xenial-security',
-            'version' => '1.7~git20150920+dfsg-4ubuntu1.16.04.1',
-            'system' => 'apt',
             'name' => 'libroken18-heimdal',
-            'arch' => 'amd64',
-            'update' => 'libroken18-heimdal'
+            'system' => 'apt',
+            'version' => '1.7~git20150920+dfsg-4ubuntu1.16.04.1',
+            'update' => 'libroken18-heimdal',
+            'arch' => 'amd64'
           },
           {
-            'source' => 'xenial-security',
-            'version' => '2.1.26.dfsg1-14ubuntu0.2',
-            'name' => 'libsasl2-2',
             'system' => 'apt',
-            'arch' => 'amd64',
-            'update' => 'libsasl2-2'
+            'name' => 'libsasl2-2',
+            'source' => 'xenial-security',
+            'update' => 'libsasl2-2',
+            'version' => '2.1.26.dfsg1-14ubuntu0.2',
+            'arch' => 'amd64'
           },
           {
             'update' => 'libsasl2-modules-db',
-            'system' => 'apt',
+            'version' => '2.1.26.dfsg1-14ubuntu0.2',
             'arch' => 'amd64',
-            'name' => 'libsasl2-modules-db',
+            'system' => 'apt',
             'source' => 'xenial-security',
-            'version' => '2.1.26.dfsg1-14ubuntu0.2'
+            'name' => 'libsasl2-modules-db'
           },
           {
-            'source' => 'xenial-security',
-            'version' => '2.4.1-0ubuntu0.16.04.2',
-            'update' => 'libseccomp2',
             'name' => 'libseccomp2',
+            'source' => 'xenial-updates',
             'system' => 'apt',
+            'version' => '2.5.1-1ubuntu1~16.04.1',
+            'update' => 'libseccomp2',
             'arch' => 'amd64'
           },
           {
-            'arch' => 'amd64',
-            'system' => 'apt',
             'name' => 'libsmartcols1',
-            'update' => 'libsmartcols1',
             'source' => 'xenial-updates',
-            'version' => '2.27.1-6ubuntu3.10'
-          },
-          {
-            'source' => 'xenial-security',
-            'version' => '3.11.0-1ubuntu1.4',
             'system' => 'apt',
             'arch' => 'amd64',
+            'version' => '2.27.1-6ubuntu3.10',
+            'update' => 'libsmartcols1'
+          },
+          {
+            'system' => 'apt',
             'name' => 'libsqlite3-0',
-            'update' => 'libsqlite3-0'
+            'source' => 'xenial-security',
+            'arch' => 'amd64',
+            'update' => 'libsqlite3-0',
+            'version' => '3.11.0-1ubuntu1.5'
           },
           {
+            'version' => '1.42.13-1ubuntu1.2',
             'update' => 'libss2',
+            'arch' => 'amd64',
             'name' => 'libss2',
-            'system' => 'apt',
-            'arch' => 'amd64',
             'source' => 'xenial-security',
-            'version' => '1.42.13-1ubuntu1.2'
+            'system' => 'apt'
           },
           {
             'system' => 'apt',
-            'arch' => 'amd64',
             'name' => 'libssl1.0.0',
-            'update' => 'libssl1.0.0',
             'source' => 'xenial-security',
-            'version' => '1.0.2g-1ubuntu4.15'
+            'arch' => 'amd64',
+            'update' => 'libssl1.0.0',
+            'version' => '1.0.2g-1ubuntu4.20'
           },
           {
-            'update' => 'libstdc++6',
-            'arch' => 'amd64',
-            'system' => 'apt',
             'name' => 'libstdc++6',
             'source' => 'xenial-security',
-            'version' => '5.4.0-6ubuntu1~16.04.12'
+            'system' => 'apt',
+            'version' => '5.4.0-6ubuntu1~16.04.12',
+            'update' => 'libstdc++6',
+            'arch' => 'amd64'
           },
           {
-            'arch' => 'amd64',
             'system' => 'apt',
+            'source' => 'xenial-updates',
             'name' => 'libsystemd0',
             'update' => 'libsystemd0',
-            'source' => 'xenial-security',
-            'version' => '229-4ubuntu21.27'
+            'version' => '229-4ubuntu21.31',
+            'arch' => 'amd64'
           },
           {
-            'update' => 'libtasn1-6',
-            'system' => 'apt',
-            'name' => 'libtasn1-6',
-            'arch' => 'amd64',
             'version' => '4.7-3ubuntu0.16.04.3',
-            'source' => 'xenial-security'
+            'update' => 'libtasn1-6',
+            'arch' => 'amd64',
+            'source' => 'xenial-security',
+            'name' => 'libtasn1-6',
+            'system' => 'apt'
           },
           {
             'update' => 'libudev1',
-            'system' => 'apt',
+            'version' => '229-4ubuntu21.31',
             'arch' => 'amd64',
-            'name' => 'libudev1',
-            'version' => '229-4ubuntu21.27',
-            'source' => 'xenial-security'
+            'system' => 'apt',
+            'source' => 'xenial-updates',
+            'name' => 'libudev1'
           },
           {
-            'version' => '2.27.1-6ubuntu3.10',
+            'system' => 'apt',
+            'name' => 'libuuid1',
             'source' => 'xenial-updates',
             'update' => 'libuuid1',
-            'name' => 'libuuid1',
-            'system' => 'apt',
+            'version' => '2.27.1-6ubuntu3.10',
             'arch' => 'amd64'
           },
           {
+            'arch' => 'amd64',
             'version' => '1.7~git20150920+dfsg-4ubuntu1.16.04.1',
-            'source' => 'xenial-security',
             'update' => 'libwind0-heimdal',
-            'system' => 'apt',
-            'arch' => 'amd64',
-            'name' => 'libwind0-heimdal'
+            'name' => 'libwind0-heimdal',
+            'source' => 'xenial-security',
+            'system' => 'apt'
           },
           {
-            'update' => 'libxml2',
-            'system' => 'apt',
-            'arch' => 'amd64',
             'name' => 'libxml2',
+            'source' => 'xenial-security',
+            'system' => 'apt',
+            'arch' => 'amd64',
             'version' => '2.9.3+dfsg1-1ubuntu0.7',
-            'source' => 'xenial-security'
+            'update' => 'libxml2'
           },
           {
-            'version' => '2.23-0ubuntu11',
-            'source' => 'xenial-updates',
-            'arch' => 'all',
             'system' => 'apt',
+            'source' => 'xenial-security',
             'name' => 'locales',
-            'update' => 'locales'
+            'update' => 'locales',
+            'version' => '2.23-0ubuntu11.3',
+            'arch' => 'all'
           },
           {
             'update' => 'login',
-            'system' => 'apt',
-            'arch' => 'amd64',
-            'name' => 'login',
-            'epoch' => '1',
             'version' => '4.2-3.1ubuntu5.4',
-            'source' => 'xenial-security'
+            'arch' => 'amd64',
+            'epoch' => '1',
+            'system' => 'apt',
+            'source' => 'xenial-security',
+            'name' => 'login'
           },
           {
             'arch' => 'amd64',
-            'system' => 'apt',
-            'name' => 'logrotate',
+            'version' => '3.8.7-2ubuntu2.16.04.2',
             'update' => 'logrotate',
             'source' => 'xenial-updates',
-            'version' => '3.8.7-2ubuntu2.16.04.2'
+            'name' => 'logrotate',
+            'system' => 'apt'
           },
           {
-            'source' => 'xenial-updates',
+            'update' => 'mount',
             'version' => '2.27.1-6ubuntu3.10',
-            'system' => 'apt',
             'arch' => 'amd64',
+            'system' => 'apt',
             'name' => 'mount',
-            'update' => 'mount'
+            'source' => 'xenial-updates'
           },
           {
-            'source' => 'xenial-updates',
-            'version' => '2.23-0ubuntu11',
-            'update' => 'multiarch-support',
             'system' => 'apt',
             'name' => 'multiarch-support',
+            'source' => 'xenial-security',
+            'update' => 'multiarch-support',
+            'version' => '2.23-0ubuntu11.3',
             'arch' => 'amd64'
           },
           {
-            'system' => 'apt',
             'name' => 'openssh-client',
+            'source' => 'xenial-updates',
+            'epoch' => '1',
+            'system' => 'apt',
             'arch' => 'amd64',
-            'update' => 'openssh-client',
-            'source' => 'xenial-security',
-            'version' => '7.2p2-4ubuntu2.8',
-            'epoch' => '1'
+            'version' => '7.2p2-4ubuntu2.10',
+            'update' => 'openssh-client'
           },
           {
             'system' => 'apt',
+            'epoch' => '1',
+            'source' => 'xenial-updates',
             'name' => 'openssh-server',
             'arch' => 'amd64',
             'update' => 'openssh-server',
-            'epoch' => '1',
-            'version' => '7.2p2-4ubuntu2.8',
-            'source' => 'xenial-security'
+            'version' => '7.2p2-4ubuntu2.10'
           },
           {
+            'version' => '7.2p2-4ubuntu2.10',
             'update' => 'openssh-sftp-server',
-            'system' => 'apt',
-            'name' => 'openssh-sftp-server',
             'arch' => 'amd64',
-            'source' => 'xenial-security',
-            'version' => '7.2p2-4ubuntu2.8',
+            'name' => 'openssh-sftp-server',
+            'source' => 'xenial-updates',
+            'system' => 'apt',
             'epoch' => '1'
           },
           {
-            'update' => 'openssl',
-            'arch' => 'amd64',
             'system' => 'apt',
+            'source' => 'xenial-security',
             'name' => 'openssl',
-            'version' => '1.0.2g-1ubuntu4.15',
-            'source' => 'xenial-security'
+            'arch' => 'amd64',
+            'update' => 'openssl',
+            'version' => '1.0.2g-1ubuntu4.20'
           },
           {
             'version' => '4.2-3.1ubuntu5.4',
+            'update' => 'passwd',
+            'arch' => 'amd64',
+            'name' => 'passwd',
             'source' => 'xenial-security',
             'epoch' => '1',
-            'update' => 'passwd',
-            'name' => 'passwd',
-            'system' => 'apt',
-            'arch' => 'amd64'
+            'system' => 'apt'
           },
           {
+            'arch' => 'amd64',
+            'version' => '5.22.1-9ubuntu0.9',
+            'update' => 'perl',
             'source' => 'xenial-security',
-            'version' => '5.22.1-9ubuntu0.6',
-            'system' => 'apt',
             'name' => 'perl',
-            'arch' => 'amd64',
-            'update' => 'perl'
+            'system' => 'apt'
           },
           {
-            'version' => '5.22.1-9ubuntu0.6',
             'source' => 'xenial-security',
-            'arch' => 'amd64',
-            'system' => 'apt',
             'name' => 'perl-base',
+            'system' => 'apt',
+            'arch' => 'amd64',
+            'version' => '5.22.1-9ubuntu0.9',
             'update' => 'perl-base'
           },
           {
-            'system' => 'apt',
             'arch' => 'all',
-            'name' => 'perl-modules-5.22',
             'update' => 'perl-modules-5.22',
-            'source' => 'xenial-security',
-            'version' => '5.22.1-9ubuntu0.6'
+            'version' => '5.22.1-9ubuntu0.9',
+            'system' => 'apt',
+            'name' => 'perl-modules-5.22',
+            'source' => 'xenial-security'
           },
           {
-            'epoch' => '2',
-            'source' => 'xenial-updates',
-            'version' => '3.3.10-4ubuntu2.5',
-            'update' => 'procps',
             'arch' => 'amd64',
+            'update' => 'procps',
+            'version' => '3.3.10-4ubuntu2.5',
+            'epoch' => '2',
             'system' => 'apt',
+            'source' => 'xenial-updates',
             'name' => 'procps'
           },
           {
             'version' => '22.21-2.1ubuntu0.1',
-            'source' => 'xenial-updates',
             'update' => 'psmisc',
-            'system' => 'apt',
             'arch' => 'amd64',
-            'name' => 'psmisc'
+            'name' => 'psmisc',
+            'source' => 'xenial-updates',
+            'system' => 'apt'
           },
           {
+            'arch' => 'amd64',
+            'update' => 'python',
             'version' => '2.7.12-1~16.04',
-            'source' => 'xenial-updates',
             'system' => 'apt',
-            'arch' => 'amd64',
             'name' => 'python',
-            'update' => 'python'
+            'source' => 'xenial-updates'
           },
           {
-            'version' => '1.1.0~beta1ubuntu0.16.04.8',
-            'source' => 'xenial-security',
             'system' => 'apt',
-            'arch' => 'all',
-            'name' => 'python-apt-common',
-            'update' => 'python-apt-common'
-          },
-          {
-            'name' => 'python-minimal',
-            'system' => 'apt',
-            'arch' => 'amd64',
-            'update' => 'python-minimal',
             'source' => 'xenial-updates',
-            'version' => '2.7.12-1~16.04'
+            'name' => 'python-apt-common',
+            'arch' => 'all',
+            'update' => 'python-apt-common',
+            'version' => '1.1.0~beta1ubuntu0.16.04.12'
           },
           {
-            'update' => 'python2.7',
             'system' => 'apt',
-            'name' => 'python2.7',
-            'arch' => 'amd64',
-            'source' => 'xenial-security',
-            'version' => '2.7.12-1ubuntu0~16.04.9'
-          },
-          {
-            'update' => 'python2.7-minimal',
-            'arch' => 'amd64',
-            'system' => 'apt',
-            'name' => 'python2.7-minimal',
-            'source' => 'xenial-security',
-            'version' => '2.7.12-1ubuntu0~16.04.9'
-          },
-          {
-            'source' => 'xenial-security',
-            'version' => '1.1.0~beta1ubuntu0.16.04.8',
-            'update' => 'python3-apt',
-            'name' => 'python3-apt',
-            'system' => 'apt',
+            'source' => 'xenial-updates',
+            'name' => 'python-minimal',
+            'update' => 'python-minimal',
+            'version' => '2.7.12-1~16.04',
             'arch' => 'amd64'
           },
           {
-            'update' => 'python3-software-properties',
-            'arch' => 'all',
-            'system' => 'apt',
-            'name' => 'python3-software-properties',
-            'source' => 'xenial-updates',
-            'version' => '0.96.20.9'
+            'version' => '2.7.12-1ubuntu0~16.04.18',
+            'update' => 'python2.7',
+            'arch' => 'amd64',
+            'source' => 'xenial-security',
+            'name' => 'python2.7',
+            'system' => 'apt'
           },
           {
-            'update' => 'python3.5',
+            'name' => 'python2.7-minimal',
+            'source' => 'xenial-security',
             'system' => 'apt',
             'arch' => 'amd64',
-            'name' => 'python3.5',
+            'version' => '2.7.12-1ubuntu0~16.04.18',
+            'update' => 'python2.7-minimal'
+          },
+          {
+            'name' => 'python3-apt',
+            'source' => 'xenial-updates',
+            'system' => 'apt',
+            'version' => '1.1.0~beta1ubuntu0.16.04.12',
+            'update' => 'python3-apt',
+            'arch' => 'amd64'
+          },
+          {
+            'name' => 'python3-software-properties',
+            'source' => 'xenial-updates',
+            'system' => 'apt',
+            'arch' => 'all',
+            'version' => '0.96.20.13',
+            'update' => 'python3-software-properties'
+          },
+          {
+            'system' => 'apt',
             'source' => 'xenial-security',
-            'version' => '3.5.2-2ubuntu0~16.04.9'
+            'name' => 'python3.5',
+            'update' => 'python3.5',
+            'version' => '3.5.2-2ubuntu0~16.04.13',
+            'arch' => 'amd64'
           },
           {
             'source' => 'xenial-security',
-            'version' => '3.5.2-2ubuntu0~16.04.9',
             'name' => 'python3.5-minimal',
             'system' => 'apt',
             'arch' => 'amd64',
+            'version' => '3.5.2-2ubuntu0~16.04.13',
             'update' => 'python3.5-minimal'
           },
           {
-            'source' => 'xenial-security',
+            'arch' => 'all',
             'version' => '0.0.9ubuntu0.16.04.1',
-            'system' => 'apt',
-            'arch' => 'all',
+            'update' => 'sensible-utils',
             'name' => 'sensible-utils',
-            'update' => 'sensible-utils'
+            'source' => 'xenial-security',
+            'system' => 'apt'
           },
           {
+            'name' => 'software-properties-common',
             'source' => 'xenial-updates',
-            'version' => '0.96.20.9',
-            'update' => 'software-properties-common',
             'system' => 'apt',
             'arch' => 'all',
-            'name' => 'software-properties-common'
+            'version' => '0.96.20.13',
+            'update' => 'software-properties-common'
           },
           {
-            'update' => 'systemd',
             'arch' => 'amd64',
+            'update' => 'systemd',
+            'version' => '229-4ubuntu21.31',
             'system' => 'apt',
             'name' => 'systemd',
-            'source' => 'xenial-security',
-            'version' => '229-4ubuntu21.27'
+            'source' => 'xenial-updates'
           },
           {
-            'name' => 'systemd-sysv',
-            'system' => 'apt',
-            'arch' => 'amd64',
+            'version' => '229-4ubuntu21.31',
             'update' => 'systemd-sysv',
-            'version' => '229-4ubuntu21.27',
-            'source' => 'xenial-security'
-          },
-          {
-            'version' => '2.27.1-6ubuntu3.10',
+            'arch' => 'amd64',
             'source' => 'xenial-updates',
-            'update' => 'util-linux',
-            'system' => 'apt',
-            'arch' => 'amd64',
-            'name' => 'util-linux'
+            'name' => 'systemd-sysv',
+            'system' => 'apt'
           },
           {
-            'update' => 'vim-common',
-            'name' => 'vim-common',
             'system' => 'apt',
+            'source' => 'xenial-security',
+            'name' => 'tar',
             'arch' => 'amd64',
-            'epoch' => '2',
-            'version' => '7.4.1689-3ubuntu1.4',
-            'source' => 'xenial-security'
+            'update' => 'tar',
+            'version' => '1.28-2.1ubuntu0.2'
           },
           {
-            'arch' => 'amd64',
-            'system' => 'apt',
-            'name' => 'vim-tiny',
-            'update' => 'vim-tiny',
-            'epoch' => '2',
-            'version' => '7.4.1689-3ubuntu1.4',
-            'source' => 'xenial-security'
-          },
-          {
-            'update' => 'webmin',
+            'source' => 'xenial-updates',
+            'name' => 'ubuntu-keyring',
             'system' => 'apt',
             'arch' => 'all',
+            'version' => '2012.05.19.1',
+            'update' => 'ubuntu-keyring'
+          },
+          {
+            'arch' => 'amd64',
+            'update' => 'util-linux',
+            'version' => '2.27.1-6ubuntu3.10',
+            'system' => 'apt',
+            'name' => 'util-linux',
+            'source' => 'xenial-updates'
+          },
+          {
+            'name' => 'vim-common',
+            'source' => 'xenial-security',
+            'system' => 'apt',
+            'epoch' => '2',
+            'version' => '7.4.1689-3ubuntu1.5',
+            'update' => 'vim-common',
+            'arch' => 'amd64'
+          },
+          {
+            'name' => 'vim-tiny',
+            'source' => 'xenial-security',
+            'system' => 'apt',
+            'epoch' => '2',
+            'version' => '7.4.1689-3ubuntu1.5',
+            'update' => 'vim-tiny',
+            'arch' => 'amd64'
+          },
+          {
+            'arch' => 'all',
+            'update' => 'webmin',
+            'version' => '2.621',
+            'system' => 'apt',
             'name' => 'webmin',
-            'version' => '1.941',
             'source' => 'sarge'
           },
           {
-            'update' => 'wget',
-            'system' => 'apt',
-            'arch' => 'amd64',
             'name' => 'wget',
-            'version' => '1.17.1-1ubuntu1.5',
-            'source' => 'xenial-security'
-          },
-          {
-            'epoch' => '1',
-            'version' => '1.2.8.dfsg-2ubuntu4.3',
             'source' => 'xenial-security',
             'system' => 'apt',
-            'arch' => 'amd64',
+            'version' => '1.17.1-1ubuntu1.5',
+            'update' => 'wget',
+            'arch' => 'amd64'
+          },
+          {
             'name' => 'zlib1g',
+            'source' => 'xenial-security',
+            'system' => 'apt',
+            'epoch' => '1',
+            'arch' => 'amd64',
+            'version' => '1.2.8.dfsg-2ubuntu4.3',
             'update' => 'zlib1g'
           }
         ];

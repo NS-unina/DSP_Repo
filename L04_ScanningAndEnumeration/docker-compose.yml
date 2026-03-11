@@ -1,27 +1,21 @@
 version: '2'
 services:
   telnet:
-    image: 'nsunina/telnet-server:1.0'
+    image: nsunina/hacking-ssh-server:1.0
     stdin_open: true
     tty: true
-    cap_add:
-      - ALL
   ftp:
-    image: 'nsunina/ftp-server:1.0'
+    image: nsunina/hacking-ssh-server:1.0
     stdin_open: true
     tty: true
-    cap_add:
-      - ALL
   samba:
-    image: 'nsunina/samba:4.6.3'
+    image: nsunina/hacking-ssh-server:1.0
     stdin_open: true
     tty: true
   hacking:
-    image: 'nsunina/hacking:1.0'
+    image: nsunina/hacking-ssh-server:1.0
     stdin_open: true
     tty: true
     ports:
       - '13389:3389'
-    cap_add:
-      - ALL
 networks: {}

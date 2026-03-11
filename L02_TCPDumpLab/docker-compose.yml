@@ -1,20 +1,7 @@
 version: '2'
 services:
-  Kali:
-    image: 'nsunina/hacking:1.0'
-    stdin_open: true
-    tty: true
-    ports:
-      - '13389:3389'
-    networks:
-      internal_network:
-        ipv4_address: 192.168.2.3
-    environment:
-      - GATEWAY=192.168.2.2
-    cap_add:
-      - ALL
   router:
-    image: 'nsunina/router:1.0'
+    image: nsunina/hacking-ssh-server:1.0
     stdin_open: true
     tty: true
     networks:
@@ -25,7 +12,7 @@ services:
     cap_add:
       - ALL
   TelnetServer:
-    image: 'nsunina/telnet-server:1.0'
+    image: nsunina/hacking-ssh-server:1.0
     stdin_open: true
     tty: true
     networks:
@@ -36,7 +23,7 @@ services:
     cap_add:
       - ALL
   telnet_client:
-    image: 'nsunina/networking:1.0'
+    image: nsunina/hacking-ssh-server:1.0
     stdin_open: true
     tty: true
     networks:
@@ -47,7 +34,7 @@ services:
     cap_add:
       - ALL
   scapy:
-    image: 'nsunina/networking:1.0'
+    image: nsunina/hacking-ssh-server:1.0
     stdin_open: true
     tty: true
     networks:
@@ -61,8 +48,8 @@ networks:
   telnet_network:
     ipam:
       config:
-        - subnet: 192.168.1.1/24
+        - subnet: 192.168.1.0/24
   internal_network:
     ipam:
       config:
-        - subnet: 192.168.2.1/24
+        - subnet: 192.168.2.0/24

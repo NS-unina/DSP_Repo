@@ -1,0 +1,75 @@
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+  font-family: Helvetica, Arial, sans-serif;
+  background:
+    radial-gradient(circle at top, rgba(255, 255, 255, 0.12), transparent 35%),
+    linear-gradient(160deg, #0d1321, #13243b 55%, #1d4d4f);
+  color: #f4f7fb;
+}
+
+.hero {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 72px 24px;
+}
+
+.eyebrow {
+  margin: 0 0 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.78rem;
+  color: #8ed8c6;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2.5rem, 7vw, 4.5rem);
+  line-height: 0.95;
+}
+
+.lead {
+  max-width: 42rem;
+  margin: 20px 0 32px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #d8e1ec;
+}
+
+.panel {
+  padding: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 18px;
+  background: rgba(10, 15, 28, 0.45);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(8px);
+}
+
+.panel h2 {
+  margin: 0 0 18px;
+  font-size: 1.2rem;
+}
+
+.track-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.track-list li {
+  display: flex;
+  gap: 16px;
+  padding: 12px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.track-list li:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.track-list span {
+  width: 2ch;
+  color: #8ed8c6;
+}

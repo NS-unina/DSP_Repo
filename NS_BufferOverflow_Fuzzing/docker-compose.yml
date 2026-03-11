@@ -48,8 +48,8 @@ networks:
   network_2:
     ipam:
       config:
-        - subnet: 193.20.3.1/24
+        - subnet: 193.20.3.0/24
   network_1:
     ipam:
       config:
-        - subnet: 193.20.1.1/24
+        - subnet: 193.20.1.0/24

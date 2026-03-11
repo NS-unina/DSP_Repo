@@ -1,0 +1,25 @@
+services:
+  topolinux:
+    image: nsunina/topolinux:v1.0
+    stdin_open: true
+    tty: true
+    ports:
+      - '9000:80'
+    networks:
+      network_0: {}
+  sqlmap:
+    image: secsi/sqlmap:1.10
+    stdin_open: true
+    tty: true
+    entrypoint:
+      - tail
+      - '-f'
+      - /dev/null
+    networks:
+      network_0:
+        ipv4_address: 172.27.0.3
+networks:
+  network_0:
+    ipam:
+      config:
+        - subnet: 172.27.0.0/24

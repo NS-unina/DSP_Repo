@@ -1,2 +1,5 @@
-FROM nsunina/apache:5.6
-ADD html /var/www/html
+FROM nginx:1.27-alpine
+
+COPY site/ /usr/share/nginx/html/
+
+EXPOSE 80
