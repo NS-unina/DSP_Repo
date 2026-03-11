@@ -14,7 +14,7 @@ services:
       - NET_ADMIN
     privileged: true
   wireshark:
-    image: lscr.io/linuxserver/wireshark:latest
+    image: lscr.io/linuxserver/wireshark:4.6.1
     container_name: wireshark
     cap_add:
       - NET_ADMIN
@@ -24,7 +24,7 @@ services:
       - TZ=Etc/UTC
     ports:
       - 3000:3000
-      - 14500:3001
+      - :3001
     shm_size: "1gb"
     restart: unless-stopped
     networks:
