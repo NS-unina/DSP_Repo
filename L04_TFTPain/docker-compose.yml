@@ -3,6 +3,7 @@ services:
   ftp_server:
     image: nsunina/hacking-ssh-server:1.0
     stdin_open: true
+    command: vsftpd
     tty: true
     ports:
       - '21:21'
@@ -14,7 +15,7 @@ services:
     stdin_open: true
     tty: true
     ports:
-      - '69:69'
+      - '69:69/udp'
     networks:
       network_0:
         ipv4_address: 193.20.1.3
