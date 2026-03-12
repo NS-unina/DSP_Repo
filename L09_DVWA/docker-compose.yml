@@ -1,0 +1,9 @@
+version: '2'
+services:
+  dvwa:
+    image: sagikazarmark/dvwa:latest
+    stdin_open: true
+    tty: true
+    ports:
+      - '11110:80'
+networks: {}
