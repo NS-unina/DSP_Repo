@@ -1,0 +1,47 @@
+version: '2'
+services:
+  Cowrie:
+    image: 'xmarf/honeypot_ubuntu:latest'
+    stdin_open: true
+    tty: true
+    networks:
+      Network0:
+        ipv4_address: 193.20.1.2
+  Dionaea:
+    image: 'dinotools/dionaea:latest'
+    stdin_open: true
+    tty: true
+    networks:
+      Network0:
+        ipv4_address: 193.20.1.5
+  Server:
+    image: 'nsunina/ssh-server:1.0'
+    stdin_open: true
+    tty: true
+    networks:
+      Network0:
+        ipv4_address: 193.20.1.3
+    cap_add:
+      - ALL
+  Cowrie_High:
+    image: 'fgipa246/cowrie_high:latest'
+    stdin_open: true
+    tty: true
+    networks:
+      Network0:
+        ipv4_address: 193.20.1.6
+  Kali:
+    image: 'xmarf/kali:latest'
+    stdin_open: true
+    tty: true
+    networks:
+      Network0:
+        ipv4_address: 193.20.1.4
+    cap_add:
+      - ALL
+    privileged: true
+networks:
+  Network0:
+    ipam:
+      config:
+        - subnet: 193.20.1.1/24
